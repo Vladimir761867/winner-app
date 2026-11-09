@@ -1,0 +1,3 @@
+{"appId":"com.example.pobeditel","appName":"Победитель","webDir":"www","backgroundColor":"#1b1535",
+ "ios":{"contentInset":"never","allowsLinkPreview":false,"scrollEnabled":false},
+ "server":{"iosScheme":"capacitor"}}
