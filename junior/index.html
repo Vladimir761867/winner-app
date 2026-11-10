@@ -209,7 +209,7 @@ addEventListener("keydown",e=>{if(shopOpen||profOpen)return;const k=e.key;if(k==
  else if(k==="Enter"||k==="j"||k==="J"||k==="k"||k==="K"){e.preventDefault();if(!e.repeat)act()}});
 const touchDev=(window.matchMedia&&matchMedia("(pointer:coarse)").matches)||navigator.maxTouchPoints>0;
 const bsz=()=>portrait?clamp(W*.16,46,64):(touchDev?Math.max(46,Math.min(64,56*u)):40);
-function btns(){const b=bsz(),y=H-b*1.3-SA.b;return[{id:"jump",x:b*1.2+SA.l,y,r:b,ic:"⬆️",lb:"ПРЫЖОК",k:"Пробел / ↑"},{id:"strike",x:W-b*1.2-SA.r,y,r:b,ic:"👊",lb:"КУЛАК",k:"Enter / J"},{id:"shoot",x:portrait?W/2:W-b*3.3-SA.r,y:y+b*.15,r:b*.82,ic:wpn().ic,lb:wpn().s,k:"F"},{id:"super",x:W-b*1.2-SA.r,y:y-b*2.2,r:b*1.0,ic:"🔥",lb:"СУПЕР",k:"E"},{id:"slow",x:W-b*.85-SA.r,y:SA.t+(portrait?180:96),r:b*.62,ic:"⏳",lb:"ЗАМЕДЛ",k:"Q"}].filter(q=>(q.id!=="super"&&q.id!=="slide"&&q.id!=="dodge"&&q.id!=="slow")||tut>=9)}
+function btns(){const b=bsz(),y=H-b*1.3-SA.b;return[{id:"jump",x:b*1.2+SA.l,y,r:b,ic:"⬆️",lb:"ПРЫЖОК",k:"Пробел / ↑"},{id:"strike",x:W-b*1.2-SA.r,y,r:b,ic:"👊",lb:"КУЛАК",k:"Enter / J"},{id:"shoot",x:portrait?W/2:W-b*3.3-SA.r,y:y+b*.15,r:b*.82,ic:wpn().ic,lb:wpn().s,k:"F"},{id:"super",x:W-b*1.2-SA.r,y:y-b*2.2,r:b*1.0,ic:"🔥",lb:"СУПЕР",k:"E"},{id:"slow",x:b*1.2+SA.l,y:y-b*1.95,r:b*.8,ic:"⏳",lb:"ЗАМЕДЛ",k:"Q"}].filter(q=>(q.id!=="super"&&q.id!=="slide"&&q.id!=="dodge"&&q.id!=="slow")||tut>=9)}
 cv.addEventListener("pointerdown",e=>{e.preventDefault();ac();if(paused)return;if(st==="over"){act();return}if(st!=="play")return;
  let best=null,bd=9;for(const b of btns()){const d=Math.hypot(e.clientX-b.x,e.clientY-b.y)/b.r;if(d<=1.2&&d<bd){bd=d;best=b}}
  if(best){best.id==="jump"?jump():best.id==="shoot"?shoot():best.id==="super"?superHit():best.id==="slide"?slide():best.id==="dodge"?dodge():best.id==="slow"?slowMo():act()}else swp={x:e.clientX,y:e.clientY,id:e.pointerId,t:performance.now()}});
@@ -298,7 +298,7 @@ function fireAtk(p,stg){const a=p.atk,x0=p.x-p.w*.42,sp=(330+lv()*10)*u*(1+stg*.
  for(let i=0;i<n;i++){const fl=i%2===1&&stg>=1,lo=true,dy=Math.random()<.5?-(H*.32):(lo?50*u:-(H*.2));haz.push({t:a,x:x0+i*150*u,s:x0+i*150*u,v:-sp,lo:lo?1:0,dy,r:(a==="stink"?30:a==="shout"?26:17)*u,hh:lo?30*u:0})}tone(LO[a]?240:520,.15,"triangle",.08,LO[a]?160:760)}
 function bossHit(z){if(fx.inv>0||iF>0)return;if(shieldOn){shieldOn=false;iF=.8;SFX.shield();say("Щит выдержал!",hx()+50*u,GY-120*u*sc(),"#cfe8ff",18);return}
  const d=tut>=9?maxE()*BOSS_HIT*arm():0;energy-=d;knock(300*u);hurtT=.6;combo=0;shake=.35;freeze=.05;SFX.hurt();buzz(60);
- say("−"+Math.round(d)+" энергии",hx()+30*u,GY-jy-100*u*sc(),"#ff9a9a",22);say(z.lo?"Прыгай над атакой!":"Пригнись — ⬇️ ПОДКАТ!",W/2,H*.5,"#cfe8ff",18);if(energy<=0)dieCheck()}
+ say("−"+Math.round(d)+" энергии",hx()+30*u,GY-jy-100*u*sc(),"#ff9a9a",22);say(z.lo?"Прыгай над атакой!":"Прыгай над атакой!",W/2,H*.5,"#cfe8ff",18);if(energy<=0)dieCheck()}
 function updHaz(dt){const X=hx();for(const z of haz){z.x+=z.v*dt;z.a=(z.a||0)+dt*9;
   const zt=z.lo?GY-z.hh:GY-72*u*sc()-z.r,zb=z.lo?GY:GY-72*u*sc()+z.r,top=GY-jy-(slideT>0?40:88)*u*sc(),bot=GY-jy-(slideT>0?0:2*u);
   if(!z.hit&&Math.abs(z.x-X)<z.r+10*u*sc()&&bot>zt&&top<zb){z.hit=1;bossHit(z)}
@@ -338,8 +338,7 @@ const CARDS=[
 {id:"sc",ic:"🔥",n:"Супер-заряд",d:"Супер-удар копится в 1,5 раза быстрее",r:1,max:2},
 {id:"shield",ic:"🔵",n:"Щит уровня",d:"Щит, который обновляется каждый уровень",r:1,max:1},
 {id:"boss",ic:"👑",n:"Боссобой",d:"+50% урона по боссам",r:1,max:2},
-{id:"rev",ic:"💖",n:"Второе дыхание",d:"Один раз за забег вернёшься с 50% энергии",r:2,max:1},
-{id:"slide",ic:"🛷",n:"Подкат-таран",d:"Подкат сбивает наземных монстров",r:2,max:1}];
+{id:"rev",ic:"💖",n:"Второе дыхание",d:"Один раз за забег вернёшься с 50% энергии",r:2,max:1}];
 const RAR=[{n:"Обычная",c:"#4a78e0",w:60},{n:"Редкая",c:"#9b4ad9",w:30},{n:"Эпическая",c:"#e0a020",w:12}];
 function pick3(){const pool=CARDS.filter(c=>PK(c.id)<c.max),out=[];for(let k=0;k<3&&pool.length;k++){let tw=pool.reduce((a,c)=>a+RAR[c.r].w,0),r=Math.random()*tw,i=0;for(;i<pool.length;i++){r-=RAR[pool[i].r].w;if(r<=0)break}out.push(pool.splice(Math.min(i,pool.length-1),1)[0])}return out}
 const REW=l=>l===3||l===7||l===11||l===20||(l>20&&l%10===0);
@@ -550,7 +549,7 @@ function zOver(){const Z=zoneNow();if(!Z||st!=="play"||tut<9)return;const zm=Z.m
  if(zm.dark&&level>=2){const X=hx(),vg=g.createRadialGradient(X,GY-60*u,70*u,X,GY-60*u,Math.max(W*.72,420*u));vg.addColorStop(0,"rgba(4,2,20,0)");vg.addColorStop(.55,"rgba(4,2,20,.5)");vg.addColorStop(1,"rgba(4,2,20,.8)");g.fillStyle=vg;g.fillRect(0,0,W,H)}}
 const HZ=zm=>zm.hz||(level>=8?["paper","splash"]:null);
 function zStep(dt,bossOn){const zm=ZM();
- if(HZ(zm)&&!bossOn&&!lvlMode){zh-=dt;if(zh<=0){zh=Math.max(2.4,6.5-level*.25)+Math.random()*2;const ty=rnd(HZ(zm));zw.push({ty,t:.95,lo:LO[ty]?1:0});SFX.warn()}}
+ if(HZ(zm)&&!bossOn&&!lvlMode){zh-=dt;if(zh<=0){zh=Math.max(2.4,6.5-level*.25)+Math.random()*2;const ty=rnd(HZ(zm));zw.push({ty,t:.95,lo:1});SFX.warn()}}
  for(const w of zw){w.t-=dt;if(w.t<=0){w.go=1;haz.push({t:w.ty,x:W+20*u,v:-(300+lv()*10)*u,lo:w.lo,r:17*u,hh:w.lo?30*u:0});tone(w.lo?240:520,.15,"triangle",.08,w.lo?160:760)}}
  zw=zw.filter(w=>!w.go)}
 function drawZW(){for(const w of zw){const pl=.5+Math.sin(t*22)*.5,X=hx(),y0=w.lo?GY-36*u:GY-100*u*sc(),hh=w.lo?36*u:56*u*sc();g.save();g.fillStyle="rgba(255,60,60,"+(.1+pl*.14)+")";g.fillRect(X+60*u,y0,W-X-60*u,hh);g.strokeStyle="rgba(255,80,80,"+(.45+pl*.4)+")";g.setLineDash([10*u,8*u]);g.lineWidth=2;g.strokeRect(X+60*u,y0,W-X-60*u,hh);g.setLineDash([]);
@@ -876,7 +875,7 @@ function showMenu(){st="menu";endEl.style.display="none";
 let endAt=0;function showEnd(){endAt=performance.now();menuEl.style.display="none";
  endEl.innerHTML='<div class="mc"><h2>Ты не проиграл(а) — ты тренировался!</h2><p style="font-size:17px">'+th.ic+' '+th.n+' · Побед: <b>'+run+'</b> · Рекорд: '+(meta.bestBy[th.id]||0)+' · Уровень: '+level+'</p>'
  +(newRec?'<p style="font-size:20px;color:#ffe27a">🏆 Новый рекорд!</p>':((meta.bestBy[th.id]||0)-run>0&&(meta.bestBy[th.id]||0)-run<=10?'<p style="color:#ffd9a0">Почти! До рекорда не хватило '+((meta.bestBy[th.id]||0)-run)+' побед</p>':''))+(need()-xp<=4?'<p style="color:#9ff5c0">До следующего уровня: '+(need()-xp)+' побед</p>':'')+'<p>'+th.over+'</p><p>Ты уже сильнее, чем в начале. Я в тебя верю!</p>'
- +'<button class="big" data-a="again" style="font-size:26px;padding:18px 44px">▶ Ещё раз</button><p style="font-size:12px;opacity:.7;margin:10px 0 4px">коснись в любом месте, чтобы играть снова</p><div class="row" style="opacity:.75;transform:scale(.85);margin-top:14px"><button data-a="menu">🗺 Сюжет</button><button data-a="shop">🛒</button><button data-a="prof">🏅</button></div></div>';
+ +'<button class="big" data-a="again" style="font-size:26px;padding:18px 44px">▶ Ещё раз</button><p style="font-size:12px;opacity:.7;margin:10px 0 4px">коснись в любом месте, чтобы играть снова</p><div class="row" style="opacity:.75;transform:scale(.85);margin-top:14px"><button data-a="menu">🏠 Меню</button><button data-a="shop">🛒</button><button data-a="prof">🏅</button></div></div>';
  endEl.style.display="flex"}
 function startGame(i){ac();thIdx=i;th=THEMES[i];meta.theme=i;meta.played[th.id]=1;menuEl.style.display="none";endEl.style.display="none";st="play";reset();zShownL=0;zIntro();save();chk()}
 function onUI(e){const b=e.target.closest("button");if(!b){if(endEl.style.display==="flex"&&performance.now()-endAt>700)startGame(thIdx);return}

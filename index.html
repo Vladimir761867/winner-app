@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="color-scheme" content="dark light"><meta name="theme-color" content="#1b1535">
 <link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/icon-180.png"><meta name="apple-mobile-web-app-title" content="Победитель"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
-<title>Победитель 17 — новые враги, два героя, награды на 3/7/11/20</title>
+<title>Победитель</title>
 <style>
 html,body{height:100%;margin:0;background:#1b1535;overflow:hidden;overscroll-behavior:none;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 canvas{display:block;width:100%;height:100%;touch-action:none}
@@ -247,7 +247,7 @@ function defeat(p,quiet,big){if(p.bar)return;p.dead=true;if(p.boss){spawn=Math.m
  else say(combo%5===0?"Комбо ×"+combo+" — неудержим!":rnd(th.praise),p.x,y-p.h/2-30*u,"#fff2a8",22);
  save();chk()}
 function startClear(){lvlMode=1;lvlT=6.2;lvlB=0;lvlC=0;lvlP=rnd(th.praise);probs.forEach(p=>{if(p.bar){p.dead=true;return}if(!p.dead&&!p.boss)defeat(p,1)});pits.length=0;queue.length=0;bullets.length=0;joyT=3;flash=.8;shake=.3;SFX.level();confetti(W/2,H*.35);setTimeout(()=>confetti(W*.3,H*.4),350);setTimeout(()=>confetti(W*.7,H*.4),700);buzz(40)}
-function levelUp(){zPrev=zoneNow();level++;zWipe=.001;xp=0;setLvl();energy=Math.min(maxE(),energy+30);coins+=2;shieldOn=ownR("shield")>0||PK("shield")>0;flash=1;shake=.4;buzz(40);if(isDev()){if(chOf(level)!==chOf(level-1)){thIdx=devTh(level);th=THEMES[thIdx];th.en=th.enD;probs=probs.filter(p=>p.boss);showChap(chOf(level)-1)}if(chOf(level)===5)fx.magnet=Math.max(fx.magnet,25)}save();chk()}
+function levelUp(){zPrev=zoneNow();level++;zWipe=.001;xp=0;setLvl();energy=Math.min(maxE(),energy+30);coins+=2;shieldOn=ownR("shield")>0||PK("shield")>0;flash=1;shake=.4;buzz(40);if(isDev()){if(chOf(level)!==chOf(level-1)){thIdx=devTh(level);th=THEMES[thIdx];th.en=th.enD;probs=probs.filter(p=>p.boss);showChap(chOf(level)-1)}if(chOf(level)===5){fx.magnet=Math.max(fx.magnet,25);fx.x2=Math.max(fx.x2,25)}}save();chk()}
 function dieCheck(){if(PK("rev")&&!perk.revU){perk.revU=1;energy=maxE()*.5;iF=2;flash=.8;banner("💖 Второе дыхание! Ты снова в строю",2.5);SFX.level();return}if(ownR("kit")>0){inv.kit--;energy=60;save();say("Аптечка поддержки! +60",W/2,H*.3,"#9ff5c0",26)}
  else{st="over";overT=0;SFX.over();if(run>(meta.bestBy[th.id]||0))meta.bestBy[th.id]=run;if(run>meta.best){meta.best=run;newRec=true}setLvl();save();chk();showEnd()}}
 
@@ -289,7 +289,7 @@ addEventListener("keydown",e=>{if(shopOpen||profOpen)return;const k=e.key;if(k==
  else if(k==="Enter"||k==="j"||k==="J"||k==="k"||k==="K"){e.preventDefault();if(!e.repeat)act()}});
 const touchDev=(window.matchMedia&&matchMedia("(pointer:coarse)").matches)||navigator.maxTouchPoints>0;
 const bsz=()=>portrait?clamp(W*.16,46,64):(touchDev?Math.max(46,Math.min(64,56*u)):40);
-function btns(){const b=bsz(),y=H-b*1.3-SA.b;return[{id:"jump",x:b*1.2+SA.l,y,r:b,ic:"⬆️",lb:"ПРЫЖОК",k:"Пробел / ↑"},{id:"strike",x:W-b*1.2-SA.r,y,r:b,ic:"👊",lb:"КУЛАК",k:"Enter / J"},{id:"shoot",x:portrait?W/2:W-b*3.3-SA.r,y:y+b*.15,r:b*.82,ic:meta.weapon===1?"🍳":"⚽",lb:meta.weapon===1?"СКОВОРОДА":"МЯЧИК",k:"F"},{id:"super",x:W-b*1.2-SA.r,y:y-b*2.2,r:b*1.0,ic:"🔥",lb:"СУПЕР",k:"E"},{id:"slow",x:W-b*.85-SA.r,y:SA.t+(portrait?180:96),r:b*.62,ic:"⏳",lb:"ЗАМЕДЛ",k:"Q"}].filter(q=>(q.id!=="super"&&q.id!=="slide"&&q.id!=="dodge"&&q.id!=="slow")||tut>=9)}
+function btns(){const b=bsz(),y=H-b*1.3-SA.b;return[{id:"jump",x:b*1.2+SA.l,y,r:b,ic:"⬆️",lb:"ПРЫЖОК",k:"Пробел / ↑"},{id:"strike",x:W-b*1.2-SA.r,y,r:b,ic:"👊",lb:"КУЛАК",k:"Enter / J"},{id:"shoot",x:portrait?W/2:W-b*3.3-SA.r,y:y+b*.15,r:b*.82,ic:meta.weapon===1?"🍳":"⚽",lb:meta.weapon===1?"СКОВОРОДА":"МЯЧИК",k:"F"},{id:"super",x:W-b*1.2-SA.r,y:y-b*2.2,r:b*1.0,ic:"🔥",lb:"СУПЕР",k:"E"},{id:"slow",x:b*1.2+SA.l,y:y-b*1.95,r:b*.8,ic:"⏳",lb:"ЗАМЕДЛ",k:"Q"}].filter(q=>(q.id!=="super"&&q.id!=="slide"&&q.id!=="dodge"&&q.id!=="slow")||tut>=9)}
 cv.addEventListener("pointerdown",e=>{e.preventDefault();ac();if(paused)return;if(st==="over"){act();return}if(st!=="play")return;
  let best=null,bd=9;for(const b of btns()){const d=Math.hypot(e.clientX-b.x,e.clientY-b.y)/b.r;if(d<=1.2&&d<bd){bd=d;best=b}}
  if(best){best.id==="jump"?jump():best.id==="shoot"?shoot():best.id==="super"?superHit():best.id==="slide"?slide():best.id==="dodge"?dodge():best.id==="slow"?slowMo():act()}else swp={x:e.clientX,y:e.clientY,id:e.pointerId,t:performance.now()}});
@@ -367,7 +367,7 @@ function dayStep(dt){
  const ph=phase();if(ph!==lastPh){lastPh=ph;say(["","Наступил день","Вечер: силы тают — ищи "+th.food+" и "+th.fun,"Ночь: держись, скоро утро"][ph],W/2,H*.38,"#ffe3b0",22)}
  if(fx.inv<=0)energy-=(.4+2.6*dayT)*(mood>0?.2:1)*dt;
  pt-=dt;if(pt<=0){pt=8-4*dayT+Math.random()*3;const r=Math.random(),hg=Math.random()<.4?80*u:0;
-  if(r>.88)coinArc(W+80,5,0);else pk.push({x:W+40,hg,ty:r<.32?"food":r<.52?"fun":r<.64?"magnet":r<.76?"x2":"inv",ph:Math.random()*6})}
+  if(r>(isDev()&&chOf(level)===5?.45:.88))coinArc(W+80,isDev()&&chOf(level)===5?8:5,0);else pk.push({x:W+40,hg,ty:r<.32?"food":r<.52?"fun":r<.64?"magnet":r<.76?"x2":"inv",ph:Math.random()*6})}
  pkStep(dt);if(energy<=0)dieCheck()}
 
 /* ===== живые боссы ===== */
@@ -390,7 +390,7 @@ function fireAtk(p,stg){const a=p.atk,x0=p.x-p.w*.42,sp=(330+lv()*10)*u*(1+stg*.
  for(let i=0;i<n;i++){const fl=i%2===1&&stg>=1,lo=true,dy=Math.random()<.5?-(H*.32):(lo?50*u:-(H*.2));haz.push({t:a,x:x0+i*150*u,s:x0+i*150*u,v:-sp,lo:lo?1:0,dy,r:(a==="stink"?30:a==="shout"?26:17)*u,hh:lo?30*u:0})}tone(LO[a]?240:520,.15,"triangle",.08,LO[a]?160:760)}
 function bossHit(z){if(fx.inv>0||iF>0)return;if(shieldOn){shieldOn=false;iF=.8;SFX.shield();say("Щит выдержал!",hx()+50*u,GY-120*u*sc(),"#cfe8ff",18);return}
  const d=tut>=9?maxE()*BOSS_HIT*arm():0;energy-=d;knock(300*u);hurtT=.6;combo=0;shake=.35;freeze=.05;SFX.hurt();buzz(60);
- say("−"+Math.round(d)+" энергии",hx()+30*u,GY-jy-100*u*sc(),"#ff9a9a",22);say(z.lo?"Прыгай над атакой!":"Пригнись — ⬇️ ПОДКАТ!",W/2,H*.5,"#cfe8ff",18);if(energy<=0)dieCheck()}
+ say("−"+Math.round(d)+" энергии",hx()+30*u,GY-jy-100*u*sc(),"#ff9a9a",22);say(z.lo?"Прыгай над атакой!":"Прыгай над атакой!",W/2,H*.5,"#cfe8ff",18);if(energy<=0)dieCheck()}
 function updHaz(dt){const X=hx();for(const z of haz){z.x+=z.v*dt;z.a=(z.a||0)+dt*9;
   const zt=z.lo?GY-z.hh:GY-72*u*sc()-z.r,zb=z.lo?GY:GY-72*u*sc()+z.r,top=GY-jy-(slideT>0?40:88)*u*sc(),bot=GY-jy-(slideT>0?0:2*u);
   if(!z.hit&&Math.abs(z.x-X)<z.r+10*u*sc()&&bot>zt&&top<zb){z.hit=1;bossHit(z)}
@@ -430,8 +430,7 @@ const CARDS=[
 {id:"sc",ic:"🔥",n:"Супер-заряд",d:"Супер-удар копится в 1,5 раза быстрее",r:1,max:2},
 {id:"shield",ic:"🔵",n:"Щит уровня",d:"Щит, который обновляется каждый уровень",r:1,max:1},
 {id:"boss",ic:"👑",n:"Боссобой",d:"+50% урона по боссам",r:1,max:2},
-{id:"rev",ic:"💖",n:"Второе дыхание",d:"Один раз за забег вернёшься с 50% энергии",r:2,max:1},
-{id:"slide",ic:"🛷",n:"Подкат-таран",d:"Подкат сбивает наземные проблемы",r:2,max:1}];
+{id:"rev",ic:"💖",n:"Второе дыхание",d:"Один раз за забег вернёшься с 50% энергии",r:2,max:1}];
 const RAR=[{n:"Обычная",c:"#4a78e0",w:60},{n:"Редкая",c:"#9b4ad9",w:30},{n:"Эпическая",c:"#e0a020",w:12}];
 function pick3(){const pool=CARDS.filter(c=>PK(c.id)<c.max),out=[];for(let k=0;k<3&&pool.length;k++){let tw=pool.reduce((a,c)=>a+RAR[c.r].w,0),r=Math.random()*tw,i=0;for(;i<pool.length;i++){r-=RAR[pool[i].r].w;if(r<=0)break}out.push(pool.splice(Math.min(i,pool.length-1),1)[0])}return out}
 const REW=l=>l===3||l===7||l===11||l===20||(l>20&&l%10===0);
@@ -557,7 +556,7 @@ const ZONES={
 work:[
  ZD("Дорога на работу","🚌","street",[205,75,68],[215,25,62],[40,90,60],[220,12,40],["🚏","🌳","🚦","🚌"],{fast:1,fav:"pd"},"Час пик: всё быстрее, на дороге ямы — прыгай заранее"),
  ZD("Метро","🚇","metro",[220,25,28],[210,20,42],[48,95,55],[220,10,30],["ℹ️","🚇","🪧","🛗"],{fav:"pl"},"Зазор у края платформы — прыгай!"),
- ZD("Open-space","🖥️","office",[40,30,90],[210,30,82],[205,70,75],[210,18,52],["🪴","🖨️","🗄️","🖥️"],{fav:"fh",hz:["paper"]},"Уведомления летят со всех сторон: сбивай ⚽ или пригибайся ⬇️"),
+ ZD("Open-space","🖥️","office",[40,30,90],[210,30,82],[205,70,75],[210,18,52],["🪴","🖨️","🗄️","🖥️"],{fav:"fh",hz:["paper"]},"Уведомления летят со всех сторон: сбивай ⚽ или перепрыгивай ⬆️"),
  ZD("Лифт","🛗","lift",[210,10,60],[210,8,62],[48,60,60],[215,8,36],["🔼","🛗","🔢"],{ceil:1,fav:"hl"},"Потолок низкий: прыжок ниже: прыгай аккуратно"),
  ZD("Столовая","🍽️","canteen",[35,45,92],[38,40,86],[12,70,60],[35,40,55],["🍲","🥗","🍞","🥤"],{hz:["plates","splash"],fav:"dl"},"Покатились подносы! Смотри на красную полосу справа и прыгай"),
  ZD("Дорога домой","🌧️","street",[235,40,26],[230,25,28],[48,90,60],[225,12,22],["🚏","🌳","🚦","🏮"],{rain:1,dark:1,fav:"hf"},"Дождь и темнота: видно только вокруг героя")],
@@ -599,7 +598,7 @@ mom:[
 school:[
  ZD("Дорога в школу","🚸","street",[205,75,74],[30,30,72],[48,90,60],[220,10,48],["🚸","🌳","🚌","🚦"],{fast:1,fav:"pd"},"Опаздываем! Всё быстрее, на дороге ямы"),
  ZD("Гардероб","🧥","hall",[45,30,92],[45,40,86],[340,70,70],[30,40,56],["🧥","🎒","👟","🪑"],{fav:"wl"},"Очередь в гардероб: стены из курток — разбей или перепрыгни","lock"),
- ZD("Класс","📚","hall",[45,30,92],[48,35,88],[340,70,70],[30,40,58],["📚","🪑","🌍","🪴"],{fav:"fh",hz:["paper"]},"Самолётики и записки летят по классу — сбивай ⚽ или пригибайся ⬇️","board"),
+ ZD("Класс","📚","hall",[45,30,92],[48,35,88],[340,70,70],[30,40,58],["📚","🪑","🌍","🪴"],{fav:"fh",hz:["paper"]},"Самолётики и записки летят по классу — сбивай ⚽ или перепрыгивай ⬆️","board"),
  ZD("Перемена","🔔","hall",[45,30,92],[200,45,86],[340,70,70],[30,40,56],["🎒","🏃","🔔","🪑"],{fast:1,fav:"dg"},"Перемена! Все бегут — проблемы быстрее","lock"),
  ZD("Столовая","🍲","canteen",[35,45,92],[38,40,86],[12,70,60],[35,40,55],["🍲","🥛","🍞","🥗"],{hz:["plates","splash"],fav:"dl"},"Подносы и компот летят по полу! Прыгай над ними"),
  ZD("Спортзал","🏀","room",[210,40,88],[28,55,72],[10,80,60],[30,55,50],["🏀","🥅","🤸","⚽"],{fav:"sf"},"Маты-батуты! Прыгай — и лови ⭐")],
@@ -611,7 +610,7 @@ kinder:[
  ZD("Утренник","🎭","hall",[330,50,90],[320,45,84],[48,95,60],[330,30,54],["🎭","🎈","🎀","⭐"],{fav:"wl"},"Праздник: стены из шариков — разбей или перепрыгни","lock"),
  ZD("Дорога домой","🏠","street",[205,75,74],[30,30,72],[48,90,60],[220,10,48],["🏠","🌳","🚸","🚦"],{fast:1,fav:"pd"},"Мама ждёт! Быстрее, на дороге ямы")],
 uni:[
- ZD("Аудитория","🎓","hall",[210,30,90],[220,30,82],[260,60,66],[220,25,50],["📚","🪑","🎓","🪴"],{fav:"fh",hz:["paper"]},"Конспекты летят по аудитории — сбивай ⚽ или пригибайся ⬇️","board"),
+ ZD("Аудитория","🎓","hall",[210,30,90],[220,30,82],[260,60,66],[220,25,50],["📚","🪑","🎓","🪴"],{fav:"fh",hz:["paper"]},"Конспекты летят по аудитории — сбивай ⚽ или перепрыгивай ⬆️","board"),
  ZD("Общежитие","🛏️","room",[35,40,88],[30,40,80],[330,60,66],[28,35,50],["🛏️","🍜","👟","🪴"],{fav:"sf"},"Тесная комната: прыгай через ящики"),
  ZD("Буфет","🥪","canteen",[38,45,92],[40,40,86],[12,70,62],[35,40,55],["🥪","☕","🍕","🥤"],{hz:["plates","splash"],fav:"dl"},"Подносы и кофе летят по полу"),
  ZD("Библиотека","📖","shelf",[40,30,86],[35,40,78],[205,60,60],[30,30,46],["📖","📚","🕯️","🪑"],{dark:1,fav:"hf"},"В читальном зале полумрак"),
@@ -626,7 +625,7 @@ transport:[
  ZD("Дождь на остановке","🌧️","street",[225,35,32],[220,22,30],[48,90,60],[225,12,24],["🚏","🌳","☔","🪧"],{rain:1,dark:1,fav:"hf"},"Дождь и сумерки: видно только вокруг героя")],
 clinic:[
  ZD("Регистратура","🪟","hall",[185,30,92],[175,30,86],[170,60,56],[180,15,52],["🪟","📄","🪑","🪴"],{fav:"wl"},"Очередь в окошко: стены из людей","lock"),
- ZD("Коридор","🚪","hall",[185,25,90],[190,25,84],[170,60,56],[180,15,50],["🚪","🪑","📋","🪴"],{fav:"fh",hz:["paper"]},"Справки и бахилы летят — сбивай ⚽ или пригибайся ⬇️","board"),
+ ZD("Коридор","🚪","hall",[185,25,90],[190,25,84],[170,60,56],[180,15,50],["🚪","🪑","📋","🪴"],{fav:"fh",hz:["paper"]},"Справки и бахилы летят — сбивай ⚽ или перепрыгивай ⬆️","board"),
  ZD("Кабинет","🩺","room",[185,30,92],[170,35,84],[0,70,62],[180,20,52],["🩺","💉","🪑","🪴"],{fav:"sf"},"Прыгай через коробки"),
  ZD("Лаборатория","🧪","room",[190,30,92],[180,35,82],[270,55,62],[190,20,46],["🧪","🔬","💉","🪑"],{fav:"dl",hz:["splash"]},"Пробирки и капли — прыгай над ними"),
  ZD("Очередь","🧍","lift",[185,20,86],[190,22,76],[170,60,56],[180,15,44],["🧍","🪑","⏰","📋"],{fast:1,fav:"dg"},"Очередь подвинулась! Всё быстрее","lock"),
@@ -660,8 +659,8 @@ THEMES.forEach(T=>{T.enD=T.en;T.enV=T.en});
 {const w=THEMES.find(x=>x.id==="work");w.enV=w.en.map(a=>a.filter(n=>!/парков|Пробк|дорог|подъём|на работу|пропуск|Кофе закончился|Невкусный кофе/.test(n)));w.enV[0]=w.enV[0].concat(["Принтер завис","Кофемашина сломалась","Чужой обед в холодильнике","Конфликт в чате","Счёт на оплату","Платёжка","Задержка зарплаты","Акт сверки"]);w.enV[1]=w.enV[1].concat(["Налоговая проверка","Просроченный счёт","Квартальный отчёт","Срочная сверка","Выставить счёт","Переплата","Задержка платежа","Счёт-фактура"]);w.enV[2]=w.enV[2].concat(["Авансовый отчёт","Налоговая декларация","Не та печать","Штраф за просрочку"]);w.fly=w.fly.concat(["Платёжка","Счёт","Акт сверки"])}
 
 ZONES.work_v=[
- ZD("Бухгалтерия","🧾","office",[40,30,92],[45,40,86],[0,70,56],[30,30,48],["🗄️","🧮","🧾","🪴"],{fav:"fh",hz:["paper"]},"Счета, платёжки и задержки выскакивают на тебя — сбивай ⚽ или пригибайся ⬇️","acc"),
- ZD("Open-space","🖥️","office",[40,30,90],[210,30,84],[205,70,75],[210,18,52],["🪴","🖨️","🗄️","🖥️"],{fav:"fh",hz:["paper"]},"Уведомления летят со всех сторон: сбивай ⚽ или пригибайся ⬇️","open"),
+ ZD("Бухгалтерия","🧾","office",[40,30,92],[45,40,86],[0,70,56],[30,30,48],["🗄️","🧮","🧾","🪴"],{fav:"fh",hz:["paper"]},"Счета, платёжки и задержки выскакивают на тебя — сбивай ⚽ или перепрыгивай ⬆️","acc"),
+ ZD("Open-space","🖥️","office",[40,30,90],[210,30,84],[205,70,75],[210,18,52],["🪴","🖨️","🗄️","🖥️"],{fav:"fh",hz:["paper"]},"Уведомления летят со всех сторон: сбивай ⚽ или перепрыгивай ⬆️","open"),
  ZD("Лифт","🛗","lift",[210,10,60],[210,8,62],[48,60,60],[215,8,36],["🔼","🛗","🔢"],{ceil:1,fav:"hl"},"Потолок низкий: прыжок ниже: прыгай аккуратно"),
  ZD("Переговорка","📊","office",[210,25,92],[215,25,84],[205,70,66],[215,15,50],["📊","🪑","🖊️","🪴"],{fav:"wl",hz:["paper"]},"Совещание: стены из презентаций — разбей или перепрыгни","meet"),
  ZD("Кухня и кофемашина","☕","canteen",[35,45,92],[38,40,86],[12,70,60],[35,40,55],["☕","🥗","🍞","🥤"],{hz:["plates","splash"],fav:"dl"},"Кофе и подносы летят по полу — прыгай!"),
@@ -777,7 +776,7 @@ function zOver(){const Z=zoneNow();if(!Z||st!=="play"||tut<9)return;const zm=Z.m
  if(zm.dark&&level>=2){const X=hx(),vg=g.createRadialGradient(X,GY-60*u,70*u,X,GY-60*u,Math.max(W*.72,420*u));vg.addColorStop(0,"rgba(4,2,20,0)");vg.addColorStop(.55,"rgba(4,2,20,.5)");vg.addColorStop(1,"rgba(4,2,20,.8)");g.fillStyle=vg;g.fillRect(0,0,W,H)}}
 const HZ=zm=>zm.hz||(level>=8?["paper","splash"]:null);
 function zStep(dt,bossOn){const zm=ZM();
- if(HZ(zm)&&!bossOn&&!lvlMode){zh-=dt;if(zh<=0){zh=Math.max(2.4,6.5-level*.25)+Math.random()*2;const ty=rnd(HZ(zm));zw.push({ty,t:.95,lo:LO[ty]?1:0});SFX.warn()}}
+ if(HZ(zm)&&!bossOn&&!lvlMode){zh-=dt;if(zh<=0){zh=Math.max(2.4,6.5-level*.25)+Math.random()*2;const ty=rnd(HZ(zm));zw.push({ty,t:.95,lo:1});SFX.warn()}}
  for(const w of zw){w.t-=dt;if(w.t<=0){w.go=1;haz.push({t:w.ty,x:W+20*u,v:-(300+lv()*10)*u,lo:w.lo,r:17*u,hh:w.lo?30*u:0});tone(w.lo?240:520,.15,"triangle",.08,w.lo?160:760)}}
  zw=zw.filter(w=>!w.go)}
 function drawZW(){for(const w of zw){const pl=.5+Math.sin(t*22)*.5,X=hx(),y0=w.lo?GY-36*u:GY-100*u*sc(),hh=w.lo?36*u:56*u*sc();g.save();g.fillStyle="rgba(255,60,60,"+(.1+pl*.14)+")";g.fillRect(X+60*u,y0,W-X-60*u,hh);g.strokeStyle="rgba(255,80,80,"+(.45+pl*.4)+")";g.setLineDash([10*u,8*u]);g.lineWidth=2;g.strokeRect(X+60*u,y0,W-X-60*u,hh);g.setLineDash([]);
@@ -1096,9 +1095,9 @@ function showMenu(){st="menu";endEl.style.display="none";
  +'</div><p style="font-size:13px;opacity:.85">'+(meta.tut?'Свайп ↑ прыжок · → мяч · тап = удар · 🔥 СУПЕР-ВОЛНА · ⏳ замедление. Клавиши: Пробел прыжок, Enter удар, F мяч, E супер, Q замедление':'Сначала короткое обучение (его можно пропустить)')+'</p><div class="row" style="margin-bottom:6px">'+["👦 Мальчик","👧 Девочка"].map((n,i)=>'<button data-a="hero'+i+'" style="'+(((meta.hero||0)%2)===i?'outline:3px solid #fff;background:#fff':'opacity:.8')+';padding:8px 10px;font-size:12px"><div style="font-size:36px;line-height:1.1">'+(i?"👧":"👦")+'</div>'+n.replace(/^\S+\s/,'')+'</button>').join("")+'</div><div class="row" style="margin-bottom:6px"><button data-a="wp0" style="'+(meta.weapon!==1?'outline:3px solid #fff':'opacity:.7')+'">⚽ Мячик</button><button data-a="wp1" style="'+(meta.weapon===1?'outline:3px solid #fff':'opacity:.7')+'">🍳 Сковородка</button></div><div class="row"><button data-a="bes">📖 Коллекция</button><button data-a="shop">🛒 Магазин</button><button data-a="prof">🏅 Профиль и задания</button><button data-a="mute">'+(mute?"🔇 Звук выключен":"🔊 Звук включён")+'</button></div></div>';
  menuEl.style.display="flex"}
 let endAt=0;function showEnd(){endAt=performance.now();menuEl.style.display="none";
- endEl.innerHTML='<div class="mc"><h2>Ты не проиграл(а) — ты тренировался!</h2><p style="font-size:17px">'+th.ic+' '+th.n+' · Побед: <b>'+run+'</b> · Рекорд: '+(meta.bestBy[th.id]||0)+' · Уровень: '+level+'</p>'
+ endEl.innerHTML='<div class="mc"><h2>Ты не проиграл(а) — ты тренировался!</h2><p style="font-size:17px">'+th.ic+' '+th.n+' · Побед: <b>'+run+'</b> · Рекорд: '+(meta.bestBy[th.id]||0)+' · Уровень: '+level+'</p>'+(isDev()?'<p style="color:#9ff5c0">🌱 Глава '+(chOf(level)+1)+' из 6: '+CH[chOf(level)].n+(chOf(level)<5?' · до следующей главы '+(chOf(level)*4+5-level)+' ур.':'')+'</p>':'')
  +(newRec?'<p style="font-size:20px;color:#ffe27a">🏆 Новый рекорд!</p>':((meta.bestBy[th.id]||0)-run>0&&(meta.bestBy[th.id]||0)-run<=10?'<p style="color:#ffd9a0">Почти! До рекорда не хватило '+((meta.bestBy[th.id]||0)-run)+' побед</p>':''))+(need()-xp<=4?'<p style="color:#9ff5c0">До следующего уровня: '+(need()-xp)+' побед</p>':'')+'<p>'+th.over+'</p><p>Ты уже сильнее, чем в начале. Я в тебя верю!</p>'
- +'<button class="big" data-a="again" style="font-size:26px;padding:18px 44px">▶ Ещё раз</button><p style="font-size:12px;opacity:.7;margin:10px 0 4px">коснись в любом месте, чтобы играть снова</p><div class="row" style="opacity:.75;transform:scale(.85);margin-top:14px"><button data-a="menu">🗺 Сюжет</button><button data-a="shop">🛒</button><button data-a="prof">🏅</button></div></div>';
+ +'<button class="big" data-a="again" style="font-size:26px;padding:18px 44px">▶ Ещё раз</button><p style="font-size:12px;opacity:.7;margin:10px 0 4px">коснись в любом месте, чтобы играть снова</p><div class="row" style="opacity:.75;transform:scale(.85);margin-top:14px"><button data-a="menu">🏠 Меню</button><button data-a="shop">🛒</button><button data-a="prof">🏅</button></div></div>';
  endEl.style.display="flex"}
 const chEl=document.createElement("div");chEl.id="ch";chEl.className="ov";document.body.appendChild(chEl);
 function showChap(prev){const c=CH[chOf(level)],pb=prev!==undefined&&prev>=0&&DBOSS[CH[prev].id]?DBOSS[CH[prev].id][1][0]:"";paused=true;
