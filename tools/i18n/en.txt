@@ -1,0 +1,1396 @@
+0	! Hit it with your fist and ball, jump over its attacks
+1	! Energy is full again
+2	">⚽ Ball
+3	">🍳 Frying pan
+4	1 ⭐ for every win
+5	10 ⭐ per find
+6	2 ⭐ · energy +30
+7	20 to max energy
+8	200 wins
+9	25 to max energy and full heal
+10	3 energy for every win
+11	4 energy for every win
+12	50 wins
+13	50% damage to bosses
+14	“Back in our day…”
+15	“Mom's place is cleaner”
+16	“Who are you here to see?”
+17	“Be like everyone else”
+18	“Not our department”
+19	“You think you're special?”
+20	“There are many of you and one of me”
+21	“Everyone's already decided”
+22	“Are you getting off?”
+23	“Girls don't fight”
+24	“Girls don't do tech”
+25	“Maternity leave means no career”
+26	“A diploma is everything”
+27	“Woman driver”
+28	“Ma'am, it's just your nerves”
+29	“A woman boss is all nerves”
+30	“Stay a little longer”
+31	“Time to get married”
+32	“Appointments by phone only”
+33	“Do it like normal people”
+34	“Career over family”
+35	“When are the grandkids?”
+36	“Boys don't cry”
+37	“A man must earn the money”
+38	“Men don't wash dishes”
+39	“Sir, wait in line”
+40	“We're like a family here”
+41	“Stop making things up!”
+42	“Don't stick out”
+43	“Don't cry, you're a boy”
+44	“Kids these days…”
+45	“Relationships can wait”
+46	“Pass this for the ticket”
+47	“Wait, the doctor stepped out”
+48	“Come back on Monday”
+49	“Undress to the waist”
+50	“We managed without it before”
+51	“Nowhere to go with your major”
+52	“It's your own fault”
+53	“Art won't feed you”
+54	“Only straight A's are good”
+55	“Just endure it like everyone”
+56	“You owe everyone”
+57	“You just sit at home anyway”
+58	“You're young, cover for everyone”
+59	“Cleaning isn't real work”
+60	“Give up your seat!”
+61	“A housewife must keep up”
+62	“What do you want? I don't know!”
+63	“So, everything hurts?”
+64	“It's Your Age”
+65	“It's your age”
+66	“That's women's work”
+67	“That's not for you”
+68	“That's not my job”
+69	» is yours! Wear it in your profile
+70	A B C
+71	A-A-A!
+72	PHARMACY
+73	Expense report
+74	Bus
+75	The bus shakes: pits and the bus leaving!
+76	The bus shakes: pits and closing doors
+77	The bus is leaving!
+78	Missed the bus by a second
+79	Missed the bus? Run! Pit on the road
+80	Bus, lines, a boring guide and rain — survive the school trip
+81	Reconciliation report
+82	Pharmacy
+83	Pharmacy: prescriptions, prices and “we don't have it”
+84	Support med kit
+85	Support med kit! +60
+86	Watermelon
+87	Lecture hall
+88	Airport
+89	Б Ы Н К М
+90	BAM!
+91	POW!
+92	BOING!
+93	BOSS
+94	BOSS!
+95	ACCOUNTING
+96	Granny cutting the line
+97	Granny with a cart
+98	Beam
+99	Balcony
+100	Trampoline! Step on the spring — you'll bounce up and ⭐ line up in an arc
+101	Trampolines in the park! Jump and catch ⭐
+102	Trampolines on the playground!
+103	Shoe covers
+104	Run, jump and beat the monsters!
+105	They're chasing me!
+106	Crazy Alarm Clock
+107	Laundry flies off the line — hit it with ⚽
+108	Save your nerves
+109	Endless Queue
+110	Endless “why?”
+111	Endless Bus
+112	Mess
+113	Insomnia
+114	Library
+115	Ticket
+116	Lost the tickets
+117	Sparkling!
+118	Blocks 1 hit, refreshes every level
+119	Energetic day
+120	Fighter
+121	Chatty bubble
+122	Big Panic
+123	Big Fight
+124	Great Loneliness
+125	Big Deadline
+126	Big boulder
+127	The boss is furious! Hold on!
+128	Boss on every level, +50% ⭐ per boss
+129	The boss is angry!
+130	Boss slayer
+131	Throw two projectiles at once
+132	Throw recharges 25% faster
+133	Splashes
+134	Splashes on the floor — jump
+135	Fountain splashes
+136	Alarm clock
+137	Alarm at 4 a.m.
+138	Alarm at 7:00
+139	Overslept
+140	Paper dragon
+141	Paper plane
+142	Paper storm
+143	Snack bar
+144	Accounting
+145	It happens! Let's move on
+146	It happens! Try again
+147	It happens, let's move on
+148	Fast ball recharge
+149	Faster and denser!
+150	Red tape
+151	The hall is dark: you only see what's close
+152	The office is cramped: jump over the boxes
+153	The pantry is dark — keep your eyes open
+154	The pantry is dark: walls of boxes — break or jump over
+155	The cave is dark: you only see near the hero
+156	Anything can happen on a trip
+157	Anything can happen on the road
+158	Equipped
+159	Next time you'll make it
+160	The tram shakes: bags slide down the aisle
+161	The reading room is dim
+162	Metro car at rush hour
+163	Bathroom
+164	Great Laundry
+165	Great Fatigue
+166	Great Burnout
+167	Great Silence
+168	Great Misunderstanding
+169	Spring
+170	Sea wind: pits and seagulls
+171	Evening
+172	Evening in the bedroom: light only around you
+173	Evening by the window
+174	Evening, homework
+175	Evening: light only around you; homework flies
+176	Evening: strength is fading — look for
+177	Party
+178	Eternal Fatigue
+179	Sigh
+180	Take
+181	Guilt
+182	Yummy! +25 energy
+183	Unrequited crush
+184	Stronger together!
+185	Pits in the sandbox — jump!
+186	Pits and puddles in the yard — jump
+187	Pits in the yard — jump early
+188	Train station
+189	Magic sword
+190	Stinky Sock
+191	Guide's question
+192	Topic question
+193	Grumbling
+194	Grumbler
+195	Wow!
+196	That's friendship!
+197	What a route!
+198	What a recipe!
+199	What a hit!
+200	Toward the dream!
+201	Go!
+202	All daily tasks! Bonus +30 ⭐
+203	Everyone starts somewhere
+204	All shackles are off! Now it's an arcade: coins, speed and a world without limits. Run ahead and collect adventures.
+205	Everyone's gathering: problems come thicker
+206	Flash!
+207	Meeting friends: problems come thicker
+208	Everything can be fixed, you're together
+209	Second wind
+210	Volcano
+211	You've grown closer!
+212	Choose a boost
+213	Burnout
+214	Breathe out and try again
+215	Breathe out — you can do it
+216	Breathe out, you're already on your way
+217	Breathe out. Health comes first.
+218	Called to the Principal
+219	Called to the board
+220	Hardy
+221	Let off steam or get ready for the workday
+222	Issue an invoice
+223	APPOINTMENT SCHEDULE
+224	Cloakroom
+225	Heroes train! Try again — you'll get stronger.
+226	Hero
+227	Hero of the month: “
+228	Chapter
+229	Pigeon
+230	Mountain of Dirty Dishes
+231	Mountain of Homework
+232	Mountain of Reports
+233	Mountain of Errands
+234	Mountain of luggage
+235	Mountain of laundry
+236	Mountain of ironing
+237	Mountain of chores
+238	Mountain of paperwork
+239	Mountain of homework
+240	Mountain of cards
+241	Pile of coats in the cloakroom
+242	Mountain of unsaid things
+243	Mountain of postponed meetings
+244	Mountain of pillows
+245	Mountain of dishes
+246	Mountain of edits
+247	Mountain of meetings
+248	Mountain of washing
+249	Mountain of souvenirs
+250	Mountain of notebooks
+251	Mountain of lessons
+252	Mountain of textbooks
+253	Proud of you!
+254	Block tower
+255	Mountain trail
+256	The city is yours!
+257	Robot city
+258	Public transport
+259	Burning Term Paper
+260	Burning term paper
+261	Living room
+262	Thermometer
+263	Mushroom forest
+264	Mushroom trampolines! Jump on the spring and catch ⭐
+265	Storm cloud
+266	Storm Giant
+267	Loud music in headphones
+268	Loud Passenger
+269	Noisy bus
+270	Loud phone call
+271	Group
+272	The group can wait — let's go on
+273	Dirty Stove
+274	Dirty bathtub
+275	Dirty stove
+276	Dirty dishes
+277	Dirty dishes, a lonely sock and gum on the floor — beat the mess
+278	Dirty mirror
+279	Dirty socks
+280	Muddy footprints
+281	Dirty clump
+282	DECEMBER
+283	RING
+284	Crush at the Doors
+285	Crush at the doors
+286	Crush at the entrance
+287	Crowds, “give up your seat” and endless advice — beat them all
+288	Pressure of expectations
+289	Old grudge
+290	Doors are closing!
+291	Bad grade
+292	A bad grade isn't the end
+293	Double throw
+294	Double jump
+295	Yard
+296	Yard by the entrance
+297	Deadline
+298	Cafeteria duty
+299	Lasts until the end of the run
+300	Day
+301	Collector's day
+302	Sharpshooter day
+303	School money collection
+304	The kids are fine, you're doing great!
+305	Kids won't go to sleep
+306	Kids are fighting
+307	Kids' room
+308	Playground
+309	Time Shortage
+310	Sofa trampoline: step on the spring and up for ⭐
+311	Dictation
+312	Thesis without ideas
+313	Long road
+314	A long map: worlds, monsters and bosses
+315	Long line
+316	Long
+317	Long arms
+318	Until next level
+319	Welcome! Jump over the pits early
+320	Good day
+321	Made it!
+322	Rain
+323	Rain without an umbrella
+324	Rain and dusk: you only see around the hero
+325	Rain and darkness: you only see around the hero
+326	Rain at the resort
+327	Rain at the bus stop
+328	Rain by the bus
+329	Survive to day 3
+330	Long way back
+331	Long transfer
+332	Long wait
+333	The house is shining!
+334	The house is cleaner. Rest — you've earned it.
+335	Home is where they wait for you. Breathe out and hug someone.
+336	Homework
+337	Bus ride
+338	Visiting friends
+339	Way to school
+340	Way home
+341	Commute to work
+342	The road is no reason to be angry
+343	Roads, adventures and new places
+344	Expensive taxis
+345	Expensive Taxi
+346	Achievement
+347	Achievements (
+348	Teasing
+349	Bully Bobby
+350	Drone
+351	Friend didn't reply
+352	Friends
+353	Friends nearby: lots of problems, but lots of ⭐ too
+354	Your friends are proud of you!
+355	Friends, first love and choosing your own path
+356	Stuffiness
+357	Snarky comment
+358	One more story
+359	One more “Mom!”
+360	Another stain defeated!
+361	More!
+362	TAP!
+363	Heat
+364	Heat and Thirst
+365	Heat and lines
+366	Gum on the floor
+367	Gum under the desk
+368	Sticky Gum
+369	Iron Traffic Jammer
+370	SLOW
+371	Got lost
+372	Forgot insurance card
+373	Forgot to call
+374	Forgot to pick up
+375	Forgot to reply
+376	Forgot the birthday
+377	Forgotten Anniversary
+378	Forgotten charger
+379	Forgotten indoor shoes
+380	Forgotten lunch
+381	Forgotten passport
+382	Forgotten pass
+383	Overload
+384	Too much to do
+385	Log jam
+386	Stuffed closet
+387	School again tomorrow
+388	Another deadline tomorrow
+389	Task complete!
+390	Today's tasks
+391	Task closed!
+392	Salary delay
+393	Stuck at work
+394	Payment delay
+395	Flight delay
+396	Gap at the platform edge — jump!
+397	Platform gaps and “Panic” — hurry!
+398	Closed museum door
+399	Closed for Lunch
+400	Closed for lunch
+401	Closed Metro
+402	Close
+403	Slow-mo charging
+404	Note in the school diary
+405	Called out in front of everyone
+406	Castle
+407	Busy
+408	Energy reserve
+409	Hospital smell
+410	Smell from the fridge
+411	Note
+412	Fell asleep on the bus
+413	Clogged sink
+414	Pass
+415	Passed!
+416	Rank
+417	Rank: “
+418	Alarm ringing
+419	Loud alarm clock
+420	Bell
+421	Call from school
+422	School Bell
+423	End-of-class bell
+424	Bell!
+425	Star rain
+426	Star magnet
+427	Star trail
+428	Healthy!
+429	Great!
+430	Health matters more
+431	Green light is blinking! Everything's faster
+432	Mirror of Comparisons
+433	Evil Bad Grade
+434	Angry Inspector
+435	Evil Shouting King
+436	Grumpy Waiter
+437	Evil Printer
+438	Knowledge is power!
+439	Calls for helpers
+440	Golden Miser
+441	Umbrella
+442	Zoo
+443	И Н Ш М К
+444	INFORMATION
+445	Toy trampolines and blocks!
+446	Toys everywhere — lots of problems, but they're small
+447	Toys everywhere: lots of problems, but they're small
+448	Perfect order!
+449	There are no perfect moms
+450	University
+451	University: friends, first love, freedom and the first big mistakes. Choose your own path, not “the proper way”.
+452	Interesting!
+453	You'll fix it next lesson
+454	Tantrum in the store
+455	Tantrum!
+456	FIGHT!
+457	FIST
+458	Office
+459	Doctor's office
+460	Boss's office
+461	Everyone learns from mistakes
+462	Like a real boss!
+463	Good as new!
+464	How tender!
+465	What a trip!
+466	Stone block
+467	Stone wall! Press JUMP (↑ or the ⬆️ button on the left) and jump over it. Or break it with three hits
+468	Stone wall: 3 hits, JUMP over it or the BALL
+469	Rocks and cliffs: jump over
+470	Breakfast tantrum
+471	Saucepan Knight
+472	Grumpy pot
+473	Golden coins are rolling — jump over them
+474	Coins rolling: jump!
+475	Rolling coins
+476	Café
+477	Porridge and juice are flying — jump over them
+478	Porridge for breakfast
+479	Unfinished porridge
+480	Quarterly report
+481	Cap
+482	Cinema
+483	Pantry
+484	Class
+485	The class sticks together!
+486	Cool!
+487	Awesome!
+488	Books fly out of backpacks — jump
+489	Book Dragon
+490	Book volley
+491	Bookworm
+492	Sharp word
+493	Collection
+494	Mosquito
+495	Combo ×
+496	Lump of clay
+497	Lecture notes
+498	Notes until morning
+499	Notes fly around the lecture hall — hit them with ⚽ or jump over ⬆️
+500	Test
+501	The Big Test
+502	Test tomorrow
+503	Tests, bad grades, the bell and a tasteless lunch — beat everything annoying at school
+504	Ticket inspector
+505	Candy land
+506	Candy trampolines! Jump for ⭐
+507	Confetti and balloons are flying — duck ⬇️
+508	Chat conflict
+509	Corridor
+510	King of Mess
+511	King of Stinky Socks
+512	King of Delays
+513	King of Grudges
+514	King of Cancellations
+515	King of Tantrums
+516	Slime King
+517	King of Meetings
+518	Crown
+519	Short
+520	Space
+521	Space
+522	Space! Meteors are flying — duck ⬇️
+523	Kitty
+524	Out of coffee
+525	Coffee and trays fly across the floor — jump!
+526	Coffee spirit
+527	Coffee machine broke
+528	Nicely done!
+529	Beautiful!
+530	Beauty and comfort!
+531	Gorgeous!
+532	Shout
+533	Boss shouting
+534	Boss shouting in your head
+535	Criticism
+536	Crumbs on the table
+537	Clubs and classes
+538	Club and class
+539	Cool!
+540	Fist hits 1 harder
+541	Fist reaches 20% farther
+542	Bought
+543	Kitchen
+544	Kitchen and coffee machine
+545	Pile of ironing
+546	Pile of boxes
+547	LABORATORY
+548	ENT
+549	BOW
+550	Laboratory
+551	Lava splashes! Jump over the splashes
+552	A like instead of a reply
+553	Ice mountain
+554	Too lazy to go out
+555	Too lazy to get ready
+556	Flying problem: hit it with the BALL, punch it mid-jump or just run under it
+557	Flying monster: hit it with the BALL, punch it mid-jump or just run under it
+558	A monster is flying! Press THROW (F or the ✨ button) to knock it down. Or just don't jump — it will fly over your head
+559	A problem is flying! Press BALL (F or the ✨ button) to knock it down. Or just don't jump — it will fly over your head
+560	Flying bubble
+561	Flying plates
+562	Sticky wave
+563	Sticky puddle
+564	Sticky stains
+565	Sticky kitchen floor
+566	Elevator
+567	Extra calls
+568	Catch
+569	Puddle on the floor
+570	Bow and arrows
+571	Lunar
+572	Every trip is a story. Tell it to your friends!
+573	Love wins!
+574	Every journey begins with a step. Where to tomorrow?
+575	М Н К
+576	ROUTE 47 · DOWNTOWN
+577	SWORD
+578	BALL
+579	Shop
+580	Power shop
+581	Magnet for 10 s!
+582	Mom Left
+583	Mom is waiting! Faster, pits on the road
+584	Mom with kids
+585	Mom left
+586	Semolina Porridge
+587	Semolina porridge
+588	Route recalculated — go
+589	Route conquered!
+590	Mask
+591	Mat trampolines! Jump and catch ⭐
+592	Chalk
+593	Small mess on the floor — jump over
+594	Meme trap
+595	Got a seat!
+596	Blizzard and snowdrifts: jump over!
+597	Metro
+598	The metro closed
+599	Metro: platform
+600	World 12% faster, +1 ⭐ per win
+601	Peace and comfort!
+602	The world opens up!
+603	Lots of homework
+604	It's okay to cry and keep going
+605	Well done!
+606	Silent grudge
+607	Silence
+608	Moth
+609	Coin miser
+610	Sea
+611	Midge
+612	Powerful!
+613	Museum
+614	Trash in the corner
+615	Fly
+616	Fly on the bus
+617	Flies and mosquitoes: duck ⬇️ or hit them with ⚽
+618	Thoughts about work
+619	Ball and frying pan hit 1 harder
+620	Ball
+621	Embankment
+622	Daily reward
+623	Worn
+624	Wear
+625	Inflatable mattresses are trampolines! Jump for ⭐
+626	Tax return
+627	Tax audit
+628	Write first — and everything will work out
+629	Reminder
+630	Collection reminder
+631	Referral to another doctor
+632	Real friends will understand
+633	Daytime has come
+634	The boss yelled
+635	The boss is unhappy
+636	Shouting Boss
+637	Not allowed to play
+638	Don't know who to be
+639	Don't know what I want
+640	Couldn't find the time
+641	Can't hear the guide
+642	Can't sleep
+643	Wrong stamp
+644	Wrong terminal
+645	Not enough time
+646	Not enough time, homework, tantrums, money collections and walks
+647	Don't want to go to kindergarten
+648	Bad Coffee
+649	Bad coffee
+650	Tasteless lunch
+651	Unspoken words
+652	Sleepy
+653	Unlearned poem
+654	Unhappy client
+655	Unfinished tasks
+656	Misunderstanding
+657	Things left unsaid
+658	Unsaid things at breakfast
+659	Lack of sleep
+660	Strange city at night
+661	Awkward Pause
+662	Awkward pause
+663	Awkwardness
+664	Do not touch
+665	Unwashed frying pan
+666	Unwashed floor
+667	Unread
+668	No money until the stipend
+669	No change
+670	No window seat
+671	No reply from the client
+672	No parking
+673	No signal
+674	No tickets left
+675	No textbook
+676	No clean uniform
+677	Invincible for 6 s!
+678	Low barrier! Press ⬇️ SLIDE (↓) and slip under it
+679	Low problem: jump over it or hit it
+680	Low monster: jump over it or hit it
+681	Low-flying problem! Press ⬇️ SLIDE (↓) to slip under it, or knock it down
+682	Low-flying monster! Press ⬇️ SLIDE (↓) to slip under it, or knock it down
+683	No worries! You'll get it in the game
+684	New group
+685	New problem in the collection: +10 ⭐
+686	Newbie
+687	New Year
+688	New
+689	New day
+690	New monster in the collection: +10 ⭐
+691	Socks and toys all over the living room — beat them one by one
+692	Sock missiles
+693	Smelly sock
+694	Night city
+695	Night
+696	Night of bosses
+697	Night, the deadline is burning: dark and fast
+698	Night: you only see around the hero
+699	Night: hold on, morning is near
+700	Need a certificate
+701	DEPARTMENT
+702	OPEN! Hit it — damage ×2
+703	A promise without a call
+704	Grudge
+705	Stink cloud
+706	Little cloud
+707	Angry cloud
+708	Cloud land
+709	Piles of shoes and coats — break or jump over
+710	Dorm kitchen
+711	Dorm
+712	Common
+713	Fire staff
+714	Fire trail
+715	Fire!
+716	Little flame
+717	Huge line
+718	Huge line: walls — break or jump over
+719	Getting dressed alone
+720	Once per run you'll come back with 50% energy
+721	Lonely Sock
+722	Lonely sock
+723	Loneliness
+724	Lonely in a crowd
+725	One stain isn't the end of the world
+726	Eye doctor
+727	We're late
+728	Late for the bus
+729	We're late! Everything's faster
+730	We're late! Everything's faster, pits on the road
+731	Late for class!
+732	I'm late!
+733	Late classmate
+734	Missed the transfer
+735	Late for the meeting
+736	Late for work
+737	Late for class
+738	Lateness Monster
+739	Late again
+740	Wasp
+741	Autumn
+742	Bus stop
+743	Wrong stop
+744	Excuse
+745	Open
+746	Great meetup!
+747	Top student!
+748	Excellent!
+749	Excellent! Beat the monsters when they get close
+750	Excellent! Beat the problems when they get close
+751	Great shot!
+752	Canceled plans
+753	Reports
+754	Office
+755	The waiters dropped their trays — jump over them
+756	Grade below expectations
+757	Lines and prices: coins are rolling — jump
+758	Lines and suitcases: walls — break or jump over
+759	Lines, tickets and “who are you here to see?” — let off steam
+760	Queue
+761	Cloakroom Line
+762	Line for the bus
+763	Line at the snack bar
+764	Line at the cloakroom
+765	Cloakroom line: walls of coats — break or jump over
+766	Line at the dean's office
+767	Line to the doctor's office
+768	Line at the museum
+769	Line at the window: walls of people
+770	Line at the window: walls of people — break or jump over
+771	Line at the clinic
+772	Line at the reception
+773	Taxi line
+774	Line for the toilet
+775	Line for the potty
+776	Line at the bus stop
+777	Waiting for approval
+778	The line moved! Everything's faster
+779	The line won't last forever
+780	Glasses
+781	Mistakes are part of the way
+782	BANG!
+783	MEETING ROOM
+784	BOSS DEFEATED!
+785	STAFF
+786	PREJUDICE
+787	CLEARED!
+788	JUMP
+789	Steam released!
+790	Park
+791	Park with friends
+792	Pause
+793	Cobweb in the corner
+794	Little cobweb
+795	First class at 8:00
+796	First win
+797	Meeting room
+798	Take a break and continue
+799	Breather, energy is recovering
+800	Worries
+801	Reboot — and go
+802	Recess
+803	Recess earned!
+804	Recess! Everyone's running — problems are faster
+805	Overpayment
+806	Jumped over!
+807	Overtime
+808	Transfer
+809	Retake
+810	A retake isn't the end
+811	Head Count
+812	Head count
+813	Passages and turnstiles: walls, jump!
+814	Crosswalk
+815	Crystal cave
+816	Pirate island
+817	Letter
+818	Letter from the boss
+819	Briefing
+820	Payment order
+821	Bad signal
+822	Playground
+823	Beach
+824	Wins
+825	Total wins
+826	Beat “
+827	Beat problems ×
+828	Winner
+829	Winner Junior
+830	Winner Junior — adventure
+831	Fear conqueror
+832	Beat the boss
+833	Beat monsters to unlock them here. Rewards
+834	Beat problems to unlock them here. Rewards
+835	Visit every story
+836	Lord of Shadows
+837	Underwater: pits and flying fish
+838	Pick up food or joy ×
+839	Underwater kingdom
+840	Support, meetups and fun
+841	Trays and juice fly across the floor! Jump over them
+842	Trays and coffee fly across the floor
+843	The train isn't moving
+844	I'll call later
+845	Trays are rolling! Watch the red stripe on the right and jump
+846	Clinic
+847	Privacy policy: no personal data is collected. To erase all progress, press the button below or delete the app.
+848	Shelves and displays: pits on the floor
+849	Monday
+850	Get well!
+851	Tailwind: everything's faster!
+852	Regular
+853	Dishes roll off the table — jump!
+854	Lost in the crowd
+855	Lost mitten
+856	Lost medical card
+857	Lost shoes
+858	Lost Luggage
+859	Lost Ticket
+860	Lost luggage
+861	Lost ticket
+862	Low ceiling: lower jump: jump carefully
+863	Mail
+864	Almost! Short of the record by
+865	Report edits
+866	Party: walls of balloons — break or jump over
+867	Ghost
+868	Nitpicking
+869	Nitpicking the report
+870	Adventure
+871	Adventure!
+872	Adventures
+873	Printer froze
+874	Printer Dragon
+875	Scary printer
+876	Accepted!
+877	Hallway
+878	Space / ↑
+879	Piercing ball
+880	Test tubes and drops — jump over them
+881	Traffic jam
+882	Traffic jam on the way
+883	Traffic bug
+884	Walk in the rain
+885	Skip tutorial
+886	Missed call
+887	Slid under!
+888	Slept through the alarm
+889	Overdue invoice
+890	Profile
+891	Treatment room
+892	Read
+893	Jump over the attack!
+894	Jump over the boxes
+895	Jump again in the air — handy over pits and walls
+896	Jump on a monster from above — you'll squash it and bounce!
+897	Jump on a problem from above — you'll squash it and bounce!
+898	Jump!
+899	Jump, punch and ball are always available. Here are the boosts.
+900	Life traveler
+901	Travel
+902	Wanderer
+903	Speck of dust
+904	Dust on the shelves
+905	Dust under the sofa
+906	Stain on the sofa
+907	Stain on the carpet
+908	Top grade!
+909	RECEPTION
+910	GROWTH
+911	Work
+912	Work: bosses, deadlines and “that's how it's done”. Don't dissolve in other people's expectations.
+913	The workday is long, you'll manage
+914	The workday is over — steam released!
+915	Joy! +15 energy, ⭐×2
+916	Rainbow trail
+917	Scraped knee
+918	Scattered things
+919	Scattered toys
+920	Raised voices
+921	Irritation
+922	Spilled juice!
+923	Different schedules
+924	Phone died
+925	Dead phone
+926	Early wake-up
+927	Early wake-up before the trip
+928	Early flight
+929	Breakup
+930	Distance
+931	Growing
+932	Jealousy
+933	Reception
+934	Rare
+935	Record
+936	Essay due tomorrow
+937	Robot
+938	Robots are in a hurry: faster and denser!
+939	Parents' Chat
+940	Parents' chat
+941	Parents' Meeting
+942	For parents
+943	Dash!
+944	Market
+945	Backpack
+946	Row of lockers
+947	PAN
+948	NEXT STATION: SQUARE
+949	STATION
+950	SUPER
+951	SUPER HIT ready!
+952	Kindergarten
+953	Bus interior: bags in the aisle and “pass this for the ticket”
+954	Did it yourself!
+955	Heals +60 by itself when energy hits zero
+956	Paper planes and notes fly around the class — hit them with ⚽ or jump over ⬆️
+957	Money Collection
+958	Getting ready for kindergarten
+959	Meeting at school
+960	Getting ready for school
+961	Swipe ↑ jump · → ball · tap = punch · 🔥 SUPER WAVE · ⏳ slow-mo. Keys: Space jump, Enter punch, F ball, E super, Q slow-mo
+962	Fresh air: flies and mosquitoes — duck ⬇️
+963	Freedom of movement!
+964	Freedom!
+965	Your own thing!
+966	Fasting blood test
+967	Dead phone
+968	Selfie stick
+969	Family dinner
+970	Family
+971	The family is proud!
+972	Family means patience
+973	Family, care and daily life. Find the balance between “must” and “want”, don't break yourself for other people's frames.
+974	Server room at night
+975	Heart
+976	Heart in the right place!
+977	Streak
+978	3-day streak
+979	Exams
+980	Exams! Everything's faster
+981	Strength
+982	Power of victory
+983	Running low — you're slower! Catch
+984	Strong in spirit
+985	Hero skins
+986	Frying pan
+987	Slippery! Splashes on the floor — jump
+988	Speed day
+989	Rapid fire
+990	Homesick
+991	Boring Tour Guide
+992	Boring lesson
+993	Boring tour guide
+994	Hero trail
+995	The next one comes in five minutes
+996	Next!
+997	Sticky slug
+998	The elevator broke
+999	Broken pen
+1000	Broken printer
+1001	Broken turnstile
+1002	Brave!
+1003	A short tutorial first (you can skip it)
+1004	Snowy
+1005	Take off
+1006	Collect ⭐ ×
+1007	Event of the day
+1008	Daily event complete! +120 ⭐
+1009	Meeting
+1010	Meeting: walls of presentations — break or jump over
+1011	Sunny meadow
+1012	Sunny
+1013	Straw hat
+1014	Doubt
+1015	Doubt: should I write
+1016	Drowsiness
+1017	Chat message
+1018	Group chat message
+1019	Class chat message
+1020	Bedroom
+1021	Spam
+1022	Hurrying down the street: pits and “Panic”
+1023	Rush
+1024	To-do list
+1025	Cheating
+1026	Gossip
+1027	Gossip at recess
+1028	Gym
+1029	Certificate
+1030	Certificate for a Certificate
+1031	Certificate for a certificate
+1032	Certificate received!
+1033	Certificates and shoe covers fly — hit them with ⚽ or jump over ⬆️
+1034	Comparing with Others
+1035	Comparing with others
+1036	Medium
+1037	Urgent reconciliation
+1038	Urgent!
+1039	Urgent email
+1040	Urgent call
+1041	Urgent report
+1042	Meltdown!
+1043	Argument
+1044	Argument in the chat
+1045	Argument before bed
+1046	Argument with a roommate
+1047	Old grudge
+1048	Old argument
+1049	Wall of homework
+1050	Wall of silence
+1051	Wall of awkwardness
+1052	Wall of grudges
+1053	Castle walls: break them or jump over
+1054	Shyness
+1055	Cafeteria
+1056	Fear of the Future
+1057	Fear of Diagnosis
+1058	Fear of the Unknown
+1059	Fear of the future
+1060	Fear of looking silly
+1061	Fear of diagnosis
+1062	Fear of the unknown
+1063	Fear of rejection
+1064	Exam fear
+1065	Scary Exams
+1066	Scary Shadow
+1067	Scary shadow in the bedroom
+1068	Strict Teacher
+1069	Strict Vice Principal
+1070	Strict teacher
+1071	Strict Professor
+1072	Strict professor
+1073	Pricey souvenirs
+1074	Bag on the seat
+1075	Super charging
+1076	Super!
+1077	Super charge
+1078	Super hit charges 1.5× faster
+1079	Superhero!
+1080	Bills, payments and delays jump at you — hit them with ⚽ or jump over ⬆️
+1081	Bill
+1082	Invoice to pay
+1083	Tax invoice
+1084	PATIENCE IS
+1085	MEDICINE TOO
+1086	STOMP!
+1087	TRAM 3 · DEPOT
+1088	CRASH!
+1089	“Do not touch!” sign
+1090	Keep it up!
+1091	Keep it up, student!
+1092	Taxi
+1093	The taxi races through the night city: fast, pits
+1094	Ticket for another day
+1095	Vestibule and car: bags, buckets and gardeners — jump!
+1096	Customs line
+1097	Customs Boss
+1098	Plates and splashes fly across the floor — jump!
+1099	Plates roll across the table! Jump over them
+1100	You're four. You don't know what you want, and the world seems huge. Run, jump, try — and don't let anyone convince you that you “must be like everyone else”.
+1101	Phone instead of talking
+1102	Phone at the table
+1103	Phone Troll Boss
+1104	Phone troll
+1105	Darkness in the bedroom
+1106	Baby Has a Fever
+1107	Baby has a fever
+1108	Spooky shadow
+1109	Warmth at home!
+1110	Warmth, talks and feelings of loved ones
+1111	General doctor
+1112	Cramped room: jump over the crates
+1113	Cramped office: jump over the folders
+1114	Narrow corridor
+1115	Quiz
+1116	Nap Time
+1117	Quiet evening: light only around you
+1118	Nap time
+1119	Nap time: dark, you only see around the hero
+1120	Silence in the chat
+1121	Crush
+1122	Crowd
+1123	Crowd in the corridor
+1124	Crowd of tourists
+1125	Crowd at the entrance
+1126	Crowd at the doors
+1127	Thick skin
+1128	Adults only
+1129	Hurrying: faster, duck ⬇️
+1130	Gloom
+1131	Missing friends
+1132	Really reset? Press again
+1133	Tram
+1134	Anxiety
+1135	Worry about the kids
+1136	Anxiety before the defense
+1137	Anxiety before the test
+1138	Turnstiles
+1139	Cloud
+1140	You don't run from problems — you defeat them.
+1141	You're a hero!
+1142	You're ready! Win, grow and collect ⭐. Good luck!
+1143	You do the impossible!
+1144	You made it. The rest is details.
+1145	Life of the party!
+1146	You already do so much
+1147	You're finding yourself — that's what learning is.
+1148	You're little and don't know what you want
+1149	You can do it!
+1150	You're a real explorer!
+1151	You're a real traveler!
+1152	You're finding yourself!
+1153	You didn't lose — you trained!
+1154	You defeated
+1155	You almost made it!
+1156	You did a lot today. That's valuable — rest.
+1157	You're managing!
+1158	You're just starting — and that's already brave.
+1159	You're already stronger than at the start. I believe in you!
+1160	You were heard!
+1161	You're a pro!
+1162	Pumpkin
+1163	Heavy Backpack
+1164	Heavy fist
+1165	Heavy backpack
+1166	Heavy suitcase
+1167	Dark Grudge
+1168	Dark Silence
+1169	Sunglasses
+1170	Dark orb
+1171	Everyone has their own pace
+1172	HIT!
+1173	LEVEL
+1174	House cleaning
+1175	Cleaning is a marathon
+1176	Notification
+1177	Notifications fly from every side: hit them with ⚽ or jump over ⬆️
+1178	Dodged!
+1179	Shockwave
+1180	Hits take 15% less energy
+1181	Hits take 20% less energy
+1182	Dinner isn't ready
+1183	Motion sick
+1184	Motion sickness
+1185	Dodge!
+1186	Fell — got up, that's normal
+1187	Reproach
+1188	Lv.
+1189	Hooray!
+1190	Hooray, no line!
+1191	Cancellation Hurricane
+1192	Level
+1193	Level 10
+1194	Level 5
+1195	Lesson learned!
+1196	Homework
+1197	Made it!
+1198	Tired legs
+1199	Fatigue
+1200	Tired after work
+1201	Tired after school
+1202	Morning rush
+1203	Kids' party
+1204	Party without a costume
+1205	Morning rush: problems run faster
+1206	Morning bustle
+1207	Morning
+1208	Morning in the kitchen
+1209	The teacher is proud!
+1210	Studying is a marathon. Well done, rest.
+1211	JUNK
+1212	Chaos at Home
+1213	Failed math exam
+1214	Surgeon
+1215	Slammed Door
+1216	Slammed door
+1217	Cold message
+1218	Cold Stethoscope
+1219	Cold fruit drink
+1220	Cold coffee
+1221	Cold stethoscope
+1222	A good friend starts with you. Message someone!
+1223	Thirsty
+1224	Flower
+1225	Top hat
+1226	Seagull
+1227	Thieving seagull
+1228	Rush Hour
+1229	Rush hour
+1230	Rush hour: everything's faster, pits on the road — jump early
+1231	Rush hour: walls of people — break or jump over
+1232	Chat
+1233	Chat with no reply
+1234	Someone's backpack in your face
+1235	Spotless!
+1236	To open this section, solve the problem
+1237	Feeling unwanted
+1238	Someone Else's Toy
+1239	Someone else's toy
+1240	Blamed for someone else's mistake
+1241	Someone's lunch in the fridge
+1242	Ш Б
+1243	Hat
+1244	Graduation cap
+1245	Ball
+1246	The ball flies through and hits several problems at once
+1247	The ball flies through and hits several monsters at once
+1248	Ball recharges faster
+1249	School
+1250	School: grades, bells and parents' expectations. Learn to hear yourself, not just other people's approval.
+1251	School Cafeteria
+1252	School
+1253	Helmet
+1254	Syringe midge
+1255	Late payment fine
+1256	Noise in the corridor
+1257	Noisy alarm clock
+1258	Noisy class
+1259	The shield held!
+1260	Support shield
+1261	Level shield
+1262	A shield that refreshes every level
+1263	Ы М Б Ш
+1264	COMMUTER TRAIN · ALL STOPS
+1265	Exam ticket
+1266	Field trip
+1267	Great trip!
+1268	The tour guide and “Do not touch!” signs fly at you
+1269	Commuter train
+1270	Emoji with no reply
+1271	Epic
+1272	This problem runs fast — hit it as soon as it gets close
+1273	It's a monster! Press FIST (Enter or the big 👊 button bottom right) to beat it
+1274	That's very valuable!
+1275	It's a problem! Press FIST (Enter or the big 👊 button bottom right) to beat it
+1276	That's a memory too
+1277	That's a story too
+1278	Success!
+1279	This monster runs fast — hit it as soon as it gets close
+1280	Language barrier
+1281	Pit! Press JUMP early. There are ⭐ over the pit
+1282	Pit! −
+1283	tests 8:00–10:00
+1284	endless
+1285	chatty bubble
+1286	bosses this month
+1287	paper dragon
+1288	pierces through
+1289	enemies with triple toughness
+1290	everything is bought with in-game coins only.
+1291	storm cloud
+1292	dirty clump
+1293	d.
+1294	d.)
+1295	levels left in the chapter
+1296	until the next chapter
+1297	loud alarm clock
+1298	and
+1299	and works offline. Progress is stored only on this device.
+1300	of
+1301	of 6
+1302	room
+1303	grumpy pot
+1304	bookworm
+1305	tap anywhere to play again
+1306	coffee spirit
+1307	flying enemies and stone walls
+1308	flying thoughts and stone walls
+1309	flying bubble
+1310	sticky puddle
+1311	coin miser
+1312	monsters today
+1313	reward ⭐
+1314	does not collect or share data
+1315	no real-money purchases
+1316	no ads
+1317	unstoppable!
+1318	new boss — even stronger
+1319	smelly sock
+1320	angry cloud
+1321	left
+1322	from kindergarten to adventures
+1323	wins
+1324	beat
+1325	ghost
+1326	scary printer
+1327	problems today
+1328	problems!
+1329	traffic bug
+1330	record
+1331	growth
+1332	sticky slug
+1333	tricky obstacle patterns
+1334	super
+1335	phone troll
+1336	spooky shadow
+1337	already owned
+1338	lv.
+1339	noisy alarm clock
+1340	energy
+1341	energy
+1342	that's energy. When energy is low, you run slower. Food and joy restore your strength
+1343	pits, fast “Panic” and low flyers — duck ⬇️
+1344	pits, fast enemies and low flyers — duck ⬇️
+1345	• The game has
+1346	• Age 6+. Cartoon monsters, no blood or violence.
+1347	• The game
+1348	• No chats, no links to websites or social networks.
+1349	→ WINDOW
+1350	→ chest +120 ⭐
+1351	⏳ Now SLOW-MO: press ⏳ on the left (or Q) — time will slow down. It charges by itself and from wins
+1352	⏳ Time flows again
+1353	⏳ SLOW-MO! Time flows slower
+1354	▶ Next
+1355	▶ Play again
+1356	▶ PLAY · level
+1357	▶ Continue
+1358	⚔️ Weapons
+1359	⚠ BOSS ahead
+1360	⚡ Boosts
+1361	⛓️ Shackles broken
+1362	✅ Goal complete! New event tomorrow
+1363	✅ unlocked! Wear it in your profile
+1364	⬆️ JUMP
+1365	⬇️ SLIDE
+1366	⭐ (streak
+1367	⭐ for wins ×2
+1368	⭐×2 for 10 s!
+1369	🌱 Chapter
+1370	🌱 GROWING UP
+1371	🎩 Clothes
+1372	🎯 Beat
+1373	🎲 Reroll (
+1374	🏅 Profile & tasks
+1375	🏆 New record!
+1376	🏠 Menu
+1377	👑 Hero of the month “
+1378	👦 Boy
+1379	👧 Girl
+1380	👪 For parents
+1381	💖 Second wind! You're back in action
+1382	📖 Collection
+1383	📖 Monster collection
+1384	📖 Problem collection
+1385	📖 New in the collection
+1386	🔇 Sound off
+1387	🔊 Sound on
+1388	🔥 LET OFF STEAM — choose a map
+1389	🔥 SUPER is ready! Press the big 🔥 SUPER button (or E) — a fire wave will sweep the whole screen
+1390	🔥 SUPER WAVE!
+1391	🗑 Reset progress
+1392	🗺 To menu
+1393	🛒 Shop
+1394	Boy
+1395	Girl

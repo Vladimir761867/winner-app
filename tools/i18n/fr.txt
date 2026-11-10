@@ -1,0 +1,1396 @@
+0	! Frappe-le du poing et de la balle, saute par-dessus ses attaques
+1	! Énergie de nouveau pleine
+2	">⚽ Balle
+3	">🍳 Poêle
+4	1 ⭐ par victoire
+5	10 ⭐ par trouvaille
+6	2 ⭐ · énergie +30
+7	20 à l'énergie max
+8	200 victoires
+9	25 à l'énergie max et soin complet
+10	3 d'énergie par victoire
+11	4 d'énergie par victoire
+12	50 victoires
+13	50 % de dégâts aux boss
+14	« De notre temps… »
+15	« Chez maman, c'est plus propre »
+16	« Vous venez voir qui ? »
+17	« Sois comme tout le monde »
+18	« Ce n'est pas chez nous »
+19	« Tu te crois spécial ? »
+20	« Vous êtes nombreux, je suis seule »
+21	« Tout le monde a déjà choisi »
+22	« Vous descendez ? »
+23	« Les filles ne se battent pas »
+24	« Les filles et la technique, non »
+25	« Congé maternité = pas de carrière »
+26	« Le diplôme, c'est tout »
+27	« Femme au volant »
+28	« Madame, ce sont juste les nerfs »
+29	« Une cheffe, c'est que des nerfs »
+30	« Reste encore un peu »
+31	« Il est temps de te marier »
+32	« Rendez-vous par téléphone seulement »
+33	« Fais comme les gens normaux »
+34	« La carrière avant la famille »
+35	« C'est pour quand, les petits-enfants ? »
+36	« Les garçons ne pleurent pas »
+37	« L'homme doit gagner l'argent »
+38	« Les hommes ne font pas la vaisselle »
+39	« Monsieur, faites la queue »
+40	« Ici, on est une famille »
+41	« Arrête d'inventer ! »
+42	« Ne te fais pas remarquer »
+43	« Ne pleure pas, t'es un garçon »
+44	« Les jeunes d'aujourd'hui… »
+45	« Les relations, plus tard »
+46	« Faites passer pour le ticket »
+47	« Attendez, le médecin est sorti »
+48	« Revenez lundi »
+49	« Déshabillez-vous jusqu'à la taille »
+50	« Avant, on s'en passait »
+51	« Avec ta filière, tu n'iras nulle part »
+52	« C'est de votre faute »
+53	« L'art ne nourrit pas son homme »
+54	« Que des 20/20, sinon rien »
+55	« Endure, comme tout le monde »
+56	« Tu dois tout à tout le monde »
+57	« De toute façon tu restes à la maison »
+58	« T'es jeune, bosse pour tous »
+59	« Le ménage, ce n'est pas du travail »
+60	« Laisse ta place ! »
+61	« Une femme au foyer doit tout gérer »
+62	« Tu veux quoi ? Je sais pas ! »
+63	« Alors, tout fait mal ? »
+64	« C'est l'Âge »
+65	« C'est l'âge »
+66	« C'est un truc de femmes »
+67	« Ce n'est pas pour toi »
+68	« Ce n'est pas mon rayon »
+69	» est à toi ! Porte-le dans le profil
+70	A B C
+71	A-A-A !
+72	PHARMACIE
+73	Note de frais
+74	Bus
+75	Le bus secoue : trous et « le bus s'en va ! »
+76	Le bus secoue : trous et portes qui se ferment
+77	Le bus s'en va !
+78	Le bus est parti sous ton nez
+79	Bus raté ? Cours ! Trou sur la route
+80	Bus, files, guide ennuyeux et pluie : survis à la sortie scolaire
+81	Rapprochement des comptes
+82	Pharmacie
+83	Pharmacie : ordonnances, prix et « on n'en a pas »
+84	Trousse de soutien
+85	Trousse de soutien ! +60
+86	Pastèque
+87	Amphi
+88	Aéroport
+89	Б Ы Н К М
+90	BAM !
+91	POW !
+92	BOING !
+93	BOSS
+94	BOSS !
+95	COMPTABILITÉ
+96	Mamie qui double
+97	Mamie au caddie
+98	Poutre
+99	Balcon
+100	Trampoline ! Marche sur le ressort : tu rebondis et les ⭐ forment un arc
+101	Trampolines au parc ! Saute et attrape les ⭐
+102	Trampolines à l'aire de jeux !
+103	Surchaussures
+104	Cours, saute et bats les monstres !
+105	Ils me poursuivent !
+106	Réveil Fou
+107	Le linge s'envole de la corde : vise avec ⚽
+108	Ménage tes nerfs
+109	File Sans Fin
+110	« Pourquoi ? » sans fin
+111	Bus Sans Fin
+112	Bazar
+113	Insomnie
+114	Bibliothèque
+115	Ticket
+116	Les billets ont disparu
+117	Ça brille !
+118	Bloque 1 coup, se renouvelle à chaque niveau
+119	Journée tonique
+120	Combattant
+121	Bulle bavarde
+122	Grande Panique
+123	Grosse Dispute
+124	Grande Solitude
+125	Grande Échéance
+126	Gros rocher
+127	Le boss est furieux ! Tiens bon !
+128	Boss à chaque niveau, +50 % ⭐ par boss
+129	Le boss s'énerve !
+130	Tueur de boss
+131	Lance deux projectiles à la fois
+132	Le lancer recharge 25 % plus vite
+133	Éclaboussures
+134	Éclaboussures au sol : saute
+135	Éclaboussures de fontaine
+136	Réveil
+137	Réveil à 4 h
+138	Réveil à 7:00
+139	Panne de réveil
+140	Dragon de papier
+141	Avion en papier
+142	Tempête de papier
+143	Snack
+144	Comptabilité
+145	Ça arrive ! On continue
+146	Ça arrive ! Réessaie
+147	Ça arrive, on continue
+148	Recharge rapide de la balle
+149	Plus vite et plus dense !
+150	Paperasse
+151	La salle est sombre : tu ne vois que de près
+152	Le cabinet est étroit : saute les cartons
+153	Le débarras est sombre : ouvre l'œil
+154	Le débarras est sombre : murs de cartons, casse-les ou saute
+155	La grotte est sombre : tu ne vois que près du héros
+156	En voyage, tout peut arriver
+157	En route, tout peut arriver
+158	Équipé
+159	La prochaine fois, ça ira
+160	Le tram secoue : les sacs glissent dans l'allée
+161	La salle de lecture est dans la pénombre
+162	Rame de métro à l'heure de pointe
+163	Salle de bain
+164	Grande Lessive
+165	Grande Fatigue
+166	Grand Épuisement
+167	Grand Silence
+168	Grand Malentendu
+169	Printanier
+170	Vent marin : trous et mouettes
+171	Soir
+172	Soir dans la chambre : lumière seulement autour de toi
+173	Soirée à la fenêtre
+174	Soir, devoirs
+175	Soir : lumière seulement autour de toi ; les devoirs volent
+176	Soir : les forces faiblissent, cherche
+177	Fête
+178	Fatigue Éternelle
+179	Soupir
+180	Prendre
+181	Culpabilité
+182	Miam ! +25 d'énergie
+183	Amour non partagé
+184	Plus forts ensemble !
+185	Trous dans le bac à sable : saute !
+186	Trous et flaques dans la cour : saute
+187	Trous dans la cour : saute tôt
+188	Gare
+189	Épée magique
+190	Chaussette Puante
+191	Question du guide
+192	Question de cours
+193	Râlerie
+194	Râleur
+195	Waouh !
+196	Ça, c'est l'amitié !
+197	Quel itinéraire !
+198	Quelle recette !
+199	Quel coup !
+200	Vers le rêve !
+201	En avant !
+202	Toutes les tâches du jour ! Bonus +30 ⭐
+203	Tout le monde a commencé un jour
+204	Toutes les chaînes sont tombées ! C'est maintenant un jeu d'arcade : pièces, vitesse et un monde sans limites. Fonce et collectionne les aventures.
+205	Tout le monde se réunit : les problèmes arrivent plus serrés
+206	Éclair !
+207	On reçoit des amis : les problèmes arrivent plus serrés
+208	Tout s'arrange, vous êtes ensemble
+209	Second souffle
+210	Volcan
+211	Vous êtes plus proches !
+212	Choisis un bonus
+213	Épuisement
+214	Respire et réessaie
+215	Respire, tu vas y arriver
+216	Respire, tu es déjà en route
+217	Respire. La santé d'abord.
+218	Convoqué chez le directeur
+219	Au tableau
+220	Endurant
+221	Défoule-toi ou prépare-toi à la journée de travail
+222	Émettre une facture
+223	HORAIRES DE CONSULTATION
+224	Vestiaire
+225	Les héros s'entraînent ! Réessaie, tu deviendras plus fort.
+226	Héros
+227	Héros du mois : «
+228	Chapitre
+229	Pigeon
+230	Montagne de Vaisselle Sale
+231	Montagne de Devoirs
+232	Montagne de Rapports
+233	Montagne de Courses
+234	Montagne de bagages
+235	Montagne de linge
+236	Montagne de repassage
+237	Montagne de corvées
+238	Montagne de papiers
+239	Montagne de devoirs
+240	Montagne de fiches
+241	Montagne de manteaux au vestiaire
+242	Montagne de non-dits
+243	Montagne de rendez-vous reportés
+244	Montagne d'oreillers
+245	Montagne de vaisselle
+246	Montagne de corrections
+247	Montagne de réunions
+248	Montagne de lessive
+249	Montagne de souvenirs
+250	Montagne de cahiers
+251	Montagne de leçons
+252	Montagne de manuels
+253	Fier de toi !
+254	Tour de cubes
+255	Sentier de montagne
+256	La ville est conquise !
+257	Ville des robots
+258	Transports en commun
+259	Mémoire en Feu
+260	Mémoire en feu
+261	Salon
+262	Thermomètre
+263	Forêt de champignons
+264	Champignons-trampolines ! Saute sur le ressort et attrape les ⭐
+265	Nuage d'orage
+266	Géant de l'Orage
+267	Musique forte dans les écouteurs
+268	Passager Bruyant
+269	Bus bruyant
+270	Appel à voix haute
+271	Groupe
+272	Le groupe attendra : on continue
+273	Cuisinière Sale
+274	Baignoire sale
+275	Cuisinière sale
+276	Vaisselle sale
+277	Vaisselle sale, chaussette solitaire et chewing-gum par terre : vaincs le bazar
+278	Miroir sale
+279	Chaussettes sales
+280	Traces de boue
+281	Boule de saleté
+282	DÉCEMBRE
+283	DRING
+284	Bousculade aux Portes
+285	Bousculade aux portes
+286	Bousculade à l'entrée
+287	Bousculade, « laisse ta place » et conseils sans fin : bats-les tous
+288	Pression des attentes
+289	Vieille rancune
+290	Les portes se ferment !
+291	Mauvaise note
+292	Une mauvaise note n'est pas la fin
+293	Double lancer
+294	Double saut
+295	Cour
+296	Cour de l'immeuble
+297	Échéance
+298	Service à la cantine
+299	Dure jusqu'à la fin de la partie
+300	Jour
+301	Journée du collectionneur
+302	Journée des tirs précis
+303	Collecte d'argent pour l'école
+304	Les enfants vont bien, tu assures !
+305	Les enfants ne veulent pas dormir
+306	Les enfants se disputent
+307	Chambre des enfants
+308	Aire de jeux
+309	Manque de Temps
+310	Canapé-trampoline : marche sur le ressort et hop vers les ⭐
+311	Dictée
+312	Mémoire sans idées
+313	Longue route
+314	Une longue carte : mondes, monstres et boss
+315	Longue file
+316	Long
+317	Bras longs
+318	Avant le niveau suivant
+319	Bienvenue ! Saute les trous à l'avance
+320	Bonne journée
+321	Arrivé !
+322	Pluie
+323	Pluie sans parapluie
+324	Pluie et crépuscule : tu ne vois qu'autour du héros
+325	Pluie et obscurité : tu ne vois qu'autour du héros
+326	Pluie en vacances
+327	Pluie à l'arrêt
+328	Pluie près du bus
+329	Tenir jusqu'au 3e jour
+330	Long retour
+331	Long transfert
+332	Longue attente
+333	La maison brille !
+334	La maison est plus propre. Repose-toi, tu l'as mérité.
+335	La maison, c'est là où on t'attend. Respire et serre quelqu'un dans tes bras.
+336	Devoirs
+337	Trajet en bus
+338	En visite
+339	Chemin de l'école
+340	Retour à la maison
+341	Trajet vers le travail
+342	La route n'est pas une raison de s'énerver
+343	Routes, aventures et nouveaux lieux
+344	Taxis chers
+345	Taxi Cher
+346	Succès
+347	Succès (
+348	Moqueries
+349	Bébert le Bagarreur
+350	Drone
+351	Un ami n'a pas répondu
+352	Amis
+353	Amis à côté : beaucoup de problèmes, mais beaucoup de ⭐ aussi
+354	Tes amis sont fiers de toi !
+355	Amis, premier amour et choisir son propre chemin
+356	Chaleur étouffante
+357	Commentaire sarcastique
+358	Encore une histoire
+359	Encore un « Maman ! »
+360	Encore une tache vaincue !
+361	Encore !
+362	APPUIE !
+363	Chaleur
+364	Chaleur et Soif
+365	Chaleur et files
+366	Chewing-gum par terre
+367	Chewing-gum sous la table
+368	Chewing-gum Collant
+369	Bouchonneur de Fer
+370	RALENTI
+371	Perdu
+372	Carte vitale oubliée
+373	Oublié d'appeler
+374	Oublié de venir chercher
+375	Oublié de répondre
+376	Anniversaire oublié
+377	Anniversaire de Mariage Oublié
+378	Chargeur oublié
+379	Chaussons oubliés
+380	Déjeuner oublié
+381	Passeport oublié
+382	Badge oublié
+383	Surcharge
+384	Plein de choses à faire
+385	Barrage de rondins
+386	Placard plein à craquer
+387	Demain, école à nouveau
+388	Demain, nouvelle échéance
+389	Tâche accomplie !
+390	Tâches du jour
+391	Tâche bouclée !
+392	Salaire en retard
+393	Retenu au travail
+394	Paiement en retard
+395	Vol retardé
+396	Espace au bord du quai : saute !
+397	Espaces au quai et « Panique » : dépêche-toi !
+398	Porte du musée fermée
+399	Fermé pour Déjeuner
+400	Fermé pour déjeuner
+401	Métro Fermé
+402	Fermer
+403	Le ralenti se charge
+404	Mot dans le carnet
+405	Remarque devant tout le monde
+406	Château
+407	Occupé
+408	Réserve de forces
+409	Odeur d'hôpital
+410	Odeur du frigo
+411	Mot
+412	Endormi dans le bus
+413	Évier bouché
+414	Validé
+415	Validé !
+416	Titre
+417	Titre : «
+418	Sonnerie du réveil
+419	Réveil bruyant
+420	Sonnerie
+421	Appel de l'école
+422	Sonnerie de Cours
+423	Sonnerie de fin de cours
+424	Sonnerie !
+425	Pluie d'étoiles
+426	Aimant à étoiles
+427	Traînée d'étoiles
+428	En forme !
+429	Génial !
+430	La santé passe avant
+431	Le vert clignote ! Tout va plus vite
+432	Miroir des Comparaisons
+433	Méchante Mauvaise Note
+434	Contrôleur Furieux
+435	Méchant Roi Crieur
+436	Serveur Grincheux
+437	Imprimante Maléfique
+438	Le savoir, c'est le pouvoir !
+439	Appelle des aides
+440	Avare Doré
+441	Parapluie
+442	Zoo
+443	И Н Ш М К
+444	INFORMATIONS
+445	Trampolines et cubes en jouet !
+446	Des jouets partout : plein de problèmes, mais petits
+447	Des jouets partout : plein de problèmes, mais petits
+448	Ordre parfait !
+449	Les mamans parfaites n'existent pas
+450	Fac
+451	Fac : amis, premier amour, liberté et premières grosses erreurs. Choisis ton chemin, pas « ce qui se fait ».
+452	Intéressant !
+453	Tu corrigeras au prochain cours
+454	Caprice au magasin
+455	Caprice !
+456	AU COMBAT !
+457	POING
+458	Cabinet
+459	Cabinet du médecin
+460	Bureau du chef
+461	Tout le monde apprend de ses erreurs
+462	Comme un vrai boss !
+463	Comme neuf !
+464	Que c'est tendre !
+465	Quel voyage !
+466	Bloc de pierre
+467	Mur de pierre ! Appuie sur SAUT (↑ ou le bouton ⬆️ à gauche) pour le franchir. Ou casse-le en trois coups
+468	Mur de pierre : 3 coups, SAUTE par-dessus ou la BALLE
+469	Rochers et falaises : saute
+470	Caprice au petit-déj
+471	Chevalier Casserole
+472	Marmite grognon
+473	Des pièces d'or roulent : saute par-dessus
+474	Les pièces roulent : saute !
+475	Pièces qui roulent
+476	Café
+477	Bouillie et compote volent : saute par-dessus
+478	Bouillie au petit-déj
+479	Bouillie pas finie
+480	Rapport trimestriel
+481	Casquette
+482	Cinéma
+483	Débarras
+484	Classe
+485	La classe se serre les coudes !
+486	Classe !
+487	Trop bien !
+488	Les livres sortent des sacs : saute
+489	Dragon des Livres
+490	Salve de livres
+491	Rat de bibliothèque
+492	Mot piquant
+493	Collection
+494	Moustique
+495	Combo ×
+496	Boulette de pâte à modeler
+497	Notes de cours
+498	Notes jusqu'au matin
+499	Les notes volent dans l'amphi : vise avec ⚽ ou saute ⬆️
+500	Contrôle
+501	Le Grand Contrôle
+502	Contrôle demain
+503	Contrôles, mauvaises notes, la sonnerie et une cantine fade : bats tout ce qui énerve à l'école
+504	Contrôleur
+505	Pays des bonbons
+506	Trampolines en bonbons ! Saute pour les ⭐
+507	Confettis et ballons volent : baisse-toi ⬇️
+508	Conflit dans le chat
+509	Couloir
+510	Roi du Bazar
+511	Roi des Chaussettes Puantes
+512	Roi des Retards
+513	Roi des Rancunes
+514	Roi des Annulations
+515	Roi des Scènes
+516	Roi Limace
+517	Roi des Réunions
+518	Couronne
+519	Court
+520	Spatial
+521	Espace
+522	L'espace ! Des météorites volent : baisse-toi ⬇️
+523	Chaton
+524	Plus de café
+525	Café et plateaux volent au sol : saute !
+526	Esprit du café
+527	La machine à café est en panne
+528	Joliment fait !
+529	Magnifique !
+530	Beauté et confort !
+531	Superbe !
+532	Cri
+533	Cri du chef
+534	Le cri du chef dans la tête
+535	Critiques
+536	Miettes sur la table
+537	Clubs et activités
+538	Club et activité
+539	Trop bien !
+540	Le poing frappe 1 plus fort
+541	Le poing porte 20 % plus loin
+542	Acheté
+543	Cuisine
+544	Cuisine et machine à café
+545	Tas de repassage
+546	Tas de cartons
+547	LABORATOIRE
+548	ORL
+549	ARC
+550	Laboratoire
+551	La lave gicle ! Saute par-dessus les éclaboussures
+552	Un like au lieu d'une réponse
+553	Montagne de glace
+554	Flemme de sortir
+555	Flemme de se préparer
+556	Problème volant : abats-le avec la BALLE, frappe en sautant ou passe simplement dessous
+557	Monstre volant : abats-le avec la BALLE, frappe en sautant ou passe simplement dessous
+558	Un monstre vole ! Appuie sur LANCER (F ou le bouton ✨) pour l'abattre. Ou ne saute pas : il passera au-dessus de ta tête
+559	Un problème vole ! Appuie sur BALLE (F ou le bouton ✨) pour l'abattre. Ou ne saute pas : il passera au-dessus de ta tête
+560	Bulle volante
+561	Assiettes volantes
+562	Vague collante
+563	Flaque collante
+564	Taches collantes
+565	Sol de cuisine collant
+566	Ascenseur
+567	Appels en trop
+568	Attrape
+569	Flaque par terre
+570	Arc et flèches
+571	Lunaire
+572	Chaque voyage est une histoire. Raconte-la à tes amis !
+573	L'amour gagne !
+574	Tout voyage commence par un pas. On va où demain ?
+575	М Н К
+576	LIGNE 47 · CENTRE
+577	ÉPÉE
+578	BALLE
+579	Boutique
+580	Boutique de pouvoirs
+581	Aimant pendant 10 s !
+582	Maman est Partie
+583	Maman attend ! Plus vite, trous sur la route
+584	Maman avec enfants
+585	Maman est partie
+586	Semoule au Lait
+587	Semoule au lait
+588	Itinéraire recalculé : en avant
+589	Itinéraire conquis !
+590	Masque
+591	Tapis-trampolines ! Saute et attrape les ⭐
+592	Craie
+593	Petit bazar par terre : saute par-dessus
+594	Piège à mèmes
+595	Il y avait de la place !
+596	Tempête de neige et congères : saute !
+597	Métro
+598	Le métro a fermé
+599	Métro : quai
+600	Monde 12 % plus rapide, +1 ⭐ par victoire
+601	Paix et confort !
+602	Le monde s'ouvre !
+603	Beaucoup de devoirs
+604	On peut pleurer et continuer
+605	Bravo !
+606	Rancune silencieuse
+607	Silence
+608	Mite
+609	Avare de pièces
+610	Marin
+611	Moucheron
+612	Puissant !
+613	Musée
+614	Déchets dans le coin
+615	Mouche
+616	Mouche dans le bus
+617	Mouches et moustiques : baisse-toi ⬇️ ou vise avec ⚽
+618	Pensées au travail
+619	Balle et poêle frappent 1 plus fort
+620	Balle
+621	Quai
+622	Récompense du jour
+623	Porté
+624	Porter
+625	Matelas gonflables trampolines ! Saute pour les ⭐
+626	Déclaration d'impôts
+627	Contrôle fiscal
+628	Écris en premier, tout s'arrangera
+629	Rappel
+630	Rappel de collecte
+631	Orientation vers un autre médecin
+632	Les vrais amis comprendront
+633	Le jour est arrivé
+634	Le chef a crié
+635	Le chef est mécontent
+636	Chef Crieur
+637	On ne me laisse pas jouer
+638	Je ne sais pas qui devenir
+639	Je ne sais pas ce que je veux
+640	Pas trouvé le temps
+641	On n'entend pas le guide
+642	Impossible de dormir
+643	Mauvais tampon
+644	Mauvais terminal
+645	Pas assez de temps
+646	Manque de temps, devoirs, scènes, collectes et balades
+647	Je ne veux pas aller à la crèche
+648	Mauvais Café
+649	Mauvais café
+650	Déjeuner fade
+651	Mots non dits
+652	Pas assez dormi
+653	Poésie pas apprise
+654	Client mécontent
+655	Tâches inachevées
+656	Malentendu
+657	Non-dits
+658	Non-dits au petit-déj
+659	Manque de sommeil
+660	Ville inconnue la nuit
+661	Pause Gênante
+662	Pause gênante
+663	Gêne
+664	Ne pas toucher
+665	Poêle pas lavée
+666	Sol pas lavé
+667	Non lu
+668	Plus d'argent avant la bourse
+669	Pas de monnaie
+670	Pas de place côté fenêtre
+671	Pas de réponse du client
+672	Pas de parking
+673	Pas de réseau
+674	Plus de tickets
+675	Pas de manuel
+676	Pas de tenue propre
+677	Invincible pendant 6 s !
+678	Barrière basse ! Appuie sur ⬇️ GLISSADE (↓) pour passer dessous
+679	Problème bas : saute par-dessus ou frappe-le
+680	Monstre bas : saute par-dessus ou frappe-le
+681	Problème qui vole bas ! Appuie sur ⬇️ GLISSADE (↓) pour passer dessous, ou abats-le
+682	Monstre qui vole bas ! Appuie sur ⬇️ GLISSADE (↓) pour passer dessous, ou abats-le
+683	Pas grave ! Dans le jeu, ça marchera
+684	Nouveau groupe
+685	Nouveau problème dans la collection : +10 ⭐
+686	Débutant
+687	Du Nouvel An
+688	Nouveau
+689	Nouveau jour
+690	Nouveau monstre dans la collection : +10 ⭐
+691	Chaussettes et jouets partout dans le salon : bats-les un par un
+692	Chaussettes-projectiles
+693	Chaussette puante
+694	Ville de nuit
+695	Nuit
+696	Nuit des boss
+697	Nuit, l'échéance brûle : sombre et rapide
+698	Nuit : tu ne vois qu'autour du héros
+699	Nuit : tiens bon, le matin approche
+700	Il faut un certificat
+701	SERVICE
+702	OUVERT ! Frappe : dégâts ×2
+703	Promesse sans appel
+704	Rancune
+705	Nuage puant
+706	Petit nuage
+707	Nuage grognon
+708	Pays des nuages
+709	Tas de chaussures et de manteaux : casse-les ou saute
+710	Cuisine de la résidence
+711	Résidence universitaire
+712	Commune
+713	Bâton de feu
+714	Traînée de feu
+715	Feu !
+716	Petite flamme
+717	File énorme
+718	File énorme : murs, casse-les ou saute
+719	S'habiller tout seul
+720	Une fois par partie, tu reviens avec 50 % d'énergie
+721	Chaussette Solitaire
+722	Chaussette solitaire
+723	Solitude
+724	Seul dans la foule
+725	Une tache n'est pas la fin du monde
+726	Ophtalmo
+727	On est en retard
+728	En retard pour le bus
+729	On est en retard ! Tout va plus vite
+730	On est en retard ! Tout va plus vite, trous sur la route
+731	En retard en cours !
+732	Je suis en retard !
+733	Camarade en retard
+734	Correspondance ratée
+735	En retard à la réunion
+736	En retard au travail
+737	En retard en classe
+738	Monstre du Retard
+739	Encore en retard
+740	Guêpe
+741	Automnal
+742	Arrêt de bus
+743	Mauvais arrêt
+744	Excuse
+745	Ouvert
+746	Super rencontre !
+747	Premier de la classe !
+748	Excellent !
+749	Excellent ! Bats les monstres quand ils approchent
+750	Excellent ! Bats les problèmes quand ils approchent
+751	Belle photo !
+752	Projets annulés
+753	Rapports
+754	Bureau
+755	Les serveurs ont lâché leurs plateaux : saute par-dessus
+756	Note sous les attentes
+757	Files et prix : les pièces roulent, saute
+758	Files et valises : murs, casse-les ou saute
+759	Files, tickets et « vous venez voir qui ? » : défoule-toi
+760	File d'attente
+761	File du Vestiaire
+762	File pour le bus
+763	File au snack
+764	File au vestiaire
+765	File au vestiaire : murs de manteaux, casse-les ou saute
+766	File au secrétariat
+767	File devant le cabinet
+768	File au musée
+769	File au guichet : murs de gens
+770	File au guichet : murs de gens, casse-les ou saute
+771	File au centre médical
+772	File à l'accueil
+773	File de taxis
+774	File aux toilettes
+775	File au pot
+776	File à l'arrêt
+777	Attente de validation
+778	La file avance ! Tout va plus vite
+779	La file ne durera pas toujours
+780	Lunettes
+781	Les erreurs font partie du chemin
+782	PAF !
+783	SALLE DE RÉUNION
+784	BOSS VAINCU !
+785	BÂTON
+786	PRÉJUGÉ
+787	RÉUSSI !
+788	SAUT
+789	Vapeur relâchée !
+790	Parc
+791	Parc entre amis
+792	Pause
+793	Toile dans le coin
+794	Petite toile
+795	Premier cours à 8:00
+796	Première victoire
+797	Salle de réunion
+798	Souffle un peu et continue
+799	Répit, l'énergie se recharge
+800	Inquiétudes
+801	Redémarre et en avant
+802	Récré
+803	Récré méritée !
+804	Récré ! Tout le monde court : les problèmes vont plus vite
+805	Trop-perçu
+806	Sauté !
+807	Heures sup
+808	Correspondance
+809	Rattrapage
+810	Un rattrapage n'est pas la fin
+811	Comptage des Têtes
+812	Comptage des têtes
+813	Couloirs et tourniquets : murs, saute !
+814	Passage piéton
+815	Grotte de cristaux
+816	Île des pirates
+817	Lettre
+818	Lettre du chef
+819	Point d'équipe
+820	Ordre de virement
+821	Mauvais signal
+822	Aire de jeux
+823	Plage
+824	Victoires
+825	Victoires au total
+826	Bats «
+827	Bats des problèmes ×
+828	Vainqueur
+829	Vainqueur Junior
+830	Vainqueur Junior : aventure
+831	Vainqueur des peurs
+832	Battre le boss
+833	Bats des monstres pour les débloquer ici. Récompenses
+834	Bats des problèmes pour les débloquer ici. Récompenses
+835	Visiter toutes les histoires
+836	Seigneur des Ombres
+837	Sous l'eau : trous et poissons volants
+838	Ramasse nourriture ou joie ×
+839	Royaume sous-marin
+840	Soutien, rencontres et amusement
+841	Plateaux et compote volent au sol ! Saute par-dessus
+842	Plateaux et café volent au sol
+843	Le train n'avance pas
+844	Je rappelle plus tard
+845	Les plateaux roulent ! Regarde la bande rouge à droite et saute
+846	Centre médical
+847	Confidentialité : aucune donnée personnelle n'est collectée. Pour effacer toute la progression, appuie sur le bouton ci-dessous ou supprime l'appli.
+848	Étagères et vitrines : trous au sol
+849	Lundi
+850	Bon rétablissement !
+851	Vent arrière : tout va plus vite !
+852	Constant
+853	La vaisselle roule de la table : saute !
+854	Perdu dans la foule
+855	Moufle perdue
+856	Dossier médical perdu
+857	Chaussures perdues
+858	Bagage Perdu
+859	Billet Perdu
+860	Bagage perdu
+861	Billet perdu
+862	Plafond bas : saut plus bas, saute prudemment
+863	Courrier
+864	Presque ! Il manquait pour le record
+865	Corrections du rapport
+866	Fête : murs de ballons, casse-les ou saute
+867	Fantôme
+868	Chicanes
+869	Chicanes sur le rapport
+870	Aventure
+871	Aventure !
+872	Aventures
+873	L'imprimante a planté
+874	Dragon-Imprimante
+875	Imprimante effrayante
+876	Reçu !
+877	Entrée
+878	Espace / ↑
+879	Balle perforante
+880	Éprouvettes et gouttes : saute par-dessus
+881	Embouteillage
+882	Embouteillage en route
+883	Bestiole des bouchons
+884	Balade sous la pluie
+885	Passer le tutoriel
+886	Appel manqué
+887	Passé dessous !
+888	Pas entendu le réveil
+889	Facture impayée
+890	Profil
+891	Salle de soins
+892	Lu
+893	Saute par-dessus l'attaque !
+894	Saute les cartons
+895	Saute encore en l'air : pratique au-dessus des trous et des murs
+896	Saute sur un monstre par le haut : tu l'écrases et tu rebondis !
+897	Saute sur un problème par le haut : tu l'écrases et tu rebondis !
+898	Saut !
+899	Saut, coup et balle sont toujours là. Ici, ce sont les bonus.
+900	Voyageur de la vie
+901	Voyages
+902	Voyageur
+903	Grain de poussière
+904	Poussière sur les étagères
+905	Poussière sous le canapé
+906	Tache sur le canapé
+907	Tache sur le tapis
+908	20 sur 20 !
+909	ACCUEIL
+910	CROISSANCE
+911	Travail
+912	Travail : chefs, échéances et « c'est comme ça ». Ne te dissous pas dans les attentes des autres.
+913	La journée est longue, tu vas y arriver
+914	Journée finie : vapeur relâchée !
+915	Joie ! +15 d'énergie, ⭐×2
+916	Traînée arc-en-ciel
+917	Genou écorché
+918	Affaires éparpillées
+919	Jouets éparpillés
+920	Voix qui montent
+921	Agacement
+922	Jus renversé !
+923	Horaires différents
+924	Le téléphone s'est éteint
+925	Téléphone à plat
+926	Lever aux aurores
+927	Lever tôt avant le voyage
+928	Vol matinal
+929	Rupture
+930	Distance
+931	En croissance
+932	Jalousie
+933	Accueil
+934	Rare
+935	Record
+936	Exposé pour demain
+937	Robot
+938	Les robots sont pressés : plus vite et plus dense !
+939	Chat des Parents
+940	Chat des parents
+941	Réunion de Parents
+942	Pour les parents
+943	Sprint !
+944	Marché
+945	Sac à dos
+946	Rangée de casiers
+947	POÊLE
+948	PROCHAINE STATION : PLACE
+949	STATION
+950	SUPER
+951	SUPER-COUP prêt !
+952	Crèche
+953	Dans le bus : sacs dans l'allée et « faites passer pour le ticket »
+954	Fait tout seul !
+955	Soigne +60 tout seul quand l'énergie tombe à zéro
+956	Avions en papier et mots volent dans la classe : vise avec ⚽ ou saute ⬆️
+957	Collecte d'Argent
+958	Préparatifs pour la crèche
+959	Rendez-vous à l'école
+960	Préparatifs pour l'école
+961	Balaye ↑ saut · → balle · tape = coup · 🔥 SUPER-VAGUE · ⏳ ralenti. Touches : Espace saut, Entrée coup, F balle, E super, Q ralenti
+962	Grand air : mouches et moustiques, baisse-toi ⬇️
+963	Liberté de mouvement !
+964	Liberté !
+965	Ton truc à toi !
+966	Prise de sang à jeun
+967	Téléphone à plat
+968	Perche à selfie
+969	Dîner en famille
+970	Famille
+971	La famille est fière !
+972	La famille, c'est la patience
+973	Famille, attention et quotidien. Trouve l'équilibre entre « il faut » et « je veux », ne te casse pas pour les cadres des autres.
+974	Salle des serveurs la nuit
+975	Cœur
+976	Le cœur à la bonne place !
+977	Série
+978	Série de 3 jours
+979	Partiels
+980	Partiels ! Tout va plus vite
+981	Force
+982	Force de la victoire
+983	À bout de forces : tu ralentis ! Attrape
+984	Fort dans sa tête
+985	Tenues du héros
+986	Poêle
+987	Ça glisse ! Éclaboussures au sol : saute
+988	Journée vitesse
+989	Tir rapide
+990	Le mal du pays
+991	Guide Ennuyeux
+992	Cours ennuyeux
+993	Guide ennuyeux
+994	Traînée du héros
+995	Le prochain passe dans cinq minutes
+996	Au suivant !
+997	Limace collante
+998	L'ascenseur est en panne
+999	Stylo cassé
+1000	Imprimante cassée
+1001	Tourniquet cassé
+1002	Courageux !
+1003	D'abord un court tutoriel (on peut le passer)
+1004	Enneigé
+1005	Retirer
+1006	Collecte ⭐ ×
+1007	Événement du jour
+1008	Événement du jour réussi ! +120 ⭐
+1009	Réunion
+1010	Réunion : murs de présentations, casse-les ou saute
+1011	Prairie ensoleillée
+1012	Ensoleillé
+1013	Chapeau de paille
+1014	Doute
+1015	Doute : écrire ou pas ?
+1016	Somnolence
+1017	Message dans le chat
+1018	Message dans le chat du groupe
+1019	Message dans le chat de la classe
+1020	Chambre
+1021	Spam
+1022	On se presse dans la rue : trous et « Panique »
+1023	Précipitation
+1024	Liste de choses à faire
+1025	Triche
+1026	Ragots
+1027	Ragots à la récré
+1028	Gymnase
+1029	Certificat
+1030	Certificat pour un Certificat
+1031	Certificat pour un certificat
+1032	Certificat obtenu !
+1033	Certificats et surchaussures volent : vise avec ⚽ ou saute ⬆️
+1034	Comparaison aux Autres
+1035	Comparaison aux autres
+1036	Moyen
+1037	Rapprochement urgent
+1038	Urgent !
+1039	E-mail urgent
+1040	Appel urgent
+1041	Rapport urgent
+1042	Craquage !
+1043	Dispute
+1044	Dispute dans le chat
+1045	Dispute avant de dormir
+1046	Dispute avec le coloc
+1047	Vieille rancune
+1048	Vieux désaccord
+1049	Mur de devoirs
+1050	Mur de silence
+1051	Mur de gêne
+1052	Mur de rancunes
+1053	Murailles du château : casse-les ou saute
+1054	Timidité
+1055	Cantine
+1056	Peur de l'Avenir
+1057	Peur du Diagnostic
+1058	Peur de l'Inconnu
+1059	Peur de l'avenir
+1060	Peur d'être ridicule
+1061	Peur du diagnostic
+1062	Peur de l'inconnu
+1063	Peur du rejet
+1064	Peur de l'examen
+1065	Partiels Terribles
+1066	Ombre Effrayante
+1067	Ombre effrayante dans la chambre
+1068	Maîtresse Sévère
+1069	CPE Sévère
+1070	Maîtresse sévère
+1071	Prof Sévère
+1072	Prof sévère
+1073	Souvenirs chers
+1074	Sac sur le siège
+1075	Le super se charge
+1076	Super !
+1077	Super-charge
+1078	Le super-coup se charge 1,5× plus vite
+1079	Super-héros !
+1080	Factures, paiements et retards te sautent dessus : vise avec ⚽ ou saute ⬆️
+1081	Facture
+1082	Facture à payer
+1083	Facture avec TVA
+1084	LA PATIENCE
+1085	SOIGNE AUSSI
+1086	ÉCRASÉ !
+1087	TRAM 3 · DÉPÔT
+1088	CRAC !
+1089	Panneau « Ne pas toucher ! »
+1090	Continue comme ça !
+1091	Continue comme ça, élève !
+1092	Taxi
+1093	Le taxi file dans la ville de nuit : vite, trous
+1094	Ticket pour un autre jour
+1095	Plateforme et wagon : sacs, seaux et jardiniers, saute !
+1096	File à la douane
+1097	Boss de la Douane
+1098	Assiettes et éclaboussures volent au sol : saute !
+1099	Les assiettes roulent sur la table ! Saute par-dessus
+1100	Tu as quatre ans. Tu ne sais pas ce que tu veux, et le monde paraît immense. Cours, saute, essaie, et ne laisse personne te convaincre que tu « dois être comme tout le monde ».
+1101	Le téléphone au lieu de parler
+1102	Téléphone à table
+1103	Boss Troll du Téléphone
+1104	Troll du téléphone
+1105	Obscurité dans la chambre
+1106	Bébé a de la Fièvre
+1107	Bébé a de la fièvre
+1108	Ombre qui fait peur
+1109	Chaleur à la maison !
+1110	Chaleur, discussions et sentiments des proches
+1111	Généraliste
+1112	Chambre étroite : saute les caisses
+1113	Bureau étroit : saute les classeurs
+1114	Couloir étroit
+1115	Interro
+1116	Heure de la Sieste
+1117	Soirée calme : lumière seulement autour de toi
+1118	Heure de la sieste
+1119	Sieste : sombre, tu ne vois qu'autour du héros
+1120	Silence dans le chat
+1121	Cohue
+1122	Foule
+1123	Foule dans le couloir
+1124	Foule de touristes
+1125	Foule à l'entrée
+1126	Foule aux portes
+1127	Carapace
+1128	Réservé aux adultes
+1129	On se presse : plus vite, baisse-toi ⬇️
+1130	Spleen
+1131	Les amis me manquent
+1132	Vraiment réinitialiser ? Appuie encore
+1133	Tram
+1134	Anxiété
+1135	Inquiétude pour les enfants
+1136	Trac avant la soutenance
+1137	Trac avant le contrôle
+1138	Tourniquets
+1139	Nuage
+1140	Tu ne fuis pas les problèmes : tu les bats.
+1141	Tu es un héros !
+1142	Prêt ! Gagne, grandis et collecte des ⭐. Bonne chance !
+1143	Tu fais l'impossible !
+1144	Tu es arrivé. Le reste, ce sont des détails.
+1145	Tu es l'âme de la fête !
+1146	Tu en fais déjà beaucoup
+1147	Tu te trouves, et c'est ça apprendre.
+1148	Tu es petit et tu ne sais pas ce que tu veux
+1149	Tu peux le faire !
+1150	Tu es un vrai explorateur !
+1151	Tu es un vrai voyageur !
+1152	Tu te trouves !
+1153	Tu n'as pas perdu : tu t'es entraîné !
+1154	Tu as battu
+1155	Tu y étais presque !
+1156	Tu as fait énormément aujourd'hui. C'est précieux : repose-toi.
+1157	Tu gères !
+1158	Tu ne fais que commencer, et c'est déjà courageux.
+1159	Tu es déjà plus fort qu'au début. Je crois en toi !
+1160	On t'a entendu !
+1161	Tu es un pro !
+1162	Citrouille
+1163	Sac Lourd
+1164	Poing lourd
+1165	Sac lourd
+1166	Valise lourde
+1167	Sombre Rancune
+1168	Sombre Silence
+1169	Lunettes de soleil
+1170	Orbe sombre
+1171	Chacun son rythme
+1172	COUP !
+1173	NIVEAU
+1174	Ménage à la maison
+1175	Le ménage est un marathon
+1176	Notification
+1177	Les notifications volent de partout : vise avec ⚽ ou saute ⬆️
+1178	Esquivé !
+1179	Onde de choc
+1180	Les coups coûtent 15 % d'énergie en moins
+1181	Les coups coûtent 20 % d'énergie en moins
+1182	Le dîner n'est pas prêt
+1183	J'ai mal au cœur
+1184	Mal des transports
+1185	Esquive !
+1186	Tomber, se relever : c'est normal
+1187	Reproche
+1188	Niv.
+1189	Hourra !
+1190	Hourra, pas de file !
+1191	Ouragan d'Annulations
+1192	Niveau
+1193	Niveau 10
+1194	Niveau 5
+1195	Leçon apprise !
+1196	Devoirs
+1197	À l'heure !
+1198	Jambes fatiguées
+1199	Fatigue
+1200	Fatigue après le travail
+1201	Fatigue après l'école
+1202	Rush du matin
+1203	Spectacle de l'école
+1204	Spectacle sans costume
+1205	Rush du matin : les problèmes courent plus vite
+1206	Agitation du matin
+1207	Matin
+1208	Matin dans la cuisine
+1209	Le prof est fier !
+1210	Étudier, c'est un marathon. Bravo, repose-toi.
+1211	BRIC-À-BRAC
+1212	Chaos à la Maison
+1213	Partiel de maths raté
+1214	Chirurgien
+1215	Porte Claquée
+1216	Porte claquée
+1217	Message froid
+1218	Stéthoscope Glacé
+1219	Compote froide
+1220	Café froid
+1221	Stéthoscope glacé
+1222	Un bon ami commence par toi. Écris à quelqu'un !
+1223	Soif
+1224	Fleuri
+1225	Haut-de-forme
+1226	Mouette
+1227	Mouette voleuse
+1228	Heure de Pointe
+1229	Heure de pointe
+1230	Heure de pointe : tout va plus vite, trous sur la route, saute tôt
+1231	Heure de pointe : murs de gens, casse-les ou saute
+1232	Chat
+1233	Chat sans réponse
+1234	Le sac de quelqu'un en pleine figure
+1235	Propreté !
+1236	Pour ouvrir cette section, résous le calcul
+1237	Se sentir de trop
+1238	Jouet d'un Autre
+1239	Jouet d'un autre
+1240	Accusé de l'erreur d'un autre
+1241	Le déjeuner d'un autre au frigo
+1242	Ш Б
+1243	Bonnet
+1244	Toque de diplômé
+1245	Balle
+1246	La balle traverse et touche plusieurs problèmes à la fois
+1247	La balle traverse et touche plusieurs monstres à la fois
+1248	La balle recharge plus vite
+1249	École
+1250	École : notes, sonneries et attentes des parents. Apprends à t'écouter, pas seulement l'approbation des autres.
+1251	Cantine de l'École
+1252	Scolaire
+1253	Casque
+1254	Moucheron-seringue
+1255	Pénalité de retard
+1256	Bruit dans le couloir
+1257	Réveil bruyant
+1258	Classe bruyante
+1259	Le bouclier a tenu !
+1260	Bouclier de soutien
+1261	Bouclier de niveau
+1262	Un bouclier qui se renouvelle à chaque niveau
+1263	Ы М Б Ш
+1264	TRAIN DE BANLIEUE · TOUS ARRÊTS
+1265	Sujet d'examen
+1266	Sortie
+1267	Super sortie !
+1268	Le guide et les panneaux « Ne pas toucher ! » volent vers toi
+1269	Train de banlieue
+1270	Emoji sans réponse
+1271	Épique
+1272	Ce problème court vite : frappe dès qu'il approche
+1273	C'est un monstre ! Appuie sur POING (Entrée ou le gros bouton 👊 en bas à droite) pour le battre
+1274	C'est très précieux !
+1275	C'est un problème ! Appuie sur POING (Entrée ou le gros bouton 👊 en bas à droite) pour le battre
+1276	C'est aussi un souvenir
+1277	C'est aussi une histoire
+1278	C'est une réussite !
+1279	Ce monstre court vite : frappe dès qu'il approche
+1280	Barrière de la langue
+1281	Trou ! Appuie sur SAUT à l'avance. Des ⭐ sont au-dessus du trou
+1282	Trou ! −
+1283	prises de sang 8:00–10:00
+1284	sans fin
+1285	bulle bavarde
+1286	boss ce mois-ci
+1287	dragon de papier
+1288	transperce
+1289	ennemis à triple résistance
+1290	tout s'achète uniquement avec des pièces du jeu.
+1291	nuage d'orage
+1292	boule de saleté
+1293	j.
+1294	j.)
+1295	niveaux restants dans le chapitre
+1296	avant le chapitre suivant
+1297	réveil bruyant
+1298	et
+1299	et fonctionne hors ligne. La progression reste uniquement sur cet appareil.
+1300	sur
+1301	sur 6
+1302	bur.
+1303	marmite grognon
+1304	rat de bibliothèque
+1305	touche n'importe où pour rejouer
+1306	esprit du café
+1307	ennemis volants et murs de pierre
+1308	pensées volantes et murs de pierre
+1309	bulle volante
+1310	flaque collante
+1311	avare de pièces
+1312	monstres aujourd'hui
+1313	récompense ⭐
+1314	ne collecte ni ne partage de données
+1315	aucun achat avec de l'argent réel
+1316	aucune pub
+1317	inarrêtable !
+1318	nouveau boss, encore plus fort
+1319	chaussette puante
+1320	nuage grognon
+1321	restant
+1322	de la crèche aux aventures
+1323	victoires
+1324	bats
+1325	fantôme
+1326	imprimante effrayante
+1327	problèmes aujourd'hui
+1328	problèmes !
+1329	bestiole des bouchons
+1330	record
+1331	croissance
+1332	limace collante
+1333	enchaînements d'obstacles corsés
+1334	super
+1335	troll du téléphone
+1336	ombre qui fait peur
+1337	déjà acquis
+1338	niv.
+1339	réveil bruyant
+1340	d'énergie
+1341	énergie
+1342	c'est de l'énergie. Avec peu d'énergie, tu cours plus lentement. Nourriture et joie te redonnent des forces
+1343	trous, « Panique » rapide et volants bas : baisse-toi ⬇️
+1344	trous, ennemis rapides et volants bas : baisse-toi ⬇️
+1345	• Dans le jeu, il n'y a
+1346	• Dès 6 ans. Monstres de dessin animé, sans sang ni violence.
+1347	• Le jeu
+1348	• Pas de chat, pas de liens vers des sites ou des réseaux sociaux.
+1349	→ GUICHET
+1350	→ coffre +120 ⭐
+1351	⏳ Maintenant le RALENTI : appuie sur ⏳ à gauche (ou Q), le temps ralentit. Il se recharge tout seul et avec les victoires
+1352	⏳ Le temps reprend son cours
+1353	⏳ RALENTI ! Le temps passe plus lentement
+1354	▶ Suivant
+1355	▶ Rejouer
+1356	▶ JOUER · niveau
+1357	▶ Continuer
+1358	⚔️ Armes
+1359	⚠ BOSS en vue
+1360	⚡ Bonus
+1361	⛓️ Chaînes brisées
+1362	✅ Objectif atteint ! Nouvel événement demain
+1363	✅ débloqué ! Porte-le dans le profil
+1364	⬆️ SAUTE
+1365	⬇️ GLISSE
+1366	⭐ (série
+1367	⭐ par victoire ×2
+1368	⭐×2 pendant 10 s !
+1369	🌱 Chapitre
+1370	🌱 GRANDIR
+1371	🎩 Vêtements
+1372	🎯 Bats
+1373	🎲 Relancer (
+1374	🏅 Profil et tâches
+1375	🏆 Nouveau record !
+1376	🏠 Menu
+1377	👑 Héros du mois «
+1378	👦 Garçon
+1379	👧 Fille
+1380	👪 Pour les parents
+1381	💖 Second souffle ! Tu es de retour
+1382	📖 Collection
+1383	📖 Collection de monstres
+1384	📖 Collection de problèmes
+1385	📖 Nouveau dans la collection
+1386	🔇 Son coupé
+1387	🔊 Son activé
+1388	🔥 DÉFOULE-TOI : choisis une carte
+1389	🔥 SUPER prêt ! Appuie sur le gros bouton 🔥 SUPER (ou E) : une vague de feu balaie tout l'écran
+1390	🔥 SUPER-VAGUE !
+1391	🗑 Effacer la progression
+1392	🗺 Au menu
+1393	🛒 Boutique
+1394	Garçon
+1395	Fille

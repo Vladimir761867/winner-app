@@ -1,0 +1,4 @@
+{"appId":"ru.pobeditel.game","appName":"Победитель","webDir":"www","backgroundColor":"#1b1535",
+ "android":{"backgroundColor":"#1b1535","allowMixedContent":false,"webContentsDebuggingEnabled":false},
+ "ios":{"contentInset":"never","allowsLinkPreview":false,"scrollEnabled":false,"backgroundColor":"#1b1535"},
+ "plugins":{"SplashScreen":{"launchShowDuration":800,"backgroundColor":"#1b1535","showSpinner":false},"StatusBar":{"overlaysWebView":true,"style":"DARK"}}}
