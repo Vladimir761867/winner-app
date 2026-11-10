@@ -171,7 +171,7 @@ function levelUp(){zPrev=zoneNow();level++;zWipe=.001;xp=0;meta.lvl=level;energy
 function dieCheck(){if(PK("rev")&&!perk.revU){perk.revU=1;energy=maxE()*.5;iF=2;flash=.8;banner("💖 Второе дыхание! Ты снова в строю",2.5);SFX.level();return}if(ownR("kit")>0){inv.kit--;energy=60;save();say("Аптечка поддержки! +60",W/2,H*.3,"#9ff5c0",26)}
  else{st="over";overT=0;SFX.over();if(run>(meta.bestBy[th.id]||0))meta.bestBy[th.id]=run;if(run>meta.best){meta.best=run;newRec=true}meta.lvl=level;save();chk();showEnd()}}
 
-function knock(h){kv=-480*u;kx=Math.min(kx,0);jv=Math.max(jv,h||380*u);stunT=.6;iF=1.1}
+function knock(h){kv=-480*u;kx=Math.min(kx,0);jv=Math.max(jv,h||380*u);stunT=.6;iF=1.8}
 function hitHero(p){if(fx.inv>0){defeat(p,0,1);return}
  if(iF>0){p.dead=true;burst(p.x,GY-p.h/2-(p.fh||0),"#c9b6ff",14);return}
  if(shieldOn){shieldOn=false;p.dead=true;shake=.2;iF=.6;SFX.shield();burst(p.x,GY-p.h/2,"#8fd0ff",16);say("Щит выдержал!",px()+60*u,GY-120*u*sc(),"#cfe8ff",18);return}
@@ -189,7 +189,7 @@ function act(){ac();
  for(const p of probs){const d=p.x-px()-(p.boss?p.w*.45:0);if(!p.dead&&d<range()&&d>-30*u&&(!p.fly||jy>12*u||p.boss||p.hi)&&!p.bar){p.hp-=bd(p,1+PK("fist"));p.flash=1;if(p.hp<=0)defeat(p);else burst(p.x,GY-p.h/2-(p.fh||0),"#fff",8)}}}
 function slide(){if(st!=="play")return;if(jy>2*u){jv=Math.min(jv,-950*u);slideQ=true;return}if(slideT<=0){slideT=.6;tone(180,.18,"triangle",.06,90);for(let i=0;i<10;i++)parts.push({x:px()+(Math.random()-.2)*30*u,y:GY-3*u,vx:-(60+Math.random()*120)*u,vy:-Math.random()*90*u,l:.45,c:"rgba(255,255,255,.75)",r:3*u})}}
 function jump(){if(st!=="play")return;slideT=0;slideQ=false;if(jy<=0.5*u){jv=660*u*(ZM().ceil?.82:1);SFX.jump()}else if(own("dj")&&!djU){djU=true;jv=600*u;SFX.jump();burst(px(),GY-jy,"#fff",8)}}
-function superHit(){if(st!=="play"||tut<9)return;if(sup<100){tone(200,.08,"square",.05);say("Супер копится: "+Math.floor(sup)+"%",hx(),GY-130*u*sc(),"#ffd9a0",18);return}
+function superHit(){if(st!=="play"||tut<5)return;if(tut===5)tutOk=true;if(sup<100){tone(200,.08,"square",.05);say("Супер копится: "+Math.floor(sup)+"%",hx(),GY-130*u*sc(),"#ffd9a0",18);return}
  sup=0;supBlock=1;iF=Math.max(iF,1.4);flash=1;shake=.9;freeze=.15;SFX.boom();SFX.level();buzz(150);swave={x:hx(),t:0,hit:new Set()};banner("🔥 СУПЕР-ВОЛНА!",2);pits.forEach(q=>{q.done=true})}
 function drawWave(){if(!swave)return;const x=swave.x,hg=Math.min(H*.7,GY),a=Math.min(1,(W+220*u-x)/(W*.4));g.save();g.globalAlpha=Math.max(0,a);
  const gr=g.createLinearGradient(x-460*u,0,x,0);gr.addColorStop(0,"rgba(255,120,30,0)");gr.addColorStop(1,"rgba(255,210,70,.6)");g.fillStyle=gr;g.fillRect(x-460*u,GY-hg,460*u,hg);
@@ -209,7 +209,7 @@ addEventListener("keydown",e=>{if(shopOpen||profOpen)return;const k=e.key;if(k==
  else if(k==="Enter"||k==="j"||k==="J"||k==="k"||k==="K"){e.preventDefault();if(!e.repeat)act()}});
 const touchDev=(window.matchMedia&&matchMedia("(pointer:coarse)").matches)||navigator.maxTouchPoints>0;
 const bsz=()=>portrait?clamp(W*.16,46,64):(touchDev?Math.max(46,Math.min(64,56*u)):40);
-function btns(){const b=bsz(),y=H-b*1.3-SA.b;return[{id:"jump",x:b*1.2+SA.l,y,r:b,ic:"⬆️",lb:"ПРЫЖОК",k:"Пробел / ↑"},{id:"strike",x:W-b*1.2-SA.r,y,r:b,ic:"👊",lb:"КУЛАК",k:"Enter / J"},{id:"shoot",x:portrait?W/2:W-b*3.3-SA.r,y:y+b*.15,r:b*.82,ic:wpn().ic,lb:wpn().s,k:"F"},{id:"super",x:W-b*1.2-SA.r,y:y-b*2.2,r:b*1.0,ic:"🔥",lb:"СУПЕР",k:"E"},{id:"slow",x:b*1.2+SA.l,y:y-b*1.95,r:b*.8,ic:"⏳",lb:"ЗАМЕДЛ",k:"Q"}].filter(q=>(q.id!=="super"&&q.id!=="slide"&&q.id!=="dodge"&&q.id!=="slow")||tut>=9)}
+function btns(){const b=bsz(),y=H-b*1.3-SA.b;return[{id:"jump",x:b*1.2+SA.l,y,r:b,ic:"⬆️",lb:"ПРЫЖОК",k:"Пробел / ↑"},{id:"strike",x:W-b*1.2-SA.r,y,r:b,ic:"👊",lb:"КУЛАК",k:"Enter / J"},{id:"shoot",x:portrait?W/2:W-b*3.3-SA.r,y:y+b*.15,r:b*.82,ic:wpn().ic,lb:wpn().s,k:"F"},{id:"super",x:W-b*1.2-SA.r,y:y-b*2.2,r:b*1.0,ic:"🔥",lb:"СУПЕР",k:"E"},{id:"slow",x:b*1.2+SA.l,y:y-b*1.95,r:b*.8,ic:"⏳",lb:"ЗАМЕДЛ",k:"Q"}].filter(q=>(q.id!=="super"&&q.id!=="slow")||tut>=9||(q.id==="super"&&tut>=5)||(q.id==="slow"&&tut>=6))}
 cv.addEventListener("pointerdown",e=>{e.preventDefault();ac();if(paused)return;if(st==="over"){act();return}if(st!=="play")return;
  let best=null,bd=9;for(const b of btns()){const d=Math.hypot(e.clientX-b.x,e.clientY-b.y)/b.r;if(d<=1.2&&d<bd){bd=d;best=b}}
  if(best){best.id==="jump"?jump():best.id==="shoot"?shoot():best.id==="super"?superHit():best.id==="slide"?slide():best.id==="dodge"?dodge():best.id==="slow"?slowMo():act()}else swp={x:e.clientX,y:e.clientY,id:e.pointerId,t:performance.now()}});
@@ -258,7 +258,7 @@ function pkStep(dt){for(const q of pk){q.x-=speed()*dt;const hy=GY-jy-38*u*sc();
    else if(q.ty==="inv"){SFX.power();fx.inv=6;say("Неуязвимость на 6 с!",q.x,cy-30*u,"#9ff5c0",20)}
    burst(q.x,cy,"#9ff5c0",q.ty==="star"?6:18)}}
  pk=pk.filter(q=>!q.got&&q.x>-40)}
-const TUT=()=>["Это монстр! Нажми КУЛАК (пробел или большая кнопка 👊 справа внизу), чтобы победить её","Отлично! Побеждай монстров, когда они подойдут близко","Каменная стена! Нажми ПРЫЖОК (↑ или кнопка ⬆️ слева) и перепрыгни её. Или разбей тремя ударами","Летит монстр! Нажми БРОСОК (F или кнопка ✨), чтобы сбить её. Или пробеги под ней","Лови "+th.food+" — это энергия. Когда энергии мало, бег замедляется. Еда и радость возвращают силы","Ты готов(а)! Побеждай, расти и собирай ⭐. Удачи!"];
+const TUT=()=>["Это монстр! Нажми КУЛАК (Enter или большая кнопка 👊 справа внизу), чтобы победить её","Отлично! Побеждай монстров, когда они подойдут близко","Каменная стена! Нажми ПРЫЖОК (↑ или кнопка ⬆️ слева) и перепрыгни её. Или разбей тремя ударами","Летит монстр! Нажми БРОСОК (F или кнопка ✨), чтобы сбить её. Или просто не прыгай — она пролетит над головой","Лови "+th.food+" — это энергия. Когда энергии мало, бег замедляется. Еда и радость возвращают силы","🔥 СУПЕР готов! Нажми большую кнопку 🔥 СУПЕР (или E) — огненная волна сметёт всё на экране","⏳ А теперь ЗАМЕДЛЕНИЕ: нажми ⏳ слева (или Q) — время пойдёт медленнее. Оно копится само и от побед","Ты готов(а)! Побеждай, расти и собирай ⭐. Удачи!"];
 function tutNext(){tut++;tutOk=false;tutMiss=0;tutWait=.6;SFX.level();say("✓",W/2,H*.32,"#9ff5c0",36)}
 function skipTut(){tut=99;meta.tut=1;save();probs=[];pk=[];queue=[];energy=maxE();spawn=1;skipB.style.display="none"}
 function tutStep(dt){tutWait-=dt;const idle=!probs.length&&tutWait<=0,lim=(ty)=>{if(idle){spawnT(ty);tutWait=1.4}};
@@ -267,7 +267,9 @@ function tutStep(dt){tutWait-=dt;const idle=!probs.length&&tutWait<=0,lim=(ty)=>
  else if(tut===2){if(tutOk)tutNext();else lim("w")}
  else if(tut===3){if(tutOk)tutNext();else lim("f")}
  else if(tut===4){if(tutOk)tutNext();else if(!pk.length&&tutWait<=0){pk.push({x:W+40,hg:0,ty:"food",ph:0});tutWait=1.5}}
- else if(tut===5){tutT+=dt;if(tutT>3.2){tut=99;meta.tut=1;save();skipB.style.display="none"}}}
+ else if(tut===5){if(tutOk){if(!swave)tutNext()}else{sup=100;lim("g")}}
+ else if(tut===6){if(tutOk){if(slowOn<5.5)tutNext()}else{slowCh=100;lim("g")}}
+ else if(tut===7){tutT+=dt;if(tutT>3.2){tut=99;meta.tut=1;save();skipB.style.display="none"}}}
 function dayStep(dt){
  if(tut<9){tutStep(dt);pkStep(dt);return}
  dayT+=dt/100;mood=Math.max(0,mood-dt);for(const k in fx)fx[k]=Math.max(0,fx[k]-dt);
@@ -728,7 +730,7 @@ function drawHero0(){drawHeroCode();return;const k=HS[(meta.hero||0)%2],e=SPR[k]
 function bossSpr(p,K,w,h){p.spr=1;const wind=p.bs==="wind",act=p.bs==="act",open=p.bs==="open";let tint=null;if(p.flash>0)tint="rgba(255,255,255,"+Math.min(.85,p.flash)+")";else if(wind)tint="rgba(255,60,60,"+(.2+Math.sin(t*22)*.15)+")";else if(open)tint="rgba(120,255,170,.16)";
  sprDraw(K,act?-w*.12:0,h*.5,h*1.12*(1+Math.sin(t*3+(p.ph||0))*.025),{rot:wind?-.08:act?.1:0,tint,an:{s:p.fly?"float":(STY[K]||"walk"),ph:t*((STY[K]==="blob"||p.fly)?5:9)*(p.boss?.7:1)+(p.ph||0)*3,f:p.boss?.6:1,sx:1+Math.max(0,p.flash)*.14,sy:1-Math.max(0,p.flash)*.12}})}
 let dodgeT=0,dodgeCd=0,slowT=0;
-function slowMo(){if(st!=="play"||tut<9||paused||cardOpen||slowOn>0)return;if(slowCh<100){say("Замедление копится: "+Math.floor(slowCh)+"%",W/2,H*.3,"#bcd0ff",22);return}slowCh=0;slowOn=7;flash=.5;SFX.level();banner("⏳ ЗАМЕДЛЕНИЕ! Время течёт медленнее",2.5)}
+function slowMo(){if(st!=="play"||tut<6||paused||cardOpen||slowOn>0)return;if(slowCh<100){say("Замедление копится: "+Math.floor(slowCh)+"%",W/2,H*.3,"#bcd0ff",22);return}slowCh=0;slowOn=7;if(tut===6)tutOk=true;flash=.5;SFX.level();banner("⏳ ЗАМЕДЛЕНИЕ! Время течёт медленнее",2.5)}
 function dodge(){if(st!=="play"||tut<9||paused||dodgeCd>0||cardOpen)return;dodgeT=.45;slowT=.9;dodgeCd=2.2;iF=Math.max(iF,.5);tone(300,.2,"sine",.07,700);say("Уклон!",hx()+30*u,GY-jy-110*u*sc(),"#bfe6ff",20);for(let i=0;i<12;i++)parts.push({x:px()+(Math.random()-.5)*30*u,y:GY-20*u-Math.random()*60*u,vx:-(80+Math.random()*140)*u,vy:(Math.random()-.5)*60*u,l:.4,c:"rgba(170,220,255,.85)",r:3*u})}
 let hAir=false,hLand=0;
 let paused=false,bm=0,cb=[],HTc=null;
@@ -743,7 +745,7 @@ function comicFx(){const bossOn=probs.some(p=>p.boss&&!p.dead);bm+=((bossOn?1:0)
 const pzEl=document.createElement("div");pzEl.id="pz";pzEl.className="ov";document.body.appendChild(pzEl);
 function setPause(v){if(v&&(st!=="play"||cardOpen))return;paused=v;pzEl.style.display=v?"flex":"none";if(v)pzEl.innerHTML='<div class="mc"><h2>Пауза</h2><button class="big play" data-a="resume">▶ Продолжить</button><div class="row" style="margin-top:12px"><button data-a="menu">🗺 В меню</button><button data-a="mute">'+(mute?"🔇 Звук выключен":"🔊 Звук включён")+'</button></div></div>'}
 const togglePause=()=>setPause(!paused);addEventListener("visibilitychange",()=>{if(document.hidden)setPause(true)});
-const hitF=()=>.5;
+const hitF=()=>.18;
 function drawHeroCode(){
  const s=sc(),q=u*s,x=px()+kx,k=Tk(),sk=SKINS[meta.skin]||SKINS[0],h=sk.h,thh=h===null?205:h;
  const kid=false,girl=(meta.hero||0)%2===1,ang=tut>=9&&st==="play"?clamp(1-energy/(maxE()*.3),0,1):0,tired=tut>=9&&st==="play"?clamp(1-energy/(maxE()*.5),0,1):0,air=jy>2,ph=st==="play"?dist/(22*u):0;
@@ -824,7 +826,7 @@ function hud(){lvlOverlay();if(st==="play")comicFx();g.lineJoin="round";g.shadow
  if(energy<maxE()*.5&&tut>=9){g.textAlign="center";g.font="bold "+(portrait?13:16)+"px system-ui";g.fillStyle="#ffb3b3";g.fillText("Силы на исходе — бег медленнее! Лови "+th.food+" и "+th.fun,W/2,top+(portrait?90:78))}
  g.shadowBlur=0}
 function drawBtns(){drawWave();{const B=btns().find(q=>q.id==="super");if(B&&sup>=100&&st==="play"){const k=(Math.sin(t*8)+1)/2;g.strokeStyle="rgba(255,200,60,"+(.95-k*.5)+")";g.lineWidth=7;g.beginPath();g.arc(B.x,B.y,B.r*(1.12+k*.3),0,6.283);g.stroke();g.fillStyle="#fff";g.font="900 "+Math.round(15*u)+"px system-ui";g.textAlign="center";g.strokeStyle="rgba(120,40,0,.9)";g.lineWidth=4;g.strokeText("ЖМИ!",B.x,B.y-B.r*1.5);g.fillText("ЖМИ!",B.x,B.y-B.r*1.5)}}if(slowOn>0){g.fillStyle="rgba(120,160,255,.13)";g.fillRect(0,0,W,H)}for(const b of btns()){const cdv=b.id==="strike"?clamp(cd/.3,0,1):b.id==="shoot"?clamp(sCd/(sMax||1),0,1):0;
- const hl=tut<9&&((b.id==="strike"&&tut<2)||(b.id==="jump"&&tut===2)||(b.id==="shoot"&&tut===3)),pl=hl?.75+Math.sin(t*8)*.25:1;
+ const hl=tut<9&&((b.id==="strike"&&tut<2)||(b.id==="jump"&&tut===2)||(b.id==="shoot"&&tut===3)||(b.id==="super"&&tut===5)||(b.id==="slow"&&tut===6)),pl=hl?.75+Math.sin(t*8)*.25:1;
  g.globalAlpha=.92;{const base=hl?"rgba(255,213,74,"+pl+")":((b.id==="super"&&sup>=100)||(b.id==="slow"&&slowCh>=100)?"rgba(255,140,40,"+(.8+Math.sin(t*10)*.2)+")":null);if(base)g.fillStyle=base;else{const bgd=g.createRadialGradient(b.x,b.y-b.r*.35,b.r*.1,b.x,b.y,b.r);bgd.addColorStop(0,"rgba(130,110,230,.66)");bgd.addColorStop(1,"rgba(28,18,70,.74)");g.fillStyle=bgd}}g.beginPath();g.arc(b.x,b.y,b.r*(hl?1+Math.sin(t*8)*.04:1),0,6.28);g.fill();g.lineWidth=3;g.strokeStyle=hl?"#fff":"rgba(255,255,255,.8)";g.stroke();if(b.cd>0){g.fillStyle="rgba(0,0,0,.5)";g.beginPath();g.moveTo(b.x,b.y);g.arc(b.x,b.y,b.r,-1.5708,-1.5708+6.2832*b.cd);g.closePath();g.fill()}g.fillStyle="rgba(255,255,255,.17)";g.beginPath();g.ellipse(b.x,b.y-b.r*.52,b.r*.62,b.r*.28,0,0,6.28);g.fill();
  if(cdv>0){g.fillStyle="rgba(0,0,0,.5)";g.beginPath();g.moveTo(b.x,b.y);g.arc(b.x,b.y,b.r,-Math.PI/2,-Math.PI/2+cdv*6.283);g.closePath();g.fill()}
  if(b.id==="slow"){g.strokeStyle=slowOn>0?"#9ff5c0":"#8fb4ff";g.lineWidth=5;g.beginPath();g.arc(b.x,b.y,b.r-4,-Math.PI/2,-Math.PI/2+Math.min(1,(slowOn>0?slowOn/7:slowCh/100))*6.283);g.stroke()}
@@ -870,7 +872,7 @@ function evHTML(){const E=EV(),ek=tdKey(),ep=meta.ev.k===ek?meta.ev.p:0,ed=meta.
   +box("linear-gradient(90deg,#3a6ad9,#7a4ad9)",'👑 <b>Герой месяца: «'+H2.n+'»</b> — '+(got?'✅ получен! Надень в профиле':'победи '+HMB+' боссов в этом месяце: <b>'+Math.min(hb,HMB)+'/'+HMB+'</b>')+' · осталось '+daysLeft()+' дн.')}
 function showMenu(){st="menu";endEl.style.display="none";
  menuEl.innerHTML='<div class="mc"><h1>Победитель Junior</h1><p>Беги, прыгай и побеждай монстров!</p><p style="opacity:.85">Звание: <b>'+title()+'</b> · Рекорд: '+meta.best+' · Уровень: '+level+' · ⭐ '+coins+'</p>'
- +'<button class="big play" data-a="play">▶ ИГРАТЬ · уровень '+level+'</button>'+(dailyMsg?'<p style="color:#9ff5c0">🎁 '+dailyMsg+'</p>':'')+'<p style="font-size:13px;opacity:.85">'+(meta.tut?'Свайп ↑ прыжок · → мяч · тап = удар · 🔥 СУПЕР-ВОЛНА · ⏳ замедление. Клавиши: Пробел прыжок, Enter удар, F мяч, E супер, Q замедление':'Сначала короткое обучение (его можно пропустить)')+'</p><div class="row" style="margin-bottom:6px">'+["👦 Мальчик","👧 Девочка"].map((n,i)=>'<button data-a="hero'+i+'" style="'+(((meta.hero||0)%2)===i?'outline:3px solid #fff;background:#fff':'opacity:.8')+';padding:8px 10px;font-size:12px"><div style="font-size:36px;line-height:1.1">'+(i?"👧":"👦")+'</div>'+n.replace(/^\S+\s/,'')+'</button>').join("")+'</div><div class="row" style="margin-bottom:6px">'+WP.filter(w=>wOwn(w.id)).map(w=>'<button data-a="wp'+w.id+'" style="'+(wpn().id===w.id?'outline:3px solid #fff':'opacity:.7')+'">'+w.ic+' '+w.n+'</button>').join("")+'</div><div class="row"><button data-a="bes">📖 Коллекция</button><button data-a="shop">🛒 Магазин</button><button data-a="prof">🏅 Профиль и задания</button><button data-a="mute">'+(mute?"🔇 Звук выключен":"🔊 Звук включён")+'</button></div></div>';
+ +'<button class="big play" data-a="play">▶ ИГРАТЬ · уровень '+level+'</button>'+(dailyMsg?'<p style="color:#9ff5c0">🎁 '+dailyMsg+'</p>':'')+'<p style="font-size:13px;opacity:.85">'+(meta.tut?'Свайп ↑ прыжок · → мяч · тап = удар · 🔥 СУПЕР-ВОЛНА · ⏳ замедление. Клавиши: Пробел прыжок, Enter удар, F мяч, E супер, Q замедление':'Сначала короткое обучение (его можно пропустить)')+'</p><div class="row" style="margin-bottom:6px">'+["👦 Мальчик","👧 Девочка"].map((n,i)=>'<button data-a="hero'+i+'" style="'+(((meta.hero||0)%2)===i?'outline:3px solid #fff;background:#fff':'opacity:.8')+';padding:8px 10px;font-size:12px"><div style="font-size:36px;line-height:1.1">'+(i?"👧":"👦")+'</div>'+n.replace(/^\S+\s/,'')+'</button>').join("")+'</div><div class="row" style="margin-bottom:6px">'+WP.filter(w=>wOwn(w.id)).map(w=>'<button data-a="wp'+w.id+'" style="'+(wpn().id===w.id?'outline:3px solid #fff':'opacity:.7')+'">'+w.ic+' '+w.n+'</button>').join("")+'</div><div class="row"><button data-a="bes">📖 Коллекция</button><button data-a="shop">🛒 Магазин</button><button data-a="prof">🏅 Профиль и задания</button><button data-a="mute">'+(mute?"🔇 Звук выключен":"🔊 Звук включён")+'</button><button data-a="par" style="opacity:.85">👪 Родителям</button></div></div>';
  menuEl.style.display="flex"}
 let endAt=0;function showEnd(){endAt=performance.now();menuEl.style.display="none";
  endEl.innerHTML='<div class="mc"><h2>Ты не проиграл(а) — ты тренировался!</h2><p style="font-size:17px">'+th.ic+' '+th.n+' · Побед: <b>'+run+'</b> · Рекорд: '+(meta.bestBy[th.id]||0)+' · Уровень: '+level+'</p>'
@@ -888,10 +890,15 @@ function onUI(e){const b=e.target.closest("button");if(!b){if(endEl.style.displa
  else if(/^wp\d$/.test(b.dataset.a)){meta.weapon=+b.dataset.a.slice(2);save();showMenu()}
  else if(/^hero\d$/.test(b.dataset.a)){meta.hero=+b.dataset.a.slice(4);save();showMenu()}
  else if(b.dataset.a==="shop")openShop();
+ else if(b.dataset.a==="par")parGate();
  else if(b.dataset.a==="prof")openProf();
  else if(b.dataset.a==="bes")openBes();
  else if(b.dataset.a==="mute"){setMute(!mute);b.textContent=mute?"🔇 Звук выключен":"🔊 Звук включён"}}
-menuEl.onclick=onUI;endEl.onclick=onUI;pzEl.onclick=onUI;document.getElementById("pb").onclick=()=>setPause(true);
+menuEl.onclick=onUI;endEl.onclick=onUI;pzEl.onclick=onUI;
+const parEl=document.createElement("div");parEl.className="ov";parEl.style.background="rgba(15,10,35,.97)";parEl.style.zIndex=30;document.body.appendChild(parEl);
+function parGate(){const a=6+Math.floor(Math.random()*4),b=6+Math.floor(Math.random()*4),r=a*b,o=[r,r+a,r-b,r+7].sort(()=>Math.random()-.5);parEl.innerHTML='<div class="mc"><h2>Только для взрослых</h2><p>Чтобы открыть раздел, решите пример:</p><p style="font-size:30px;font-weight:bold">'+a+' × '+b+' = ?</p><div class="row">'+o.map(v=>'<button data-p="'+(v===r?'ok':'no')+'" style="font-size:20px;padding:12px 18px">'+v+'</button>').join('')+'</div><div class="row" style="margin-top:10px"><button data-p="x">Закрыть</button></div></div>';parEl.style.display="flex"}
+function parInfo(){parEl.innerHTML='<div class="mc" style="text-align:left;max-width:520px"><h2 style="text-align:center">Родителям</h2><p>• В игре <b>нет рекламы</b> и <b>нет покупок за настоящие деньги</b>: всё покупается только за игровые монетки.</p><p>• Игра <b>не собирает и не передаёт данные</b> и работает без интернета. Прогресс хранится только на этом устройстве.</p><p>• Нет чатов, ссылок на сайты и соцсети.</p><p>• Возраст 6+. Мультяшные монстры, без крови и жестокости.</p><p style="font-size:12px;opacity:.8">Политика конфиденциальности: персональные данные не собираются. Чтобы удалить весь прогресс, нажмите кнопку ниже или удалите приложение.</p><div class="row"><button data-p="reset">🗑 Сбросить прогресс</button><button data-p="x">Закрыть</button></div></div>'}
+parEl.onclick=e=>{const b=e.target.closest("button");if(!b)return;const p=b.dataset.p;if(p==="x")parEl.style.display="none";else if(p==="ok")parInfo();else if(p==="no")parGate();else if(p==="reset"){b.dataset.p="reset2";b.textContent="Точно сбросить? Нажмите ещё раз"}else if(p==="reset2"){try{localStorage.removeItem("pobj1")}catch(e){}location.reload()}};document.getElementById("pb").onclick=()=>setPause(true);
 const SHOP=[
 {id:"dj",n:"Двойной прыжок",d:"Прыгни ещё раз в воздухе — удобно над ямами и стенами",p:40,max:1},
 {id:"rapid",n:"Быстрая зарядка шарика",d:"Шарик перезаряжается быстрее",p:40,max:3},
