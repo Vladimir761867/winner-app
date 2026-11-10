@@ -159,7 +159,7 @@ const save=()=>{try{localStorage.setItem("pob21",JSON.stringify({coins,inv,meta}
 let thIdx=meta.theme||0,th=THEMES[thIdx]||THEMES[0];
 let st="menu",level=(meta.mode==="dev"?meta.dlvl:meta.lvl)||1,xp=0,energy=100,run=0,combo=0,t=0,spawn=1.5,cd=0,strike=0,dist=0,shake=0,flash=0,overT=0,freeze=0,hurtT=0,recShown=false,beat=0,conf=[];
 let lvlC=0,slideT=0,slideQ=false,haz=[],perk={},cardOpen=false,rerolls=1,sMax=1,lvlT=0,lvlMode=0,lvlB=0,lvlP="",arena=false,joyT=0,jy=0,jv=0,sCd=0,djU=false,kx=0,kv=0,iF=0,stunT=0,sup=0,supBlock=0,shieldOn=false,dayT=0,day=1,pt=6,mood=0,lastPh=0,bossPending=false,newRec=false,dailyMsg="";
-let springs=[],zw=[],zh=5,zPrev=null,zWipe=0;let probs=[],parts=[],texts=[],pk=[],pits=[],rings=[],bullets=[],queue=[],amb=[],bn={s:"",t:0};
+let bossL=0;let springs=[],zw=[],zh=5,zPrev=null,zWipe=0;let probs=[],parts=[],texts=[],pk=[],pits=[],rings=[],bullets=[],queue=[],amb=[],bn={s:"",t:0};
 const fx={magnet:0,x2:0,inv:0};
 let tutMiss=0,tut=meta.tut?99:0,tutOk=false,tutKills=0,tutWait=0,tutT=0;
 const PK=k=>perk[k]||0;
@@ -231,7 +231,7 @@ function banner(s,tt){bn={s,t:tt||4}}
 function burst(x,y,c,n){for(let i=0;i<n;i++){const a=Math.random()*6.28,v=(80+Math.random()*220)*u;parts.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v-80*u,l:.8,c,r:(2+Math.random()*4)*u})}}
 function confetti(x,y){for(let i=0;i<70;i++)conf.push({x,y,vx:(Math.random()-.5)*520*u,vy:-(100+Math.random()*380)*u,r:2+Math.random()*5*u,c:"hsl("+Math.floor(Math.random()*360)+",90%,65%)",l:2})}
 function reset(){dodgeT=dodgeCd=slowT=0;perk={};haz=[];cb=[];bm=0;paused=false;pzEl.style.display="none";zPrev=null;zWipe=0;zh=5;zw=[];springs=[];slideT=0;slideQ=false;rerolls=1;cardOpen=false;sMax=1;EVc=null;document.getElementById("cards").style.display="none";probs=[];parts=[];texts=[];bullets=[];rings=[];pk=[];pits=[];queue=[];amb=[];energy=maxE();combo=0;spawn=1.5;xp=0;cd=0;strike=0;jy=0;jv=0;sCd=0;djU=false;kx=0;kv=0;iF=0;stunT=0;sup=0;supBlock=0;run=0;
- shieldOn=ownR("shield")>0;dayT=0;day=1;pt=6;mood=0;lastPh=0;fx.magnet=fx.x2=fx.inv=0;bossPending=false;lvlMode=0;lvlT=0;arena=false;newRec=false;recShown=false;hurtT=0;conf=[];beat=0;bn.t=0;
+ shieldOn=ownR("shield")>0;dayT=0;day=1;pt=6;mood=0;lastPh=0;fx.magnet=fx.x2=fx.inv=0;bossPending=false;bossL=0;lvlMode=0;lvlT=0;arena=false;newRec=false;recShown=false;hurtT=0;conf=[];beat=0;bn.t=0;
  if(tut<9){tut=0;tutKills=0;tutOk=false;tutWait=.8;tutT=0}}
 
 /* ===== победа и рост ===== */
@@ -247,7 +247,7 @@ function defeat(p,quiet,big){if(p.bar)return;p.dead=true;if(!quiet)joyT=.8;if(!q
  else say(combo%5===0?"Комбо ×"+combo+" — неудержим!":rnd(th.praise),p.x,y-p.h/2-30*u,"#fff2a8",22);
  save();chk()}
 function startClear(){lvlMode=1;lvlT=6.2;lvlB=0;lvlC=0;lvlP=rnd(th.praise);probs.forEach(p=>{if(p.bar){p.dead=true;return}if(!p.dead&&!p.boss)defeat(p,1)});pits.length=0;queue.length=0;bullets.length=0;joyT=3;flash=.8;shake=.3;SFX.level();confetti(W/2,H*.35);setTimeout(()=>confetti(W*.3,H*.4),350);setTimeout(()=>confetti(W*.7,H*.4),700);buzz(40)}
-function levelUp(){zPrev=zoneNow();level++;zWipe=.001;xp=0;setLvl();energy=Math.min(maxE(),energy+30);coins+=2;shieldOn=ownR("shield")>0||PK("shield")>0;flash=1;shake=.4;buzz(40);if(level%2===0||EV().id==="boss")bossPending=true;if(isDev()){if(chOf(level)!==chOf(level-1)){thIdx=devTh(level);th=THEMES[thIdx];probs=probs.filter(p=>p.boss);showChap(chOf(level)-1)}if(chOf(level)===5)fx.magnet=Math.max(fx.magnet,25)}save();chk()}
+function levelUp(){zPrev=zoneNow();level++;zWipe=.001;xp=0;setLvl();energy=Math.min(maxE(),energy+30);coins+=2;shieldOn=ownR("shield")>0||PK("shield")>0;flash=1;shake=.4;buzz(40);if(isDev()){if(chOf(level)!==chOf(level-1)){thIdx=devTh(level);th=THEMES[thIdx];th.en=th.enD;probs=probs.filter(p=>p.boss);showChap(chOf(level)-1)}if(chOf(level)===5)fx.magnet=Math.max(fx.magnet,25)}save();chk()}
 function dieCheck(){if(PK("rev")&&!perk.revU){perk.revU=1;energy=maxE()*.5;iF=2;flash=.8;banner("💖 Второе дыхание! Ты снова в строю",2.5);SFX.level();return}if(ownR("kit")>0){inv.kit--;energy=60;save();say("Аптечка поддержки! +60",W/2,H*.3,"#9ff5c0",26)}
  else{st="over";overT=0;SFX.over();if(run>(meta.bestBy[th.id]||0))meta.bestBy[th.id]=run;if(run>meta.best){meta.best=run;newRec=true}setLvl();save();chk();showEnd()}}
 
@@ -278,18 +278,21 @@ function bd(p,n){let m=n;if(p.boss){if(p.bs==="open"){m*=2;if(t-(p.crT||0)>.25){
 let shopOpen=false,profOpen=false;
 addEventListener("keydown",e=>{if(shopOpen||profOpen)return;const k=e.key;if(k==="p"||k==="P"){togglePause();return}if(paused)return;if(cardOpen){if(k==="1"||k==="2"||k==="3"){const b=document.querySelectorAll("#cards [data-card]")[+k-1];b&&b.click()}return}
  if(k==="m")setMute(!mute);else if(k==="Escape"&&tut<9&&st==="play")skipTut();
- else if(k==="ArrowUp"||k==="w"||k==="W"){e.preventDefault();jump()}
+ else if(k==="ArrowUp"||k==="w"||k==="W"||k===" "){e.preventDefault();jump()}
  else if(k==="f"||k==="F"||k==="ArrowRight"){e.preventDefault();shoot()}
  else if(k==="e"||k==="E"||k==="Shift"){e.preventDefault();superHit()}
  else if(k==="ArrowDown"||k==="s"||k==="S"){e.preventDefault();slide()}
  else if(k==="x"||k==="X"||k==="ArrowLeft"||k==="z"||k==="Z"){e.preventDefault();dodge()}
- else if(k===" "||k==="Enter"){e.preventDefault();if(!e.repeat)act()}});
+ else if(k==="Enter"||k==="j"||k==="J"||k==="k"||k==="K"){e.preventDefault();if(!e.repeat)act()}});
 const touchDev=(window.matchMedia&&matchMedia("(pointer:coarse)").matches)||navigator.maxTouchPoints>0;
 const bsz=()=>portrait?clamp(W*.16,46,64):(touchDev?Math.max(46,Math.min(64,56*u)):40);
-function btns(){const b=bsz(),y=H-b*1.3-SA.b;return[{id:"jump",x:b*1.2+SA.l,y,r:b,ic:"⬆️",lb:"ПРЫЖОК",k:"↑ / W"},{id:"strike",x:W-b*1.2-SA.r,y,r:b,ic:"👊",lb:"КУЛАК",k:"Пробел"},{id:"shoot",x:portrait?W/2:W-b*3.3-SA.r,y:y+b*.15,r:b*.82,ic:meta.weapon===1?"🍳":"⚽",lb:meta.weapon===1?"СКОВОРОДА":"МЯЧИК",k:"F"},{id:"super",x:W-b*1.2-SA.r,y:y-b*1.95,r:b*.8,ic:"🔥",lb:"СУПЕР",k:"E"},{id:"slide",x:b*1.2+SA.l,y:y-b*1.95,r:b*.8,ic:"⬇️",lb:"ПОДКАТ",k:"↓ / S"},{id:"dodge",x:portrait?W/2:b*3.3+SA.l,y:portrait?y-b*1.95:y+b*.1,r:b*.78,ic:"🌀",lb:"УКЛОН",k:"X",cd:dodgeCd>0?dodgeCd/2.2:0}].filter(q=>(q.id!=="super"&&q.id!=="slide"&&q.id!=="dodge")||tut>=9)}
+function btns(){const b=bsz(),y=H-b*1.3-SA.b;return[{id:"jump",x:b*1.2+SA.l,y,r:b,ic:"⬆️",lb:"ПРЫЖОК",k:"Пробел / ↑"},{id:"strike",x:W-b*1.2-SA.r,y,r:b,ic:"👊",lb:"КУЛАК",k:"Enter / J"},{id:"shoot",x:portrait?W/2:W-b*3.3-SA.r,y:y+b*.15,r:b*.82,ic:meta.weapon===1?"🍳":"⚽",lb:meta.weapon===1?"СКОВОРОДА":"МЯЧИК",k:"F"},{id:"super",x:W-b*1.2-SA.r,y:y-b*1.95,r:b*.8,ic:"🔥",lb:"СУПЕР",k:"E"},{id:"slide",x:b*1.2+SA.l,y:y-b*1.95,r:b*.8,ic:"⬇️",lb:"ПОДКАТ",k:"↓ / S"},{id:"dodge",x:portrait?W/2:b*3.3+SA.l,y:portrait?y-b*1.95:y+b*.1,r:b*.78,ic:"🌀",lb:"УКЛОН",k:"X",cd:dodgeCd>0?dodgeCd/2.2:0}].filter(q=>(q.id!=="super"&&q.id!=="slide"&&q.id!=="dodge")||tut>=9)}
 cv.addEventListener("pointerdown",e=>{e.preventDefault();ac();if(paused)return;if(st==="over"){act();return}if(st!=="play")return;
  let best=null,bd=9;for(const b of btns()){const d=Math.hypot(e.clientX-b.x,e.clientY-b.y)/b.r;if(d<=1.2&&d<bd){bd=d;best=b}}
- if(best){best.id==="jump"?jump():best.id==="shoot"?shoot():best.id==="super"?superHit():best.id==="slide"?slide():best.id==="dodge"?dodge():act()}else act()});
+ if(best){best.id==="jump"?jump():best.id==="shoot"?shoot():best.id==="super"?superHit():best.id==="slide"?slide():best.id==="dodge"?dodge():act()}else swp={x:e.clientX,y:e.clientY,id:e.pointerId,t:performance.now()}});
+let swp=null;
+const swEnd=e=>{if(!swp||e.pointerId!==swp.id)return;const dx=e.clientX-swp.x,dy=e.clientY-swp.y;swp=null;if(paused||st!=="play")return;const a=Math.abs(dx),b=Math.abs(dy);if(Math.max(a,b)<28){act();return}if(b>=a){dy<0?jump():slide()}else{dx<0?dodge():shoot()}};
+cv.addEventListener("pointerup",swEnd);cv.addEventListener("pointercancel",()=>{swp=null});
 
 /* ===== препятствия и узоры ===== */
 function coinArc(x,n,h){for(let i=0;i<n;i++)pk.push({x:x-34*u+i*34*u,hg:h+Math.sin(i/Math.max(1,n-1)*Math.PI)*25*u,ty:"star",ph:i})}
@@ -443,7 +446,7 @@ function update(dt){
  if(st==="play"){
   const Bx=probs.find(p=>p.boss&&!p.dead);arena=!!Bx&&Bx.x<=px()+range()*.75+Bx.w*.45+6*u;dist+=speed()*dt*(lvlMode?.25:1)*(arena?.04:1);
   if(lvlMode){lvlT-=dt;energy=Math.min(maxE(),energy+(lvlMode===2?8:5)*dt);if(lvlMode===1&&lvlB===0&&lvlT<=3.4&&!lvlC){lvlC=1;if(REW(level))openCards()}if(lvlMode===1&&lvlB===0&&lvlT<=2.8){lvlB=1;levelUp();SFX.level()}if(lvlT<=0){lvlMode=0;spawn=1.1;zIntro()}}
-  else if(tut>=9&&xp>=need()&&!Bx)startClear();
+  else if(tut>=9){if(bossL!==level&&(level%2===0||EV().id==="boss")&&xp>=need()*.6){bossL=level;bossPending=true}if(xp>=need()&&!Bx&&!bossPending)startClear()}
   cd-=dt;strike-=dt;sCd-=dt;joyT-=dt;iF-=dt;stunT-=dt;supBlock-=dt;if(kx<0||kv<0){kx+=kv*dt;kv+=1500*u*dt;if(kx>=0){kx=0;kv=0}}
   if(jy>0||jv>0){jv-=1800*u*dt;jy+=jv*dt;if(jy<=0){jy=0;djU=false;if(jv<-300*u)for(let i=0;i<8;i++)parts.push({x:px()+(Math.random()-.5)*30*u,y:GY-2*u,vx:(Math.random()-.5)*160*u,vy:-60*u*Math.random(),l:.4,c:"rgba(255,255,255,.7)",r:3*u});jv=0}}
   dayStep(dt);music(dt);slideT-=dt;if(slideQ&&jy<=0){slideQ=false;slideT=0;slide()}if(slideT>0&&Math.random()<.6)parts.push({x:px()-14*u,y:GY-3*u,vx:-120*u,vy:-40*u*Math.random(),l:.35,c:"rgba(255,255,255,.7)",r:2.5*u});
@@ -647,7 +650,26 @@ const STEREO={work:["«Женщина-руководитель — это нер
  clean:["«Это женское дело»","«Хозяйка должна успевать»","«Мужчина посуду не моет»","«А вот у мамы чище»","«Ты же дома сидишь»","«Уборка — не работа»"],
  school:["«Девочки не лезут в технику»","«Не высовывайся»","«Мальчики не плачут»"],family:["«Когда внуки?»","«Замуж пора»","«Мужчина должен зарабатывать»"]};
 Object.keys(STEREO).forEach(k=>{const T=THEMES.find(x=>x.id===k);if(T){T.en[1]=T.en[1].concat(STEREO[k]);T.en[2]=T.en[2].concat(STEREO[k])}});
-const zoneOf=l=>{const a=ZONES[th.id];return a?a[zRel(l)%a.length]:null},zoneNow=()=>zoneOf(level),ZM=()=>{if(tut<9||level<2)return{};const Z=zoneNow();return Z?Z.m:{}};
+THEMES.forEach(T=>{T.enD=T.en;T.enV=T.en});
+{const w=THEMES.find(x=>x.id==="work");w.enV=w.en.map(a=>a.filter(n=>!/парков|Пробк|дорог|подъём|на работу|пропуск|Кофе закончился|Невкусный кофе/.test(n)));w.enV[0]=w.enV[0].concat(["Принтер завис","Кофемашина сломалась","Чужой обед в холодильнике","Конфликт в чате"])}
+
+ZONES.work_v=[
+ ZD("Open-space","🖥️","hall",[40,30,90],[210,30,82],[205,70,75],[210,18,52],["🪴","🖨️","🗄️","🖥️"],{fav:"fh",hz:["paper"]},"Уведомления летят со всех сторон: сбивай ⚽ или пригибайся ⬇️"),
+ ZD("Лифт","🛗","lift",[210,10,60],[210,8,62],[48,60,60],[215,8,36],["🔼","🛗","🔢"],{ceil:1,fav:"hl"},"Потолок низкий: прыжок ниже, зато ⬇️ ПОДКАТ — твой друг"),
+ ZD("Переговорка","📊","hall",[210,25,92],[215,25,84],[205,70,66],[215,15,50],["📊","🪑","🖊️","🪴"],{fav:"wl",hz:["paper"]},"Совещание: стены из презентаций — разбей или перепрыгни","board"),
+ ZD("Кухня и кофемашина","☕","canteen",[35,45,92],[38,40,86],[12,70,60],[35,40,55],["☕","🥗","🍞","🥤"],{hz:["plates","splash"],fav:"dl"},"Кофе и подносы летят по полу — прыгай!"),
+ ZD("Кабинет начальника","🪑","room",[30,35,88],[25,40,76],[0,70,56],[25,35,40],["🗂️","🪑","🖼️","🕰️"],{fav:"sf"},"Тесный кабинет: прыгай через папки"),
+ ZD("Серверная ночью","🖥️","shelf",[220,25,24],[220,22,30],[140,80,55],[220,15,22],["🖥️","🔌","💾","🗄️"],{dark:1,fast:1,fav:"hf"},"Ночь, дедлайн горит: темно и быстро")];
+ZONES.clean_v=ZONES.clean.concat([
+ ZD("Прихожая","🚪","hall",[35,35,90],[35,40,82],[10,60,62],[28,35,50],["🚪","👟","🧥","🪞"],{fav:"wl"},"Обувь и куртки горой — разбей или перепрыгни","lock"),
+ ZD("Спальня","🛏️","room",[240,35,70],[245,30,66],[330,50,70],[250,20,40],["🛏️","🧸","🪟","🧺"],{fav:"gl",dark:1},"Вечер в спальне: свет только вокруг"),
+ ZD("Двор","🌳","park",[200,75,78],[110,50,58],[30,85,66],[100,35,44],["🌳","🚲","🪴","🧺"],{fav:"pd"},"Во дворе ямы и лужи — прыгай")]);
+ZONES.transport_v=ZONES.transport.concat([
+ ZD("Такси","🚕","street",[230,40,34],[225,25,30],[48,95,60],[225,12,26],["🚕","🌃","🚦","🪧"],{fast:1,fav:"pd"},"Такси мчит по ночному городу: быстро, ямы"),
+ ZD("Трамвай","🚋","street",[200,60,76],[40,25,62],[0,70,60],[30,12,44],["🚋","🌳","🚏","🪧"],{fav:"gd"},"Трамвайные пути: рельсы и ямы"),
+ ZD("Электричка","🚆","hall",[205,30,82],[210,25,70],[205,60,60],[215,15,44],["🚆","🪑","🧳","🎧"],{fav:"wd",hz:["paper"]},"Тамбур: сумки и пассажиры — стены, прыгай!","lock"),
+ ZD("Пешеходный переход","🚦","street",[205,75,74],[215,20,58],[48,95,60],[220,10,38],["🚦","🚶","🚗","🌳"],{fast:1,fav:"dg"},"Зелёный мигает! Всё быстрее")]);
+const zoneOf=l=>{const a=ZONES[th.id+(isDev()?"":"_v")]||ZONES[th.id];return a?a[zRel(l)%a.length]:null},zoneNow=()=>zoneOf(level),ZM=()=>{if(tut<9||level<2)return{};const Z=zoneNow();return Z?Z.m:{}};
 
 function zSky(Z){const gr=g.createLinearGradient(0,0,0,GY);gr.addColorStop(0,hc(Z.s,-8));gr.addColorStop(1,hc(Z.s,12));g.fillStyle=gr;g.fillRect(0,0,W,H);
  if(Z.s[2]<40){g.fillStyle="#fff";stars.forEach(s=>{g.globalAlpha=.8;g.beginPath();g.arc(s.x*W,s.y*GY,s.r,0,6.28);g.fill()});g.globalAlpha=1;g.fillStyle="#fff7d6";g.beginPath();g.arc(W*.78,GY*.22,16*u,0,6.28);g.fill()}}
@@ -1034,7 +1056,7 @@ function showMenu(){st="menu";endEl.style.display="none";
  menuEl.innerHTML='<div class="mc"><h1>Победитель</h1><p>Ты бежишь не от проблем — ты их побеждаешь.</p><p style="opacity:.85">Звание: <b>'+title()+'</b> · Рекорд: '+meta.best+' · ⭐ '+coins+'</p>'
  +'<button class="big play" data-a="dev">🌱 РАЗВИТИЕ<br><small style="font-weight:normal">Глава '+(chOf(meta.dlvl||1)+1)+': '+CH[chOf(meta.dlvl||1)].ic+' '+CH[chOf(meta.dlvl||1)].n+' · ур. '+(meta.dlvl||1)+'<br>от садика до приключений</small></button>'+(dailyMsg?'<p style="color:#9ff5c0">🎁 '+dailyMsg+'</p>':'')+evHTML()+'<p style="margin-top:10px;font-weight:bold">🔥 ВЫПУСТИТЬ ПАР — выбери карту:</p><div class="cards">'
  +THEMES.map((T,i)=>!VENT.includes(T.id)?'':'<button class="card" data-th="'+i+'" style="background:linear-gradient(160deg,'+T.c[0]+','+T.c[1]+')"><i>'+T.ic+'</i><b>'+T.n+'</b><span>'+T.tag+'</span><span>рекорд: '+(meta.bestBy[T.id]||0)+'</span></button>').join('')
- +'</div><p style="font-size:13px;opacity:.85">'+(meta.tut?'Кнопки: ⬆️ ПРЫЖОК · ⬇️ ПОДКАТ · 👊 КУЛАК · ⚽ БРОСОК · 🔥 СУПЕР':'Сначала короткое обучение (его можно пропустить)')+'</p><div class="row" style="margin-bottom:6px">'+["👦 Мальчик","👧 Девочка"].map((n,i)=>'<button data-a="hero'+i+'" style="'+(((meta.hero||0)%2)===i?'outline:3px solid #fff;background:#fff':'opacity:.8')+';padding:8px 10px;font-size:12px"><div style="font-size:36px;line-height:1.1">'+(i?"👧":"👦")+'</div>'+n.replace(/^\S+\s/,'')+'</button>').join("")+'</div><div class="row" style="margin-bottom:6px"><button data-a="calm0" style="'+(!meta.calm?'outline:3px solid #fff':'opacity:.7')+'">🔥 Обычно</button><button data-a="calm1" style="'+(meta.calm?'outline:3px solid #fff':'opacity:.7')+'">😌 Спокойно (удары слабее)</button></div><div class="row" style="margin-bottom:6px"><button data-a="wp0" style="'+(meta.weapon!==1?'outline:3px solid #fff':'opacity:.7')+'">⚽ Мячик</button><button data-a="wp1" style="'+(meta.weapon===1?'outline:3px solid #fff':'opacity:.7')+'">🍳 Сковородка</button></div><div class="row"><button data-a="bes">📖 Коллекция</button><button data-a="shop">🛒 Магазин</button><button data-a="prof">🏅 Профиль и задания</button><button data-a="mute">'+(mute?"🔇 Звук выключен":"🔊 Звук включён")+'</button></div></div>';
+ +'</div><p style="font-size:13px;opacity:.85">'+(meta.tut?'Свайп ↑ прыжок · ↓ подкат · ← уклон · → мяч · тап = удар. На клавиатуре: Пробел/↑ прыжок, ↓ подкат, Enter удар, F мяч, E супер':'Сначала короткое обучение (его можно пропустить)')+'</p><div class="row" style="margin-bottom:6px">'+["👦 Мальчик","👧 Девочка"].map((n,i)=>'<button data-a="hero'+i+'" style="'+(((meta.hero||0)%2)===i?'outline:3px solid #fff;background:#fff':'opacity:.8')+';padding:8px 10px;font-size:12px"><div style="font-size:36px;line-height:1.1">'+(i?"👧":"👦")+'</div>'+n.replace(/^\S+\s/,'')+'</button>').join("")+'</div><div class="row" style="margin-bottom:6px"><button data-a="calm0" style="'+(!meta.calm?'outline:3px solid #fff':'opacity:.7')+'">🔥 Обычно</button><button data-a="calm1" style="'+(meta.calm?'outline:3px solid #fff':'opacity:.7')+'">😌 Спокойно (удары слабее)</button></div><div class="row" style="margin-bottom:6px"><button data-a="wp0" style="'+(meta.weapon!==1?'outline:3px solid #fff':'opacity:.7')+'">⚽ Мячик</button><button data-a="wp1" style="'+(meta.weapon===1?'outline:3px solid #fff':'opacity:.7')+'">🍳 Сковородка</button></div><div class="row"><button data-a="bes">📖 Коллекция</button><button data-a="shop">🛒 Магазин</button><button data-a="prof">🏅 Профиль и задания</button><button data-a="mute">'+(mute?"🔇 Звук выключен":"🔊 Звук включён")+'</button></div></div>';
  menuEl.style.display="flex"}
 let endAt=0;function showEnd(){endAt=performance.now();menuEl.style.display="none";
  endEl.innerHTML='<div class="mc"><h2>Ты не проиграл(а) — ты тренировался!</h2><p style="font-size:17px">'+th.ic+' '+th.n+' · Побед: <b>'+run+'</b> · Рекорд: '+(meta.bestBy[th.id]||0)+' · Уровень: '+level+'</p>'
@@ -1044,7 +1066,7 @@ let endAt=0;function showEnd(){endAt=performance.now();menuEl.style.display="non
 const chEl=document.createElement("div");chEl.id="ch";chEl.className="ov";document.body.appendChild(chEl);
 function showChap(prev){const c=CH[chOf(level)],pb=prev!==undefined&&prev>=0&&DBOSS[CH[prev].id]?DBOSS[CH[prev].id][1][0]:"";paused=true;
  chEl.innerHTML='<div class="mc"><div style="font-size:64px;line-height:1.1">'+c.ic+'</div><h2>Глава '+(chOf(level)+1)+': '+c.n+'</h2>'+(pb?'<p style="color:#2a8f4a;font-weight:bold">⛓️ Оковы сняты: '+pb+'</p>':'')+'<p style="font-size:17px">'+c.s+'</p><p style="font-size:13px;opacity:.8">Уровень '+level+(chOf(level)<5?' · до конца главы ещё '+(chOf(level)*4+4-level+1)+' ур.':' · без конца')+'</p><button class="big play" data-a="chgo">▶ Дальше</button></div>';chEl.style.display="flex";pzEl.style.display="none"}
-function startGame(i,md){ac();if(md){setLvl();meta.mode=md;level=(md==="dev"?meta.dlvl:meta.lvl)||1}if(isDev())i=devTh(level);thIdx=i;th=THEMES[i];meta.theme=i;meta.played[th.id]=1;menuEl.style.display="none";endEl.style.display="none";st="play";reset();zShownL=0;zIntro();if(isDev())showChap(level%4===1&&level>1?chOf(level)-1:-1);save();chk()}
+function startGame(i,md){ac();if(md){setLvl();meta.mode=md;level=(md==="dev"?meta.dlvl:meta.lvl)||1}if(isDev())i=devTh(level);thIdx=i;th=THEMES[i];th.en=isDev()?th.enD:th.enV;meta.theme=i;meta.played[th.id]=1;menuEl.style.display="none";endEl.style.display="none";st="play";reset();zShownL=0;zIntro();if(isDev())showChap(level%4===1&&level>1?chOf(level)-1:-1);save();chk()}
 function onUI(e){const b=e.target.closest("button");if(!b){if(endEl.style.display==="flex"&&performance.now()-endAt>700)startGame(thIdx);return}
  if(b.dataset.a==="chgo"){paused=false;chEl.style.display="none";pzEl.style.display="none"}
  else if(b.dataset.a==="dev")startGame(0,"dev");
