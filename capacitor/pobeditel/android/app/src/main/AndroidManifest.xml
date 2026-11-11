@@ -19,7 +19,17 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <!-- возврат в игру после оплаты RuStore -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="pobeditelpay" />
+            </intent-filter>
         </activity>
+
+        <meta-data android:name="console_app_id_value" android:value="@string/rustore_app_id" />
+        <meta-data android:name="sdk_pay_scheme_value" android:value="pobeditelpay" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
