@@ -1394,3 +1394,208 @@
 1393	🛒 Loja
 1394	Menino
 1395	Menina
+1396	Comporta
+1397	Hidra
+1398	Neon!
+1399	Glitch
+1400	MARTELO
+1401	Hiper!
+1402	Decolar!
+1403	💠 Escudo!
+1404	KATANA
+1405	Glória!
+1406	Espaço!
+1407	← Voltar
+1408	MELHOR OFERTA
+1409	BLASTER
+1410	GRANADA
+1411	Órbita!
+1412	Ultra!
+1413	🥷 Errou!
+1414	Cavaleiro!
+1415	Reator
+1416	Equipar
+1417	Firewall
+1418	Granadas
+1419	Vitória!
+1420	Meteoro
+1421	Lenda!
+1422	Bumerangue
+1423	Mega Mech
+1424	BUMERANGUE
+1425	✓ Equipado
+1426	Hackeado!
+1427	em pacotes
+1428	Estufa
+1429	Ponte holográfica
+1430	💎 Arsenal
+1431	Manto das Sombras
+1432	Porta-tocha
+1433	Demônio das Sombras
+1434	Robo-guarda
+1435	Invencível!
+1436	Aranha espacial
+1437	Data center
+1438	Monstro do lag
+1439	🛡️ Armaduras
+1440	Sonda espiã
+1441	Muro de código
+1442	▶ Jogar
+1443	Código sombrio
+1444	Galáxia!
+1445	Rei Lich
+1446	Bot troll
+1447	Barreira holográfica
+1448	Sala do trono
+1449	Martelo do Trovão
+1450	Gravidade zero
+1451	Gato da bruxa
+1452	Cibermercado
+1453	As estrelas esperam
+1454	Muralha de escudos
+1455	Buraco negro
+1456	Robo-entregador
+1457	Gravidade!
+1458	Núcleo da Estação
+1459	Bot voador
+1460	substitui a bola
+1461	Titã de Dados
+1462	Bruxa das Cinzas
+1463	Ciberkraken
+1464	Anúncio holográfico
+1465	Ponte de lava
+1466	Campo de força
+1467	Arco do Caçador
+1468	Diabrete de fogo
+1469	Colosso Glitch
+1470	Morcego
+1471	Salve o herói!
+1472	Ciber-herói!
+1473	Ciber-spammer
+1474	Senhor da Lava
+1475	Comporta da estação
+1476	Ciber-ninja
+1477	Esqueleto arqueiro
+1478	Reiniciar!
+1479	Katana do Ronin
+1480	Grade do portão
+1481	Matador de dragões!
+1482	Ciber-ninja!
+1483	Fantasma do castelo
+1484	O sistema é seu!
+1485	Robô com defeito
+1486	Cavaleiro sombrio
+1487	Cometa Assassino
+1488	MAIS CURTIDAS
+1489	Rainha da Colmeia
+1490	Diabrete de fogo!
+1491	Golem de Ferro
+1492	Titã de Fogo
+1493	substitui o punho
+1494	👑 Tudo para sempre
+1495	⚔️ Pacote do Guerreiro
+1496	Muralha de fogo
+1497	Covil do dragão
+1498	O fogo te fortalece
+1499	Golem de fogo
+1500	Hacker neon
+1501	Ruas de neon
+1502	Rainha do Spam
+1503	Enxame de pixels
+1504	Dragão Vermelho
+1505	⚡ SUPERNÍVEIS
+1506	🌌 Superníveis
+1507	Drone cobrador
+1508	Golem de pedra
+1509	Alien corredor!
+1510	Portões da fortaleza
+1511	Herói estelar!
+1512	Cinturão de asteroides
+1513	🎯 Pacote do Atirador
+1514	Traje neon
+1515	Dragão Neon
+1516	Ponte de comando
+1517	Capitão Pirata
+1518	Lesma de lava
+1519	Água-viva estelar
+1520	Alvenaria de pedra
+1521	Caverna do tesouro
+1522	Megacorporação
+1523	Ciber-Chefe Sombra
+1524	Esqueleto guarda
+1525	Painéis solares
+1526	Telhados na chuva
+1527	Torre da Corporação
+1528	Alien gosmento
+1529	Drone policial
+1530	Vírus sequestrador
+1531	Armadura de Cavaleiro
+1532	Fortaleza do Dragão
+1533	Teste: tudo liberado
+1534	Bolha de plasma
+1535	Contêiner de carga
+1536	Até cavaleiros caem
+1537	Megacidade Neon
+1538	Vírus do Apocalipse
+1539	Blaster de plasma
+1540	Imperador Galáctico
+1541	Estação Orbital
+1542	Devorador de Estrelas
+1543	Compra não concluída
+1544	Imperador dos Algoritmos
+1545	🧪 Teste por 1 corrida
+1546	Reiniciando motores
+1547	No espaço também se cai
+1548	Compras restauradas
+1549	Até vírus são vencidos
+1550	↻ Restaurar compras
+1551	Levante-se: o dragão espera
+1552	🧪 Testar por 1 corrida
+1553	Testar
+1554	Caminhada espacial!
+1555	A fortaleza caiu diante de você.
+1556	O covil! O dragão está perto
+1557	Reinicie e volte à luta
+1558	Golpes em você são 35% mais fracos
+1559	A cidade brilha: você é o herói dela.
+1560	Chuva e drones: derrube os voadores
+1561	Vãos entre os painéis: pule
+1562	Não foi possível restaurar as compras
+1563	As chamas te perseguem: tudo mais rápido
+1564	Fossos de lava: pule na hora
+1565	Mais uma tentativa e a cidade é sua
+1566	A estação foi salva. As estrelas são suas.
+1567	A ponte: a luta final está perto
+1568	Luz de emergência: só se vê de perto
+1569	Obrigado! Liberado para sempre 💎
+1570	Um em cada quatro golpes erra
+1571	Último andar: aguente, o chefe está perto
+1572	Três flechas em leque, atravessam tudo
+1573	Firewalls: quebre o muro ou pule
+1574	Salão escuro: as tochas só iluminam de perto
+1575	Jardim espacial: cuidado com os brotos
+1576	🧪 Teste: liberar tudo (só no navegador)
+1577	Escuridão dos servidores: só se vê ao redor do herói
+1578	💎 ARSENAL: katanas, arcos, granadas, armaduras
+1579	Nível épico: inimigos duas vezes mais fortes, ⭐ ×2
+1580	Meteoros chegando: acerte com ⚽ ou pule
+1581	Espaço: alienígenas, meteoros e a Rainha da Colmeia
+1582	Escudo de energia bloqueia um golpe e recarrega em 12 s
+1583	Tesouro! Pegue ⭐ antes que o guardião acorde
+1584	Rajada de laser: atira três vezes mais rápido
+1585	Ponte sobre o abismo: rápido, pule os vãos
+1586	Vai e volta: acerta cada um duas vezes
+1587	Castelo de fogo: golens, cavaleiros sombrios e o Dragão Vermelho
+1588	Golpe no chão: raios avançam e atingem todos no chão
+1589	Você já testou este item hoje: amanhã de novo
+1590	Cibercidade do futuro: drones de spam, vírus e a Megacorporação
+1591	3 mapas épicos: mundos novos, monstros duas vezes mais fortes, prêmios ×2
+1592	Voam em arco e explodem: dano em todos por perto, anulam ataques do chefe
+1593	A restauração funciona no app da App Store / Google Play
+1594	Corte em meia-lua: alcança 60% mais longe, dano ×2, corta também os voadores
+1595	O pagamento está disponível no app Vencedor da App Store e Google Play.
+1596	Armas inspiradas nos melhores jogos de ação, armaduras e superníveis. Para sempre.
+1597	Arco, Blaster, Bumerangue + Traje neon + nível Megacidade Neon
+1598	Todas as 6 armas, as 3 armaduras, todos os superníveis e todas as novidades futuras
+1599	Katana, Martelo do Trovão, Granadas + Armadura de Cavaleiro + nível Fortaleza do Dragão
+1600	O pagamento funciona no app da App Store e Google Play. No navegador dá para testar qualquer item por 1 corrida ao dia.

@@ -1394,3 +1394,208 @@
 1393	🛒 Shop
 1394	Boy
 1395	Girl
+1396	Airlock
+1397	Hydra
+1398	Neon!
+1399	Glitch
+1400	HAMMER
+1401	Hyper!
+1402	Liftoff!
+1403	💠 Shield!
+1404	KATANA
+1405	Glory!
+1406	Space!
+1407	← Back
+1408	BEST VALUE
+1409	BLASTER
+1410	GRENADE
+1411	Orbit!
+1412	Ultra!
+1413	🥷 Missed!
+1414	Knight!
+1415	Reactor
+1416	Equip
+1417	Firewall
+1418	Grenades
+1419	Victory!
+1420	Meteor
+1421	Legend!
+1422	Boomerang
+1423	Mega Mech
+1424	BOOMERANG
+1425	✓ Equipped
+1426	Hacked!
+1427	in bundles
+1428	Greenhouse
+1429	Holo Bridge
+1430	💎 Arsenal
+1431	Shadow Cloak
+1432	Torchbearer
+1433	Shadow Demon
+1434	Robo Guard
+1435	Unbeatable!
+1436	Space Spider
+1437	Data Center
+1438	Lag Monster
+1439	🛡️ Armor
+1440	Spy Probe
+1441	Code Wall
+1442	▶ Play
+1443	Dark Code
+1444	Galaxy!
+1445	Lich King
+1446	Troll Bot
+1447	Holo Barrier
+1448	Throne Room
+1449	Thunder Hammer
+1450	Zero Gravity
+1451	Witch's Cat
+1452	Cyber Market
+1453	The stars are waiting
+1454	Shield Wall
+1455	Black Hole
+1456	Robo Courier
+1457	Gravity!
+1458	Station Core
+1459	Flying Bot
+1460	replaces the ball
+1461	Data Titan
+1462	Ash Witch
+1463	Cyber Kraken
+1464	Holo Ad
+1465	Lava Bridge
+1466	Force Field
+1467	Hunter's Bow
+1468	Fire Imp
+1469	Glitch Colossus
+1470	Bat
+1471	Hail the hero!
+1472	Cyber hero!
+1473	Cyber Spammer
+1474	Lava Lord
+1475	Station Airlock
+1476	Cyber Ninja
+1477	Skeleton Archer
+1478	Reboot!
+1479	Ronin's Katana
+1480	Portcullis
+1481	Dragonslayer!
+1482	Cyber ninja!
+1483	Castle Ghost
+1484	The system is yours!
+1485	Glitchy Robot
+1486	Dark Knight
+1487	Killer Comet
+1488	MORE LIKES
+1489	Hive Queen
+1490	Fire imp!
+1491	Iron Golem
+1492	Fire Titan
+1493	replaces the fist
+1494	👑 Everything Forever
+1495	⚔️ Warrior Pack
+1496	Wall of Fire
+1497	Dragon's Lair
+1498	Fire forges you
+1499	Fire Golem
+1500	Neon Hacker
+1501	Neon Streets
+1502	Spam Queen
+1503	Pixel Swarm
+1504	Red Dragon
+1505	⚡ SUPER LEVELS
+1506	🌌 Super Levels
+1507	Debt Collector Drone
+1508	Stone Golem
+1509	Alien runner!
+1510	Fortress Gates
+1511	Star hero!
+1512	Asteroid Belt
+1513	🎯 Shooter Pack
+1514	Neon Suit
+1515	Neon Dragon
+1516	Captain's Bridge
+1517	Pirate Captain
+1518	Lava Slug
+1519	Star Jellyfish
+1520	Stone Masonry
+1521	Treasure Cave
+1522	Mega Corporation
+1523	Shadow Cyber Boss
+1524	Skeleton Guard
+1525	Solar Panels
+1526	Rooftops in the Rain
+1527	Corporate Tower
+1528	Slime Alien
+1529	Police Drone
+1530	Ransomware
+1531	Knight's Armor
+1532	Dragon Fortress
+1533	Test: everything unlocked
+1534	Plasma Blob
+1535	Cargo Container
+1536	Even knights fall
+1537	Neon Megacity
+1538	Apocalypse Virus
+1539	Plasma Blaster
+1540	Galactic Emperor
+1541	Orbital Station
+1542	Star Devourer
+1543	Purchase not completed
+1544	Emperor of Algorithms
+1545	🧪 Trial for 1 run
+1546	Restarting engines
+1547	People fall in space too
+1548	Purchases restored
+1549	Even viruses can be beaten
+1550	↻ Restore purchases
+1551	Get up — the dragon is waiting
+1552	🧪 Try for 1 run
+1553	Try
+1554	Spacewalk!
+1555	The fortress has fallen before you.
+1556	The lair! The dragon is near
+1557	Reboot and back to the fight
+1558	Hits on you are 35% weaker
+1559	The city shines — you're its hero.
+1560	Rain and drones: shoot down the flyers
+1561	Gaps between panels — jump
+1562	Couldn't restore purchases
+1563	Flames chase you: everything's faster
+1564	Pits of lava — jump in time
+1565	One more try — and the city is yours
+1566	The station is saved. The stars are yours.
+1567	The bridge: the final fight is near
+1568	Emergency lights: you only see what's close
+1569	Thank you! Unlocked forever 💎
+1570	Every fourth hit misses you
+1571	Top floor: hold on, the boss is near
+1572	Three arrows in a fan, piercing through
+1573	Firewalls: break the wall or jump over
+1574	Dark hall: torches only light what's close
+1575	Space garden: careful with the sprouts
+1576	🧪 Test: unlock everything (browser only)
+1577	Server darkness: you only see around the hero
+1578	💎 ARSENAL: katanas, bows, grenades, armor
+1579	Epic level: enemies twice as tough, ⭐ ×2
+1580	Meteors incoming — shoot with ⚽ or jump over
+1581	Space: aliens, meteors and the Hive Queen
+1582	Energy shield blocks a hit and recharges in 12 s
+1583	Treasure! Grab the ⭐ before the guardian wakes
+1584	A stream of laser bolts — fires three times as often
+1585	Bridge over the abyss: fast, jump the gaps
+1586	Flies out and comes back — hits everyone twice
+1587	Fire castle: golems, dark knights and the Red Dragon
+1588	Ground slam: lightning runs forward and hits everyone on the ground
+1589	You already tried this item today — try again tomorrow
+1590	Cyber city of the future: spam drones, viruses and the Mega Corporation
+1591	3 epic maps: new worlds, monsters twice as tough, rewards ×2
+1592	Fly in an arc and explode: damage everyone nearby, cancel boss attacks
+1593	Restoring works in the app from the App Store / Google Play
+1594	Crescent slash: reaches 60% farther, damage ×2, cuts flyers too
+1595	Payment is available in the Winner app from the App Store and Google Play.
+1596	Weapons inspired by the best action games, armor and super levels. Yours forever.
+1597	Bow, Blaster, Boomerang + Neon Suit + the Neon Megacity level
+1598	All 6 weapons, all 3 armors, all super levels — and all future additions
+1599	Katana, Thunder Hammer, Grenades + Knight's Armor + the Dragon Fortress level
+1600	Payment works in the app from the App Store and Google Play. In the browser you can try any item for 1 run a day.

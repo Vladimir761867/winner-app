@@ -1394,3 +1394,208 @@
 1393	🛒 Shop
 1394	Junge
 1395	Mädchen
+1396	Schleuse
+1397	Hydra
+1398	Neon!
+1399	Glitch
+1400	HAMMER
+1401	Hyper!
+1402	Start!
+1403	💠 Schild!
+1404	KATANA
+1405	Ruhm!
+1406	Weltall!
+1407	← Zurück
+1408	BESTPREIS
+1409	BLASTER
+1410	GRANATE
+1411	Orbit!
+1412	Ultra!
+1413	🥷 Verfehlt!
+1414	Ritter!
+1415	Reaktor
+1416	Ausrüsten
+1417	Firewall
+1418	Granaten
+1419	Sieg!
+1420	Meteor
+1421	Legende!
+1422	Bumerang
+1423	Mega-Mech
+1424	BUMERANG
+1425	✓ Ausgerüstet
+1426	Gehackt!
+1427	in Paketen
+1428	Gewächshaus
+1429	Holo-Brücke
+1430	💎 Arsenal
+1431	Schattenumhang
+1432	Fackelträger
+1433	Schattendämon
+1434	Robo-Wächter
+1435	Unbesiegbar!
+1436	Weltraumspinne
+1437	Rechenzentrum
+1438	Lag-Monster
+1439	🛡️ Rüstungen
+1440	Spionagesonde
+1441	Code-Wand
+1442	▶ Spielen
+1443	Dunkler Code
+1444	Galaxis!
+1445	Lichkönig
+1446	Troll-Bot
+1447	Holo-Barriere
+1448	Thronsaal
+1449	Donnerhammer
+1450	Schwerelosigkeit
+1451	Hexenkatze
+1452	Cyber-Markt
+1453	Die Sterne warten
+1454	Schildwall
+1455	Schwarzes Loch
+1456	Robo-Kurier
+1457	Schwerkraft!
+1458	Stationskern
+1459	Fliegender Bot
+1460	ersetzt den Ball
+1461	Datentitan
+1462	Aschehexe
+1463	Cyber-Kraken
+1464	Holo-Werbung
+1465	Lavabrücke
+1466	Kraftfeld
+1467	Jägerbogen
+1468	Feuerkobold
+1469	Glitch-Koloss
+1470	Fledermaus
+1471	Heil dem Helden!
+1472	Cyber-Held!
+1473	Cyber-Spammer
+1474	Lavafürst
+1475	Stationsschleuse
+1476	Cyber-Ninja
+1477	Skelettbogenschütze
+1478	Neustart!
+1479	Ronin-Katana
+1480	Fallgitter
+1481	Drachentöter!
+1482	Cyber-Ninja!
+1483	Burggespenst
+1484	Das System gehört dir!
+1485	Defekter Roboter
+1486	Dunkler Ritter
+1487	Killerkomet
+1488	MEHR LIKES
+1489	Schwarmkönigin
+1490	Feuerkobold!
+1491	Eisengolem
+1492	Feuertitan
+1493	ersetzt die Faust
+1494	👑 Alles für immer
+1495	⚔️ Krieger-Paket
+1496	Feuerwand
+1497	Drachenhort
+1498	Feuer härtet ab
+1499	Feuergolem
+1500	Neon-Hacker
+1501	Neonstraßen
+1502	Spamkönigin
+1503	Pixelschwarm
+1504	Roter Drache
+1505	⚡ SUPER-LEVEL
+1506	🌌 Super-Level
+1507	Inkasso-Drohne
+1508	Steingolem
+1509	Alien-Läufer!
+1510	Festungstor
+1511	Sternenheld!
+1512	Asteroidengürtel
+1513	🎯 Schützen-Paket
+1514	Neonanzug
+1515	Neondrache
+1516	Kommandobrücke
+1517	Piratenkapitän
+1518	Lavaschnecke
+1519	Sternenqualle
+1520	Steinmauerwerk
+1521	Schatzhöhle
+1522	Mega-Konzern
+1523	Cyber-Boss Schatten
+1524	Skelettwächter
+1525	Solarpaneele
+1526	Dächer im Regen
+1527	Konzernturm
+1528	Schleim-Alien
+1529	Polizeidrohne
+1530	Erpresser-Virus
+1531	Ritterrüstung
+1532	Drachenfestung
+1533	Test: alles freigeschaltet
+1534	Plasmaklumpen
+1535	Frachtcontainer
+1536	Auch Ritter fallen
+1537	Neon-Megastadt
+1538	Apokalypse-Virus
+1539	Plasmablaster
+1540	Galaxie-Imperator
+1541	Orbitalstation
+1542	Sternenfresser
+1543	Kauf nicht abgeschlossen
+1544	Imperator der Algorithmen
+1545	🧪 Test für 1 Lauf
+1546	Triebwerke neu starten
+1547	Auch im All fällt man
+1548	Käufe wiederhergestellt
+1549	Selbst Viren kann man besiegen
+1550	↻ Käufe wiederherstellen
+1551	Steh auf, der Drache wartet
+1552	🧪 1 Lauf testen
+1553	Testen
+1554	Weltraumspaziergang!
+1555	Die Festung ist vor dir gefallen.
+1556	Der Hort! Der Drache ist nah
+1557	Neustart und zurück in den Kampf
+1558	Treffer gegen dich 35 % schwächer
+1559	Die Stadt leuchtet, du bist ihr Held.
+1560	Regen und Drohnen: hol die Flieger runter
+1561	Lücken zwischen Paneelen: spring
+1562	Käufe konnten nicht wiederhergestellt werden
+1563	Flammen treiben dich: alles schneller
+1564	Lavagruben: spring rechtzeitig
+1565	Noch ein Versuch, und die Stadt gehört dir
+1566	Die Station ist gerettet. Die Sterne gehören dir.
+1567	Brücke: der Endkampf ist nah
+1568	Notbeleuchtung: du siehst nur Nahes
+1569	Danke! Für immer freigeschaltet 💎
+1570	Jeder vierte Treffer geht daneben
+1571	Oberste Etage: halte durch, der Boss ist nah
+1572	Drei Pfeile im Fächer, durchschlagend
+1573	Firewalls: zerschlag die Wand oder spring drüber
+1574	Dunkler Saal: Fackeln leuchten nur nah
+1575	Weltraumgarten: Vorsicht mit den Sprösslingen
+1576	🧪 Test: alles freischalten (nur im Browser)
+1577	Serverdunkel: du siehst nur um den Helden
+1578	💎 ARSENAL: Katanas, Bögen, Granaten, Rüstungen
+1579	Episches Level: Gegner doppelt so zäh, ⭐ ×2
+1580	Meteoriten kommen: triff mit ⚽ oder spring drüber
+1581	Weltall: Aliens, Meteoriten und die Schwarmkönigin
+1582	Energieschild blockt einen Treffer und lädt in 12 s
+1583	Schatz! Sammle ⭐, bevor der Wächter erwacht
+1584	Laser-Salve: feuert dreimal so oft
+1585	Brücke über dem Abgrund: schnell, spring über Lücken
+1586	Fliegt hin und zurück: trifft jeden zweimal
+1587	Feuerburg: Golems, dunkle Ritter und der Rote Drache
+1588	Bodenschlag: Blitze rasen vorwärts und treffen alle am Boden
+1589	Diesen Gegenstand hast du heute schon getestet, morgen wieder
+1590	Cyber-Stadt der Zukunft: Spam-Drohnen, Viren und der Mega-Konzern
+1591	3 epische Karten: neue Welten, Monster doppelt so zäh, Belohnungen ×2
+1592	Fliegen im Bogen und explodieren: Schaden für alle in der Nähe, löschen Boss-Angriffe
+1593	Wiederherstellen funktioniert in der App aus App Store / Google Play
+1594	Halbmond-Hieb: 60 % mehr Reichweite, Schaden ×2, trifft auch Flieger
+1595	Bezahlen ist in der App „Sieger“ aus App Store und Google Play möglich.
+1596	Waffen aus den besten Actionspielen, Rüstungen und Super-Level. Für immer.
+1597	Bogen, Blaster, Bumerang + Neonanzug + Level „Neon-Megastadt“
+1598	Alle 6 Waffen, alle 3 Rüstungen, alle Super-Level und alle künftigen Neuheiten
+1599	Katana, Donnerhammer, Granaten + Ritterrüstung + Level „Drachenfestung“
+1600	Bezahlen funktioniert in der App aus App Store und Google Play. Im Browser kannst du jeden Gegenstand 1 Lauf pro Tag testen.
