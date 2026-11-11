@@ -1,0 +1,46 @@
+name: RuStore — сборка APK
+on:
+  push:
+    branches: [rustore]
+    paths: ["capacitor/**", ".github/workflows/rustore.yml"]
+  workflow_dispatch:
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix: { app: [pobeditel, junior] }
+    env:
+      KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+      KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+      KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+      KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+      RUSTORE_APP_ID: ${{ vars.RUSTORE_APP_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: 21 }
+      - name: Ключ подписи
+        run: |
+          if [ -n "$KEYSTORE_BASE64" ]; then
+            echo "$KEYSTORE_BASE64" | base64 -d > "$RUNNER_TEMP/release.jks"
+            echo "KEYSTORE_FILE=$RUNNER_TEMP/release.jks" >> "$GITHUB_ENV"
+            echo "VARIANT=Release" >> "$GITHUB_ENV"; echo "DIR=release" >> "$GITHUB_ENV"
+          else
+            echo "::warning::Секрет KEYSTORE_BASE64 не задан — собираю тестовый (debug) APK. Для RuStore нужен подписанный release."
+            echo "VARIANT=Debug" >> "$GITHUB_ENV"; echo "DIR=debug" >> "$GITHUB_ENV"
+          fi
+      - name: Сборка
+        working-directory: capacitor/${{ matrix.app }}
+        run: |
+          npm ci
+          npx cap sync android
+          cd android && chmod +x gradlew && ./gradlew assemble$VARIANT --no-daemon
+          mkdir -p "$GITHUB_WORKSPACE/out"
+          cp app/build/outputs/apk/$DIR/*.apk "$GITHUB_WORKSPACE/out/${{ matrix.app }}-rustore-$DIR.apk"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.app }}-rustore-apk
+          path: out/*.apk
