@@ -1599,3 +1599,17 @@
 1598	Las 6 armas, las 3 armaduras, todos los súper niveles y todas las novedades futuras
 1599	Katana, Martillo del Trueno, Granadas + Armadura de Caballero + nivel Fortaleza del Dragón
 1600	El pago funciona en la app de App Store y Google Play. En el navegador puedes probar cualquier objeto 1 partida al día.
+1601	Conjuntos
+1602	Bláster arcoíris
+1603	Conjunto de arquero
+1604	Conjunto de mago
+1605	Conjunto de caballero
+1606	Conjunto de superhéroe
+1607	Ojo certero: el arma recarga un 15% más rápido
+1608	Magia: la superola se carga un 25% más rápido
+1609	Armadura de caballero: los monstruos pegan un 20% menos
+1610	Poder de héroe: +30 de energía
+1611	¡Tienes monedas suficientes para:
+1612	Pasa por la tienda
+1613	Comprar por
+1614	Cada conjunto trae un arma, ropa y un bonus especial: más barato que por separado. Solo con ⭐ del juego.

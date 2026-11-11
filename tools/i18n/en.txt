@@ -1599,3 +1599,17 @@
 1598	All 6 weapons, all 3 armors, all super levels — and all future additions
 1599	Katana, Thunder Hammer, Grenades + Knight's Armor + the Dragon Fortress level
 1600	Payment works in the app from the App Store and Google Play. In the browser you can try any item for 1 run a day.
+1601	Sets
+1602	Rainbow Blaster
+1603	Archer Set
+1604	Wizard Set
+1605	Knight Set
+1606	Superhero Set
+1607	Sharp Eye: your weapon reloads 15% faster
+1608	Magic: the super wave charges 25% faster
+1609	Knight's Armor: monsters hit 20% weaker
+1610	Hero Power: +30 energy
+1611	You have enough coins for:
+1612	Visit the shop
+1613	Buy for
+1614	Each set has a weapon, an outfit and a special bonus — cheaper than buying separately. In-game ⭐ only.

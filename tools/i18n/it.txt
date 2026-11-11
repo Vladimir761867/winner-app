@@ -1599,3 +1599,17 @@
 1598	Tutte le 6 armi, le 3 armature, tutti i super livelli e tutte le novità future
 1599	Katana, Martello del Tuono, Granate + Armatura del Cavaliere + livello Fortezza del Drago
 1600	Il pagamento funziona nell'app da App Store e Google Play. Nel browser puoi provare ogni oggetto per 1 corsa al giorno.
+1601	Set
+1602	Blaster arcobaleno
+1603	Set dell'arciere
+1604	Set del mago
+1605	Set del cavaliere
+1606	Set del supereroe
+1607	Occhio di falco: l'arma si ricarica il 15% più in fretta
+1608	Magia: la super onda si carica il 25% più in fretta
+1609	Armatura da cavaliere: i mostri colpiscono il 20% più piano
+1610	Forza dell'eroe: +30 energia
+1611	Hai abbastanza monete per:
+1612	Passa al negozio
+1613	Compra per
+1614	Ogni set ha un'arma, un vestito e un bonus speciale — conviene più che separati. Solo con le ⭐ di gioco.

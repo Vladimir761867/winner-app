@@ -1599,3 +1599,17 @@
 1598	Les 6 armes, les 3 armures, tous les super-niveaux et toutes les nouveautés à venir
 1599	Katana, Marteau de Tonnerre, Grenades + Armure de Chevalier + niveau Forteresse du Dragon
 1600	Le paiement fonctionne dans l'appli de l'App Store et de Google Play. Dans le navigateur, tu peux essayer chaque objet 1 partie par jour.
+1601	Packs
+1602	Blaster arc-en-ciel
+1603	Pack de l'archer
+1604	Pack du magicien
+1605	Pack du chevalier
+1606	Pack du super-héros
+1607	Œil de lynx : l'arme se recharge 15% plus vite
+1608	Magie : la super vague se charge 25% plus vite
+1609	Armure de chevalier : les monstres frappent 20% moins fort
+1610	Force du héros : +30 d'énergie
+1611	Assez de pièces pour :
+1612	Passe à la boutique
+1613	Acheter pour
+1614	Chaque pack contient une arme, une tenue et un bonus spécial — moins cher que séparément. Uniquement avec les ⭐ du jeu.

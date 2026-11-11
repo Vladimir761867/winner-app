@@ -1599,3 +1599,17 @@
 1598	Alle 6 Waffen, alle 3 Rüstungen, alle Super-Level und alle künftigen Neuheiten
 1599	Katana, Donnerhammer, Granaten + Ritterrüstung + Level „Drachenfestung“
 1600	Bezahlen funktioniert in der App aus App Store und Google Play. Im Browser kannst du jeden Gegenstand 1 Lauf pro Tag testen.
+1601	Sets
+1602	Regenbogen-Blaster
+1603	Bogenschützen-Set
+1604	Zauberer-Set
+1605	Ritter-Set
+1606	Superhelden-Set
+1607	Scharfes Auge: Waffe lädt 15% schneller nach
+1608	Magie: Superwelle lädt 25% schneller
+1609	Ritterrüstung: Monster treffen 20% schwächer
+1610	Heldenkraft: +30 Energie
+1611	Genug Münzen für:
+1612	Schau im Laden vorbei
+1613	Kaufen für
+1614	Jedes Set enthält Waffe, Kleidung und einen Spezialbonus — günstiger als einzeln. Nur für Spiel-⭐.
