@@ -1618,3 +1618,39 @@
 1617	 s · a energia se recupera
 1618	🌙 Efeitos: reduzidos
 1619	✨ Efeitos: todos
+1620	Vale dos Dinossauros
+1621	Safári
+1622	Circo
+1623	Fazenda Feliz
+1624	Mundo de Ano-Novo
+1625	Os dinossauros pisoteiam! Pule as pedras
+1626	Os animais do safári correm rápido — ataque logo!
+1627	Camas elásticas do circo! Pule e pegue ⭐
+1628	Na fazenda há buracos e galinhas voadoras — olhe para cima!
+1629	Feliz Ano-Novo! Pule nas camas elásticas pelos presentes-⭐
+1630	Leão Resmungão
+1631	Espantalho Assustador
+1632	Tiranossauro Valentão
+1633	Palhaço Gargalhada
+1634	Boneco Nevasca
+1635	Gorro estrelado
+1636	Rastro lunar
+1637	Arvorezinha na cabeça
+1638	por todos os mundos da rodada 1
+1639	por todos os mundos da Noite mágica
+1640	pelo Mundo de Ano-Novo
+1641	Prêmio
+1642	prêmio
+1643	Use na loja
+1644	Mundo concluído
+1645	Mundo
+1646	Rodada
+1647	Noite mágica
+1648	depois do mundo 16
+1649	você está aqui
+1650	Mapa dos mundos
+1651	só até 31 de janeiro
+1652	Cada mundo tem 3 prêmios: ⭐ conclua o mundo · 💎 ache 3 cristais · ❤️ no máximo 2 golpes. Você pode jogar de novo qualquer mundo aberto.
+1653	Conclua todos os mundos da rodada e ganhe
+1654	JOGAR
+1655	Para o menu

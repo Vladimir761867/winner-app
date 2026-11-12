@@ -1618,3 +1618,39 @@
 1617	 s · energy is recovering
 1618	🌙 Effects: reduced
 1619	✨ Effects: full
+1620	Dinosaur Valley
+1621	Safari
+1622	Circus
+1623	Happy Farm
+1624	New Year World
+1625	Little dinos stomp around! Jump over the boulders
+1626	Safari animals run fast — hit them right away!
+1627	Circus trampolines! Jump and catch ⭐
+1628	The farm has holes and flying chickens — look up!
+1629	Happy New Year! Bounce on trampolines for gift-⭐
+1630	Grumpy Lion
+1631	Spooky Scarecrow
+1632	Bully T-Rex
+1633	Cackling Clown
+1634	Blizzard Snowman
+1635	Starry Cap
+1636	Moon Trail
+1637	Little Tree Hat
+1638	for all worlds of Round 1
+1639	for all worlds of Magic Night
+1640	for the New Year World
+1641	Reward
+1642	reward
+1643	Put it on in the shop
+1644	World complete
+1645	World
+1646	Round
+1647	Magic Night
+1648	after world 16
+1649	you are here
+1650	World Map
+1651	only until January 31
+1652	Each world has 3 rewards: ⭐ finish the world · 💎 find 3 crystals · ❤️ take no more than 2 hits. You can replay any open world.
+1653	Finish all worlds of the round to get
+1654	PLAY
+1655	To menu

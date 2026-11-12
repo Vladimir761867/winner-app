@@ -1618,3 +1618,39 @@
 1617	 s · la energía se recupera
 1618	🌙 Efectos: reducidos
 1619	✨ Efectos: todos
+1620	Valle de los dinosaurios
+1621	Safari
+1622	Circo
+1623	Granja alegre
+1624	Mundo de Año Nuevo
+1625	¡Los dinosaurios pisotean! Salta sobre las rocas
+1626	Los animales del safari corren rápido: ¡golpea enseguida!
+1627	¡Camas elásticas de circo! Salta y atrapa ⭐
+1628	En la granja hay hoyos y gallinas voladoras: ¡mira arriba!
+1629	¡Feliz Año Nuevo! Salta en las camas elásticas por los regalos-⭐
+1630	León Gruñón
+1631	Espantapájaros Terrorífico
+1632	Tiranosaurio Abusón
+1633	Payaso Carcajadas
+1634	Muñeco de Ventisca
+1635	Gorro estrellado
+1636	Estela lunar
+1637	Arbolito en la cabeza
+1638	por todos los mundos de la ronda 1
+1639	por todos los mundos de la Noche mágica
+1640	por el Mundo de Año Nuevo
+1641	Premio
+1642	premio
+1643	Póntelo en la tienda
+1644	Mundo superado
+1645	Mundo
+1646	Ronda
+1647	Noche mágica
+1648	tras el mundo 16
+1649	estás aquí
+1650	Mapa de mundos
+1651	solo hasta el 31 de enero
+1652	Cada mundo tiene 3 premios: ⭐ supera el mundo · 💎 encuentra 3 cristales · ❤️ no más de 2 golpes. Puedes repetir cualquier mundo abierto.
+1653	Supera todos los mundos de la ronda y conseguirás
+1654	JUGAR
+1655	Al menú
