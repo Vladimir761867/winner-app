@@ -1613,3 +1613,8 @@
 1612	Passa al negozio
 1613	Compra per
 1614	Ogni set ha un'arma, un vestito e un bonus speciale — conviene più che separati. Solo con le ⭐ di gioco.
+1615	Hai sconfitto: 
+1616	Respiro 
+1617	 s · l'energia si ricarica
+1618	🌙 Effetti: ridotti
+1619	✨ Effetti: tutti
