@@ -1,7 +1,7 @@
 import sys,json,re
 SP='/tmp/claude-0/-home-claude/5b8d4e16-3740-531c-8ed1-bc4597304a64/scratchpad/i18n/'
 src,dst=sys.argv[1],sys.argv[2]
-langs=sys.argv[3].split(',') if len(sys.argv)>3 else ['en','es','pt','de','fr','it','zh','ja','ko']
+langs=sys.argv[3].split(',') if len(sys.argv)>3 else ['en','es','pt','de','fr','it','zh','ja','ko','hi']
 K=json.load(open(SP+'keys.json'))
 D={}
 for L in langs:
