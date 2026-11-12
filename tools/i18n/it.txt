@@ -1654,3 +1654,187 @@
 1653	Completa tutti i mondi del giro e otterrai
 1654	GIOCA
 1655	Al menu
+1656	Ladro della Festa
+1657	Ghirlanda Rotta
+1658	Tormenta di Neve
+1659	Il regalo non è arrivato
+1660	I miracoli non esistono
+1661	Coda per la pista
+1662	Pan di zenzero bruciato
+1663	Babbo Natale in ritardo
+1664	Relazione annuale entro il 31
+1665	Animatore Invadente
+1666	Coda per i mandarini
+1667	E le insalate chi le fa?
+1668	Ingorgo del 31 dicembre
+1669	L'ultimo regalo
+1670	Allora, quando ti sposi?
+1671	I rintocchi di mezzanotte
+1672	Se non sai farlo, lascia stare
+1673	Sii comodo per gli altri
+1674	L'importante è la stabilità
+1675	Non metterti in mostra
+1676	Cosa dirà la gente?
+1677	Gli amici possono aspettare
+1678	Dopo i 30 non si fanno nuovi amici
+1679	Prima il lavoro, poi gli amici
+1680	Sei madre, sopporta
+1681	Una brava madre non si stanca
+1682	Papà dà solo una mano
+1683	Una madre deve fare tutto
+1684	I genitori devono accompagnare
+1685	Altri 500 a testa
+1686	Perché non è nel comitato genitori?
+1687	I regali sono per bambini
+1688	Capodanno è una festa in famiglia
+1689	Senza insalate non è festa
+1690	E la tua dolce metà dov'è?
+1691	Sei il genitore accompagnatore: bus, museo e conta dei bambini
+1692	Sfogarsi
+1693	Crescita
+1694	Super livelli
+1695	Capo di cattivo umore
+1696	boss più forti e arrabbiati
+1697	tutto più veloce del 15%
+1698	Senza caffè
+1699	meno cibo, recupero più lento
+1700	«Ancora una storia!» — è buio, resisti
+1701	Bisogna chiudere l'anno
+1702	«Non toccare!»: muri di cartelli — saltali
+1703	"Visualizzato" alle 2 di notte: abbatti le notifiche
+1704	Sei ingrassato
+1705	· fino a «
+1706	» mancano
+1707	· ora ×
+1708	Mercatino degli abeti
+1709	Bus con la classe
+1710	Un bus, 30 bambini e «quando arriviamo?»
+1711	Schizzi ovunque — salta!
+1712	Da un amico: cartoni della pizza e cavi
+1713	Ogni luogo ha 3 obiettivi: ✅ completalo · 🎯 svolgi il compito del luogo · 🧘 non perdere più di metà energia. +5 ⭐ per obiettivo e bonus a ogni nuovo grado. Tocca un luogo per giocarlo.
+1714	Nelle fiabe niente riesce subito
+1715	Serata davanti al camino
+1716	Festa: coriandoli e «dai, un altro giro»
+1717	Magico!
+1718	Che corsa!
+1719	Tutti vanno a trovare qualcuno: veloce e buio
+1720	Incontro al bar: vassoi che volano — salta!
+1721	Respira e riprova
+1722	Ghirlanda aggrovigliata
+1723	Anno chiuso, regali comprati — si respira!
+1724	Premio annuale
+1725	Relazione annuale
+1726	Montagna di regali
+1727	Guru dell'equilibrio
+1728	Ambulatorio pediatrico
+1729	Cameretta: compiti
+1730	Strada per l'asilo
+1731	Souvenir costosi
+1732	Colazione
+1733	Tramonto sul lungomare: più veloce e con buche
+1734	Chiudere l'anno entro il 31: muri di relazioni
+1735	Dita congelate
+1736	Luci aggrovigliate
+1737	Cenone con i parenti
+1738	Notte stellata: trampolini fino alla stella
+1739	Bosco d'inverno
+1740	Zoo: buche e pappagalli sopra la testa
+1741	Come in una fiaba!
+1742	Pista di pattinaggio
+1743	Pappa che vola, succo versato — salta!
+1744	Casa di un amico
+1745	Fiocco di neve pungente
+1746	Coriandoli
+1747	Cena aziendale: giochi e brindisi in volo — abbattili ⚽
+1748	Cena aziendale
+1749	Ora del bagnetto
+1750	Tra poco la mezzanotte
+1751	Cucina: insalata russa
+1752	Leggenda del Vincitore
+1753	Muro di ghiaccio
+1754	Luogo
+1755	Maestro del respiro
+1756	Bufera!
+1757	Bufera
+1758	Festoni ovunque
+1759	Festone
+1760	Buche e sabbiere al parco giochi — salta
+1761	Imperturbabile
+1762	Niente taxi
+1763	Niente albero
+1764	Tranquillo, c'è ancora tempo prima della mezzanotte
+1765	Calza senza regalo
+1766	Chat notturna
+1767	Bosco notturno: cumuli di neve e buche — guarda dove metti i piedi
+1768	Pranzo per 30 — vassoi che volano!
+1769	Insalata russa per tutti
+1770	Siamo in ritardo! Buche e pozzanghere per strada
+1771	Coda al guardaroba — più veloce!
+1772	Coda al negozio
+1773	Coda per la cioccolata
+1774	Coda per i regali
+1775	Coda dal pediatra — resisti!
+1776	Coda alla cassa il 31 — resisti!
+1777	Coda alla cassa
+1778	Conta dei bambini sotto la pioggia
+1779	Lettere e pacchi in volo — abbattili ⚽
+1780	Biscotto bruciato
+1781	Carta strappata
+1782	Ultimi minuti dell'anno! Fuochi d'artificio e trampolini
+1783	Ultimo autobus
+1784	Ufficio postale di Babbo Natale
+1785	La festa non scappa
+1786	Festa salvata!
+1787	Corsa di fine anno
+1788	Ingorgo fuori città
+1789	Pan di zenzero in forno: teglie che volano!
+1790	Cucina del pan di zenzero
+1791	Schiaccia 2 problemi saltandoci sopra
+1792	Saldi!
+1793	Parenti in visita
+1794	Parenti a tavola: domande da ogni lato
+1795	Notte di Natale
+1796	Fiaba di Natale
+1797	Mercatino di Natale
+1798	Buon anno in anticipo!
+1799	Insalate per 12: piatti che volano!
+1800	Botti sotto la finestra
+1801	Abbatti 3 problemi volanti
+1802	Ritrovo alle 7:00: qualcuno è in ritardo — corri!
+1803	Prepararsi in 10 minuti: montagne di scarpe e zaini — salta!
+1804	Mappa stagionale fino al 31 gennaio: cena aziendale, code per i regali e parenti a tavola
+1805	Mappa stagionale fino al 31 gennaio: mercatino, pista, pan di zenzero e un po' di magia
+1806	Sentiero scivoloso
+1807	Pista scivolosa — tutto più veloce!
+1808	Slittino rotto
+1809	Neve nel colletto
+1810	Neve e mercatino degli abeti: buche sotto i cumuli
+1811	Palla di neve
+1812	Raccogli
+1813	Ghiacciolo
+1814	Lista dei regali
+1815	Tranquillo
+1816	Vecchio cortile: buche e pozzanghere — salta
+1817	Mensa del museo
+1818	Cumulo di neve
+1819	Babbo Natale segreto
+1820	Buio in sala — si vede solo intorno
+1821	L'impasto non è lievitato
+1822	Folla al mercatino
+1823	Brindisi di cinque minuti
+1824	Ce l'hai fatta!
+1825	Bosco oscuro
+1826	Nanna
+1827	Compiti e giocattoli — tanti piccoli problemi
+1828	Serata accogliente: calze sul camino e regali
+1829	Sparacoriandoli
+1830	I miracoli accadono — soprattutto a chi non si arrende!
+1831	È successo un miracolo!
+1832	Il miracolo è vicino
+1833	Pallina dell'albero
+1834	Mercatino: folla e neve — salta
+1835	Nuovo grado
+1836	Grado
+1837	Progressi
+1838	La MODALITÀ CORSA si apre al livello 4 di «Sfogarsi»
+1839	MODALITÀ CORSA — più difficile, ma più

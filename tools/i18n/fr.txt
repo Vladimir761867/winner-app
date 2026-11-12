@@ -1654,3 +1654,187 @@
 1653	Termine tous les mondes du tour pour gagner
 1654	JOUER
 1655	Au menu
+1656	Voleur de fête
+1657	Guirlande cassée
+1658	Tempête de neige
+1659	Le cadeau n'est pas arrivé
+1660	Les miracles n'existent pas
+1661	File pour la patinoire
+1662	Pains d'épices brûlés
+1663	Père Noël en retard
+1664	Rapport annuel avant le 31
+1665	Animateur envahissant
+1666	File pour les mandarines
+1667	Et qui va faire les salades ?
+1668	Bouchon du 31 décembre
+1669	Le dernier cadeau
+1670	Alors, c'est pour quand le mariage ?
+1671	Les douze coups de minuit
+1672	Si tu ne sais pas, n'essaie pas
+1673	Sois arrangeant
+1674	L'essentiel, c'est la stabilité
+1675	Ne te fais pas remarquer
+1676	Qu'en diront les gens ?
+1677	Les amis peuvent attendre
+1678	Après 30 ans on ne se fait plus d'amis
+1679	Le travail d'abord, les amis ensuite
+1680	Tu es mère, supporte
+1681	Une bonne mère ne se fatigue pas
+1682	Papa ne fait qu'aider
+1683	Une mère doit tout faire
+1684	Les parents doivent accompagner
+1685	Encore 500 chacun
+1686	Pourquoi n'êtes-vous pas au comité des parents ?
+1687	Les cadeaux, c'est pour les enfants
+1688	Le Nouvel An est une fête de famille
+1689	Pas de fête sans salades
+1690	Et ta moitié, elle est où ?
+1691	Tu es le parent accompagnateur : bus, musée et comptage des têtes
+1692	Se défouler
+1693	Évolution
+1694	Super-niveaux
+1695	Chef de mauvaise humeur
+1696	boss plus forts et plus énervés
+1697	tout 15% plus vite
+1698	Sans café
+1699	moins de nourriture, récupération plus lente
+1700	« Encore une histoire ! » — il fait noir, tiens bon
+1701	Il faut clôturer l'année
+1702	« Ne pas toucher ! » : des murs de panneaux — saute
+1703	« Vu » à 2 h du matin : abats les notifications
+1704	Tu as grossi
+1705	· jusqu'à «
+1706	» encore
+1707	· maintenant ×
+1708	Marché aux sapins
+1709	Bus avec la classe
+1710	Un bus, 30 enfants et « on arrive bientôt ? »
+1711	Des éclaboussures partout — saute !
+1712	Chez un ami : boîtes à pizza et câbles
+1713	Chaque lieu a 3 objectifs : ✅ termine-le · 🎯 réussis la mission du lieu · 🧘 ne perds pas plus de la moitié de ton énergie. +5 ⭐ par objectif, un bonus à chaque nouveau rang. Touche un lieu pour y jouer.
+1714	Dans les contes, rien ne marche du premier coup
+1715	Soirée au coin du feu
+1716	Fête : confettis et « allez, encore une »
+1717	Magique !
+1718	Quel rush !
+1719	Tout le monde part en visite : vite et dans le noir
+1720	Rendez-vous au café : les plateaux volent — saute !
+1721	Respire et réessaie
+1722	Guirlande emmêlée
+1723	Année bouclée, cadeaux achetés — on souffle !
+1724	Prime annuelle
+1725	Rapport annuel
+1726	Montagne de cadeaux
+1727	Gourou de l'équilibre
+1728	Clinique pour enfants
+1729	Chambre des enfants : devoirs
+1730	Chemin de la maternelle
+1731	Souvenirs chers
+1732	Petit-déjeuner
+1733	Coucher de soleil sur le quai : plus vite, avec des trous
+1734	Boucler l'année avant le 31 : des murs de rapports
+1735	Doigts gelés
+1736	Lumières emmêlées
+1737	Repas avec la famille
+1738	Nuit étoilée : des trampolines jusqu'à l'étoile
+1739	Forêt d'hiver
+1740	Zoo : des trous et des perroquets au-dessus
+1741	Comme dans un conte !
+1742	Patinoire
+1743	La bouillie vole, le jus coule — saute !
+1744	Appartement d'un ami
+1745	Flocon piquant
+1746	Confettis
+1747	Fête du bureau : jeux et toasts volent — abats-les ⚽
+1748	Fête du bureau
+1749	L'heure du bain
+1750	Bientôt minuit
+1751	Cuisine : salade Olivier
+1752	Légende du Vainqueur
+1753	Mur de glace
+1754	Lieu
+1755	Maître du souffle
+1756	Blizzard !
+1757	Blizzard
+1758	Des guirlandes partout
+1759	Guirlande
+1760	Trous et bacs à sable au parc — saute
+1761	Imperturbable
+1762	Pas de taxi
+1763	Pas de sapin
+1764	Pas grave, il reste du temps avant minuit
+1765	Chaussette sans cadeau
+1766	Messages de nuit
+1767	Forêt de nuit : congères et trous — regarde où tu marches
+1768	Déjeuner pour 30 — les plateaux volent !
+1769	Salade Olivier pour tous
+1770	On est en retard ! Trous et flaques en route
+1771	File au vestiaire — plus vite !
+1772	File au magasin
+1773	File pour le chocolat chaud
+1774	File pour les cadeaux
+1775	File chez le pédiatre — tiens bon !
+1776	File à la caisse le 31 — tiens bon !
+1777	File à la caisse
+1778	Comptage des têtes sous la pluie
+1779	Lettres et colis volent — abats-les ⚽
+1780	Biscuit brûlé
+1781	Emballage déchiré
+1782	Dernières minutes de l'année ! Feux d'artifice et trampolines
+1783	Dernier bus
+1784	La poste du Père Noël
+1785	La fête ne va pas s'envoler
+1786	Fête sauvée !
+1787	Rush du Nouvel An
+1788	Bouchon hors de la ville
+1789	Pains d'épices au four : les plaques volent !
+1790	Cuisine en pain d'épices
+1791	Écrase 2 problèmes en sautant dessus
+1792	Soldes !
+1793	La famille en visite
+1794	La famille à table : des questions de partout
+1795	Nuit de Noël
+1796	Conte de Noël
+1797	Marché de Noël
+1798	Bonne année en avance !
+1799	Salades pour 12 : les assiettes volent !
+1800	Pétards sous la fenêtre
+1801	Abats 3 problèmes volants
+1802	Rendez-vous à 7 h : quelqu'un est en retard — cours !
+1803	Se préparer en 10 minutes : des tas de chaussures et de sacs — saute !
+1804	Carte saisonnière jusqu'au 31 janvier : fête du bureau, files pour les cadeaux et famille à table
+1805	Carte saisonnière jusqu'au 31 janvier : marché, patinoire, pain d'épices et un peu de magie
+1806	Chemin glissant
+1807	Patinoire glissante — tout va plus vite !
+1808	Luge cassée
+1809	Neige dans le col
+1810	Neige et marché aux sapins : des trous sous les congères
+1811	Boule de neige
+1812	Ramasse
+1813	Stalactite de glace
+1814	Liste de cadeaux
+1815	Calme
+1816	Vieille cour : trous et flaques — saute
+1817	Cafétéria du musée
+1818	Congère
+1819	Père Noël secret
+1820	Il fait noir dans la salle — on ne voit qu'autour de soi
+1821	La pâte n'a pas levé
+1822	Foule au marché
+1823	Toast de cinq minutes
+1824	Tu as réussi à temps !
+1825	Forêt sombre
+1826	Coucher
+1827	Devoirs et jouets — plein de petits problèmes
+1828	Soirée douillette : chaussettes sur la cheminée et cadeaux
+1829	Pétard surprise
+1830	Les miracles arrivent — surtout à ceux qui n'abandonnent pas !
+1831	Un miracle est arrivé !
+1832	Le miracle est tout proche
+1833	Boule du sapin
+1834	Marché : foule et congères — saute
+1835	Nouveau rang
+1836	Rang
+1837	Progression
+1838	Le MODE RUSH s'ouvre au niveau 4 de « Se défouler »
+1839	MODE RUSH — plus dur, mais plus de

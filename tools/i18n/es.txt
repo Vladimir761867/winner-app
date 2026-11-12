@@ -1654,3 +1654,187 @@
 1653	Supera todos los mundos de la ronda y conseguirás
 1654	JUGAR
 1655	Al menú
+1656	Ladrón de la Fiesta
+1657	Guirnalda Rota
+1658	Tormenta de Nieve
+1659	El regalo no llegó
+1660	Los milagros no existen
+1661	Cola para la pista
+1662	Galletas Quemadas
+1663	Papá Noel Tardón
+1664	Informe anual antes del 31
+1665	Animador Pesado
+1666	Cola de mandarinas
+1667	¿Y las ensaladas quién las hace?
+1668	Atasco del 31 de diciembre
+1669	El último regalo
+1670	¿Y la boda para cuándo?
+1671	Las campanadas
+1672	Si no sabes, no lo intentes
+1673	Sé cómodo para los demás
+1674	Lo importante es la estabilidad
+1675	No te hagas notar
+1676	¿Qué dirá la gente?
+1677	Los amigos pueden esperar
+1678	Después de los 30 no se hacen amigos
+1679	Primero el trabajo, luego los amigos
+1680	Eres madre, aguanta
+1681	Una buena madre no se cansa
+1682	Papá solo ayuda
+1683	Una madre debe llegar a todo
+1684	Los padres deben acompañar
+1685	Pongan otros 500 cada uno
+1686	¿Por qué no está en la asociación de padres?
+1687	Los regalos son para niños
+1688	Año Nuevo es una fiesta familiar
+1689	Sin ensaladas no hay fiesta
+1690	¿Y tu media naranja dónde está?
+1691	Eres el padre acompañante: autobús, museo y recuentos
+1692	Desahogarse
+1693	Crecimiento
+1694	Superniveles
+1695	Jefe de mal humor
+1696	jefes más fuertes y furiosos
+1697	todo un 15% más rápido
+1698	Sin café
+1699	menos comida, recuperas más lento
+1700	"¡Otro cuento más!" — está oscuro, aguanta
+1701	Hay que cerrar el año
+1702	«¡No tocar!»: muros de carteles, sáltalos
+1703	"Visto" a las 2 de la mañana: derriba las notificaciones
+1704	Has engordado
+1705	· hasta «
+1706	» faltan
+1707	· ahora ×
+1708	Mercado de abetos
+1709	Autobús con la clase
+1710	Un autobús, 30 niños y "¿ya llegamos?"
+1711	Salpicaduras por todas partes: ¡salta!
+1712	En casa ajena: cajas de pizza y cables
+1713	Cada lugar tiene 3 metas: ✅ supéralo · 🎯 cumple la tarea del lugar · 🧘 no pierdas más de la mitad de energía. +5 ⭐ por meta y bonus por cada rango nuevo. Toca un lugar para jugarlo.
+1714	En los cuentos nada sale a la primera
+1715	Tarde junto a la chimenea
+1716	Fiesta: vuela el confeti y "otra ronda más"
+1717	¡Mágico!
+1718	¡Qué locura de prisas!
+1719	Todos van de visita: rápido y oscuro
+1720	Quedada en el café: vuelan bandejas, ¡salta!
+1721	Respira y vuelve a intentarlo
+1722	Guirnalda enredada
+1723	Año cerrado, regalos comprados: ¡a respirar!
+1724	Paga extra anual
+1725	Informe anual
+1726	Montaña de regalos
+1727	Gurú del equilibrio
+1728	Pediatría
+1729	Habitación de los niños: deberes
+1730	Camino a la guardería
+1731	Recuerdos caros
+1732	Desayuno
+1733	Atardecer en el paseo: más rápido y con hoyos
+1734	Cerrar el año antes del 31: muros de informes
+1735	Dedos congelados
+1736	Luces enredadas
+1737	Cena con la familia
+1738	Noche estrellada: camas elásticas hasta la estrella
+1739	Bosque invernal
+1740	Zoo: hoyos y loros sobre tu cabeza
+1741	¡Como en un cuento!
+1742	Pista de hielo
+1743	Vuela la papilla, se derrama el zumo: ¡salta!
+1744	Piso de un amigo
+1745	Copo de nieve espinoso
+1746	Confeti
+1747	Cena de empresa: concursos y brindis vuelan, derríbalos ⚽
+1748	Cena de empresa
+1749	Hora del baño
+1750	Ya casi son las campanadas
+1751	Cocina: ensaladilla
+1752	Leyenda de Ganador
+1753	Muro de hielo
+1754	Lugar
+1755	Maestro del respiro
+1756	¡Ventisca!
+1757	Ventisca
+1758	Espumillón por todas partes
+1759	Espumillón
+1760	En el parque hay hoyos y areneros: salta
+1761	Imperturbable
+1762	No hay taxis
+1763	No hay árbol
+1764	Tranquilo, aún hay tiempo antes de las campanadas
+1765	Calcetín sin regalo
+1766	Chat de madrugada
+1767	Bosque nocturno: ventisqueros y hoyos, mira dónde pisas
+1768	Comida para 30: ¡vuelan bandejas!
+1769	Ensaladilla para todos
+1770	¡Llegamos tarde! Hoyos y charcos por el camino
+1771	Cola del guardarropa: ¡más rápido!
+1772	Cola en la tienda
+1773	Cola del chocolate caliente
+1774	Cola de regalos
+1775	Cola del pediatra: ¡aguanta!
+1776	Cola en caja el día 31: ¡aguanta!
+1777	Cola en caja
+1778	Recuento bajo la lluvia
+1779	Vuelan cartas y paquetes, derríbalos ⚽
+1780	Galleta quemada
+1781	Envoltorio roto
+1782	¡Últimos minutos del año! Fuegos artificiales y camas elásticas
+1783	Último autobús
+1784	Correo de Papá Noel
+1785	La fiesta no se va a ningún lado
+1786	¡Fiesta salvada!
+1787	Prisas de fin de año
+1788	Atasco a las afueras
+1789	Galletas en el horno: ¡vuelan bandejas!
+1790	Cocina de galletas
+1791	Aplasta 2 problemas saltando encima
+1792	¡Rebajas!
+1793	Familia de visita
+1794	Familia en la mesa: preguntas por todas partes
+1795	Nochebuena
+1796	Cuento de Navidad
+1797	Mercado navideño
+1798	¡Feliz Año Nuevo anticipado!
+1799	Ensaladas para 12: ¡vuelan platos!
+1800	Petardos bajo la ventana
+1801	Derriba 3 problemas voladores
+1802	Quedada a las 7:00: alguien llega tarde, ¡corre!
+1803	Prepararse en 10 minutos: montañas de zapatos y mochilas, ¡salta!
+1804	Mapa de temporada hasta el 31 de enero: cena de empresa, colas de regalos y familia a la mesa
+1805	Mapa de temporada hasta el 31 de enero: mercado, pista de hielo, galletas y un poco de magia
+1806	Camino resbaladizo
+1807	Pista resbaladiza: ¡todo más rápido!
+1808	Trineo roto
+1809	Nieve en el cuello
+1810	Nieve y mercado de abetos: hoyos bajo la nieve
+1811	Bola de nieve
+1812	Recoge
+1813	Carámbano
+1814	Lista de regalos
+1815	Tranquilo
+1816	Patio viejo: hoyos y charcos, salta
+1817	Cafetería del museo
+1818	Montón de nieve
+1819	Amigo invisible
+1820	Oscuro en la sala: solo ves lo de alrededor
+1821	La masa no subió
+1822	Multitud en el mercado
+1823	Brindis de cinco minutos
+1824	¡Lo lograste a tiempo!
+1825	Bosque oscuro
+1826	Hora de dormir
+1827	Deberes y juguetes: muchos problemas pequeños
+1828	Tarde acogedora: calcetines en la chimenea y regalos
+1829	Matasuegras
+1830	Los milagros ocurren, ¡sobre todo a quien no se rinde!
+1831	¡Ocurrió un milagro!
+1832	El milagro está cerca
+1833	Bola del árbol
+1834	Mercado: multitud y nieve, salta
+1835	Nuevo rango
+1836	Rango
+1837	Progreso
+1838	El MODO PRISAS se abre en el nivel 4 de "Desahogarse"
+1839	MODO PRISAS: más difícil, pero más
