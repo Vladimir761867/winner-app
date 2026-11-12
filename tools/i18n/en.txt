@@ -1654,3 +1654,187 @@
 1653	Finish all worlds of the round to get
 1654	PLAY
 1655	To menu
+1656	Holiday Thief
+1657	Broken Garland
+1658	Snowstorm
+1659	Gift Never Came
+1660	Miracles don't happen
+1661	Ice Rink Queue
+1662	Burnt Gingerbread
+1663	Late Father Frost
+1664	Annual report by the 31st
+1665	Party Host from Hell
+1666	Tangerine Queue
+1667	And who will make the salads?
+1668	December 31 Traffic Jam
+1669	The Last Gift
+1670	So, when's the wedding?
+1671	The Midnight Chimes
+1672	If you can't, don't try
+1673	Be convenient for others
+1674	Stability above all
+1675	Don't stick your neck out
+1676	What will people say?
+1677	Friends can wait
+1678	You don't make new friends after 30
+1679	Work first, friends later
+1680	You're a mother — just endure it
+1681	A good mother never gets tired
+1682	Dad is just helping
+1683	A mother must do it all
+1684	Parents must chaperone
+1685	Everyone chip in another 500
+1686	Why aren't you on the parents' committee?
+1687	Gifts are for kids
+1688	New Year is a family holiday
+1689	No salads, no celebration
+1690	And where's your other half?
+1691	You're the parent chaperone: bus, museum and headcounts
+1692	Let off steam
+1693	Growth
+1694	Super levels
+1695	Boss in a bad mood
+1696	bosses stronger and angrier
+1697	everything 15% faster
+1698	No coffee
+1699	less food, slower recovery
+1700	"One more story!" — it's dark, hold on
+1701	Gotta close out the year
+1702	"Do not touch!": walls of signs — jump over
+1703	"Seen" at 2 a.m.: knock down the notifications
+1704	You've put on weight
+1705	· to «
+1706	» left:
+1707	· now ×
+1708	Christmas tree market
+1709	Bus with the class
+1710	A bus, 30 kids and "are we there yet?"
+1711	Splashes everywhere — jump!
+1712	At a friend's: pizza boxes and cables
+1713	Each location has 3 goals: ✅ clear it · 🎯 complete the location task · 🧘 don't lose more than half your energy. +5 ⭐ per goal, a bonus for each new rank. Tap a location to play it.
+1714	In fairy tales, things take time
+1715	Evening by the fireplace
+1716	Party: confetti flying and "one more round"
+1717	Magical!
+1718	What a rush!
+1719	Everyone's driving to visit: fast and dark
+1720	Meetup at a café: trays flying — jump!
+1721	Breathe out and try again
+1722	Tangled garland
+1723	Year closed, gifts bought — time to breathe out!
+1724	Annual bonus
+1725	Annual report
+1726	Mountain of gifts
+1727	Balance Guru
+1728	Children's clinic
+1729	Kids' room: homework
+1730	Road to kindergarten
+1731	Pricey souvenirs
+1732	Breakfast
+1733	Sunset on the embankment: faster, with holes
+1734	Close the year by the 31st: walls of reports
+1735	Frozen fingers
+1736	Tangled lights
+1737	Dinner with relatives
+1738	Starry night: trampolines up to the star
+1739	Winter forest
+1740	Zoo: holes and parrots overhead
+1741	Like a fairy tale!
+1742	Ice rink
+1743	Porridge flying, juice spilled — jump!
+1744	Friend's apartment
+1745	Prickly snowflake
+1746	Confetti
+1747	Office party: games and toasts flying — knock them down ⚽
+1748	Office party
+1749	Bath time
+1750	The chimes are soon
+1751	Kitchen: Olivier salad
+1752	Legend of Winner
+1753	Ice wall
+1754	Location
+1755	Master of Exhaling
+1756	Blizzard!
+1757	Blizzard
+1758	Tinsel everywhere
+1759	Tinsel
+1760	Holes and sandboxes on the playground — jump
+1761	Unflappable
+1762	No taxis
+1763	No tree yet
+1764	It's fine, there's still time before midnight
+1765	Stocking with no gift
+1766	Late-night texting
+1767	Night forest: snowdrifts and holes — watch your step
+1768	Lunch for 30 — trays flying!
+1769	Olivier salad for everyone
+1770	We're late! Holes and puddles on the way
+1771	Cloakroom queue — faster!
+1772	Store queue
+1773	Cocoa queue
+1774	Gift queue
+1775	Pediatrician queue — hang in there!
+1776	Checkout queue on the 31st — hang in there!
+1777	Checkout queue
+1778	Headcount in the rain
+1779	Letters and parcels flying — knock them down ⚽
+1780	Burnt cookie
+1781	Torn wrapping
+1782	Last minutes of the year! Fireworks and trampolines
+1783	Last bus
+1784	Father Frost's Post Office
+1785	The holiday isn't going anywhere
+1786	Holiday saved!
+1787	Pre-New Year Rush
+1788	Traffic jam out of town
+1789	Gingerbread in the oven: baking trays flying!
+1790	Gingerbread kitchen
+1791	Stomp 2 problems from above
+1792	Sale!
+1793	Relatives visiting
+1794	Relatives at the table: questions from every side
+1795	Christmas night
+1796	Christmas Tale
+1797	Christmas market
+1798	Happy upcoming New Year!
+1799	Salads for 12: plates flying!
+1800	Fireworks under the window
+1801	Knock down 3 flying problems
+1802	Meet at 7:00: someone's late — run!
+1803	Getting ready in 10 minutes: piles of shoes and backpacks — jump over!
+1804	Seasonal map until January 31: office party, gift queues and relatives at the table
+1805	Seasonal map until January 31: market, ice rink, gingerbread and a bit of magic
+1806	Slippery path
+1807	Slippery rink — everything's faster!
+1808	Broken sled
+1809	Snow down your collar
+1810	Snow and a tree market: holes under the drifts
+1811	Snowball
+1812	Collect
+1813	Icicle
+1814	Gift list
+1815	Calm
+1816	Old courtyard: holes and puddles — jump
+1817	Museum cafeteria
+1818	Snowdrift
+1819	Secret Santa
+1820	Dark in the theater — you only see what's around you
+1821	Dough didn't rise
+1822	Crowd at the market
+1823	Five-minute toast
+1824	You made it!
+1825	Dark forest
+1826	Bedtime
+1827	Homework and toys — lots of small problems
+1828	Cozy evening: stockings on the mantel and gifts
+1829	Party popper
+1830	Miracles happen — especially to those who don't give up!
+1831	A miracle happened!
+1832	The miracle is near
+1833	Tree ornament
+1834	Market: crowds and snowdrifts — jump
+1835	New rank
+1836	Rank
+1837	Progress
+1838	RUSH MODE unlocks at level 4 of "Let off steam"
+1839	RUSH MODE — harder, but more

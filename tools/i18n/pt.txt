@@ -1654,3 +1654,187 @@
 1653	Conclua todos os mundos da rodada e ganhe
 1654	JOGAR
 1655	Para o menu
+1656	Ladrão da Festa
+1657	Pisca-pisca Quebrado
+1658	Tempestade de Neve
+1659	O presente não chegou
+1660	Milagres não existem
+1661	Fila da pista de gelo
+1662	Biscoitos Queimados
+1663	Papai Noel Atrasado
+1664	Relatório anual até dia 31
+1665	Animador Chato
+1666	Fila das tangerinas
+1667	E quem vai fazer as saladas?
+1668	Engarrafamento de 31 de dezembro
+1669	O último presente
+1670	E o casamento, quando sai?
+1671	As badaladas da meia-noite
+1672	Se não sabe, nem tente
+1673	Seja conveniente para os outros
+1674	O importante é a estabilidade
+1675	Não chame atenção
+1676	O que as pessoas vão dizer?
+1677	Os amigos podem esperar
+1678	Depois dos 30 não se faz amigos
+1679	Primeiro o trabalho, depois os amigos
+1680	Você é mãe, aguenta
+1681	Mãe boa não cansa
+1682	O pai só ajuda
+1683	Mãe tem que dar conta de tudo
+1684	Os pais devem acompanhar
+1685	Cada um passa mais 500
+1686	Por que você não está no comitê de pais?
+1687	Presentes são para crianças
+1688	Ano-Novo é festa de família
+1689	Sem salada não é festa
+1690	E a sua cara-metade?
+1691	Você é o pai acompanhante: ônibus, museu e contagem de cabeças
+1692	Desabafar
+1693	Crescimento
+1694	Superníveis
+1695	Chefe de mau humor
+1696	chefes mais fortes e bravos
+1697	tudo 15% mais rápido
+1698	Sem café
+1699	menos comida, recupera mais devagar
+1700	"Só mais uma história!" — está escuro, aguenta
+1701	Precisa fechar o ano
+1702	"Não toque!": paredes de placas — pule
+1703	"Visto" às 2 da manhã: derrube as notificações
+1704	Você engordou
+1705	· até «
+1706	» faltam
+1707	· agora ×
+1708	Feira de pinheiros
+1709	Ônibus com a turma
+1710	Ônibus, 30 crianças e "já chegamos?"
+1711	Respingos para todo lado — pule!
+1712	Na casa do amigo: caixas de pizza e fios
+1713	Cada local tem 3 metas: ✅ conclua · 🎯 cumpra a tarefa do local · 🧘 não perca mais da metade da energia. +5 ⭐ por meta e bônus a cada nova patente. Toque num local para jogar.
+1714	Nos contos de fada nada sai de primeira
+1715	Noite junto à lareira
+1716	Festa: confete voando e "só mais uma"
+1717	Mágico!
+1718	Que correria!
+1719	Todos indo visitar: rápido e escuro
+1720	Encontro no café: bandejas voando — pule!
+1721	Respire e tente de novo
+1722	Pisca-pisca embolado
+1723	Ano fechado, presentes comprados — pode respirar!
+1724	Bônus anual
+1725	Relatório anual
+1726	Montanha de presentes
+1727	Guru do equilíbrio
+1728	Clínica infantil
+1729	Quarto das crianças: lição de casa
+1730	Caminho da creche
+1731	Lembrancinhas caras
+1732	Café da manhã
+1733	Pôr do sol na orla: mais rápido e com buracos
+1734	Fechar o ano até dia 31: paredes de relatórios
+1735	Dedos congelados
+1736	Luzes emboladas
+1737	Ceia com os parentes
+1738	Noite estrelada: camas elásticas até a estrela
+1739	Floresta de inverno
+1740	Zoológico: buracos e papagaios por cima
+1741	Como num conto de fadas!
+1742	Pista de gelo
+1743	Mingau voando, suco derramado — pule!
+1744	Apartamento do amigo
+1745	Floco de neve espinhoso
+1746	Confete
+1747	Festa da firma: brincadeiras e brindes voando — derrube ⚽
+1748	Festa da firma
+1749	Hora do banho
+1750	As badaladas estão chegando
+1751	Cozinha: salada russa
+1752	Lenda do Vencedor
+1753	Parede de gelo
+1754	Local
+1755	Mestre da respiração
+1756	Nevasca!
+1757	Nevasca
+1758	Festão por todo lado
+1759	Festão
+1760	Buracos e caixas de areia no parquinho — pule
+1761	Inabalável
+1762	Sem táxi
+1763	Sem árvore
+1764	Calma, ainda dá tempo antes da meia-noite
+1765	Meia sem presente
+1766	Conversa de madrugada
+1767	Floresta à noite: montes de neve e buracos — olhe onde pisa
+1768	Almoço para 30 — bandejas voando!
+1769	Salada russa para todos
+1770	Atrasados! Buracos e poças no caminho
+1771	Fila do guarda-volumes — mais rápido!
+1772	Fila na loja
+1773	Fila do chocolate quente
+1774	Fila dos presentes
+1775	Fila do pediatra — aguenta!
+1776	Fila do caixa no dia 31 — aguenta!
+1777	Fila do caixa
+1778	Contagem de cabeças na chuva
+1779	Cartas e pacotes voando — derrube ⚽
+1780	Biscoito queimado
+1781	Embrulho rasgado
+1782	Últimos minutos do ano! Fogos e camas elásticas
+1783	Último ônibus
+1784	Correio do Papai Noel
+1785	A festa não vai a lugar nenhum
+1786	Festa salva!
+1787	Correria de fim de ano
+1788	Engarrafamento na estrada
+1789	Biscoitos no forno: assadeiras voando!
+1790	Cozinha dos biscoitos
+1791	Esmague 2 problemas pulando em cima
+1792	Liquidação!
+1793	Parentes de visita
+1794	Parentes à mesa: perguntas de todos os lados
+1795	Noite de Natal
+1796	Conto de Natal
+1797	Feira de Natal
+1798	Feliz Ano-Novo antecipado!
+1799	Saladas para 12: pratos voando!
+1800	Fogos debaixo da janela
+1801	Derrube 3 problemas voadores
+1802	Encontro às 7:00: alguém está atrasado — corre!
+1803	Arrumar em 10 minutos: pilhas de sapatos e mochilas — pule!
+1804	Mapa sazonal até 31 de janeiro: festa da firma, filas de presentes e parentes à mesa
+1805	Mapa sazonal até 31 de janeiro: feira, pista de gelo, biscoitos e um pouco de magia
+1806	Caminho escorregadio
+1807	Pista escorregadia — tudo mais rápido!
+1808	Trenó quebrado
+1809	Neve na gola
+1810	Neve e feira de pinheiros: buracos sob a neve
+1811	Bola de neve
+1812	Colete
+1813	Pingente de gelo
+1814	Lista de presentes
+1815	Tranquilo
+1816	Pátio antigo: buracos e poças — pule
+1817	Refeitório do museu
+1818	Monte de neve
+1819	Amigo secreto
+1820	Escuro na sala — só se vê ao redor
+1821	A massa não cresceu
+1822	Multidão na feira
+1823	Brinde de cinco minutos
+1824	Você conseguiu a tempo!
+1825	Floresta escura
+1826	Hora de dormir
+1827	Lição e brinquedos — muitos probleminhas
+1828	Noite aconchegante: meias na lareira e presentes
+1829	Lança-confete
+1830	Milagres acontecem — principalmente com quem não desiste!
+1831	Aconteceu um milagre!
+1832	O milagre está perto
+1833	Bola da árvore
+1834	Feira: multidão e neve — pule
+1835	Nova patente
+1836	Patente
+1837	Progresso
+1838	O MODO CORRERIA abre no nível 4 de "Desabafar"
+1839	MODO CORRERIA — mais difícil, mas mais

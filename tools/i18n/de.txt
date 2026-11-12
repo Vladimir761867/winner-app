@@ -1654,3 +1654,187 @@
 1653	Schaffe alle Welten der Runde und du bekommst
 1654	SPIELEN
 1655	Zum Menü
+1656	Festtagsdieb
+1657	Kaputte Lichterkette
+1658	Schneesturm
+1659	Geschenk kam nicht an
+1660	Wunder gibt es nicht
+1661	Schlange an der Eisbahn
+1662	Verbrannte Lebkuchen
+1663	Verspäteter Väterchen Frost
+1664	Jahresbericht bis zum 31.
+1665	Nerviger Animateur
+1666	Mandarinen-Schlange
+1667	Und wer macht die Salate?
+1668	Stau am 31. Dezember
+1669	Das letzte Geschenk
+1670	Na, wann ist die Hochzeit?
+1671	Glockenschlag um Mitternacht
+1672	Wenn du's nicht kannst, lass es
+1673	Sei bequem für andere
+1674	Hauptsache Stabilität
+1675	Fall bloß nicht auf
+1676	Was sollen die Leute denken?
+1677	Freunde können warten
+1678	Nach 30 findet man keine neuen Freunde
+1679	Erst die Arbeit, dann die Freunde
+1680	Du bist Mutter — halt durch
+1681	Eine gute Mutter wird nie müde
+1682	Papa hilft ja nur
+1683	Eine Mutter muss alles schaffen
+1684	Eltern müssen mitfahren
+1685	Jeder noch mal 500
+1686	Warum sind Sie nicht im Elternbeirat?
+1687	Geschenke sind für Kinder
+1688	Neujahr ist ein Familienfest
+1689	Ohne Salate kein Fest
+1690	Und wo ist deine bessere Hälfte?
+1691	Du bist Begleitperson: Bus, Museum und Durchzählen
+1692	Dampf ablassen
+1693	Entwicklung
+1694	Super-Level
+1695	Chef schlecht gelaunt
+1696	Bosse stärker und wütender
+1697	alles 15% schneller
+1698	Ohne Kaffee
+1699	weniger Essen, langsamere Erholung
+1700	„Noch eine Geschichte!" — dunkel, durchhalten
+1701	Das Jahr muss abgeschlossen werden
+1702	„Nicht berühren!": Schilderwände — spring drüber
+1703	„Gelesen" um 2 Uhr nachts: schieß die Benachrichtigungen ab
+1704	Du hast zugenommen
+1705	· bis «
+1706	» noch
+1707	· jetzt ×
+1708	Christbaummarkt
+1709	Bus mit der Klasse
+1710	Ein Bus, 30 Kinder und „Sind wir bald da?"
+1711	Spritzer überall — spring!
+1712	Zu Besuch: Pizzakartons und Kabel
+1713	Jeder Ort hat 3 Ziele: ✅ schaffen · 🎯 Ortsaufgabe erfüllen · 🧘 nicht mehr als die Hälfte der Energie verlieren. +5 ⭐ pro Ziel, Bonus für jeden neuen Rang. Tippe auf einen Ort, um ihn zu spielen.
+1714	Im Märchen klappt nicht alles sofort
+1715	Abend am Kamin
+1716	Party: Konfetti fliegt und „noch eine Runde"
+1717	Zauberhaft!
+1718	Was für eine Hektik!
+1719	Alle fahren zu Besuch: schnell und dunkel
+1720	Treffen im Café: Tabletts fliegen — spring!
+1721	Atme aus und versuch es nochmal
+1722	Verhedderte Lichterkette
+1723	Jahr abgeschlossen, Geschenke gekauft — durchatmen!
+1724	Jahresprämie
+1725	Jahresbericht
+1726	Geschenkeberg
+1727	Balance-Guru
+1728	Kinderarztpraxis
+1729	Kinderzimmer: Hausaufgaben
+1730	Weg zum Kindergarten
+1731	Teure Souvenirs
+1732	Frühstück
+1733	Sonnenuntergang am Ufer: schneller, mit Löchern
+1734	Das Jahr bis zum 31. abschließen: Wände aus Berichten
+1735	Eiskalte Finger
+1736	Verknotete Lichter
+1737	Festessen mit Verwandten
+1738	Sternennacht: Trampoline bis zum Stern
+1739	Winterwald
+1740	Zoo: Löcher und Papageien über dir
+1741	Wie im Märchen!
+1742	Eisbahn
+1743	Brei fliegt, Saft verschüttet — spring!
+1744	Wohnung eines Freundes
+1745	Stachelige Schneeflocke
+1746	Konfetti
+1747	Firmenfeier: Spiele und Trinksprüche fliegen — abschießen ⚽
+1748	Firmenfeier
+1749	Badezeit
+1750	Gleich schlägt die Uhr
+1751	Küche: Olivier-Salat
+1752	Legende des Siegers
+1753	Eiswand
+1754	Ort
+1755	Meister des Ausatmens
+1756	Schneegestöber!
+1757	Schneegestöber
+1758	Lametta überall
+1759	Lametta
+1760	Löcher und Sandkästen auf dem Spielplatz — spring
+1761	Unerschütterlich
+1762	Kein Taxi
+1763	Kein Baum
+1764	Keine Sorge, bis Mitternacht ist noch Zeit
+1765	Strumpf ohne Geschenk
+1766	Nächtlicher Chat
+1767	Nachtwald: Schneewehen und Löcher — pass auf
+1768	Mittagessen für 30 — Tabletts fliegen!
+1769	Olivier-Salat für alle
+1770	Wir sind spät dran! Löcher und Pfützen unterwegs
+1771	Garderobenschlange — schneller!
+1772	Schlange im Laden
+1773	Kakao-Schlange
+1774	Geschenke-Schlange
+1775	Schlange beim Kinderarzt — halt durch!
+1776	Kassenschlange am 31. — halt durch!
+1777	Kassenschlange
+1778	Durchzählen im Regen
+1779	Briefe und Pakete fliegen — abschießen ⚽
+1780	Verbrannter Keks
+1781	Zerrissenes Papier
+1782	Die letzten Minuten des Jahres! Feuerwerk und Trampoline
+1783	Letzter Bus
+1784	Postamt von Väterchen Frost
+1785	Das Fest läuft nicht weg
+1786	Fest gerettet!
+1787	Silvesterstress
+1788	Stau außerhalb der Stadt
+1789	Lebkuchen im Ofen: Bleche fliegen!
+1790	Lebkuchenküche
+1791	Zerquetsche 2 Probleme von oben
+1792	Ausverkauf!
+1793	Verwandte zu Besuch
+1794	Verwandte am Tisch: Fragen von allen Seiten
+1795	Weihnachtsnacht
+1796	Weihnachtsmärchen
+1797	Weihnachtsmarkt
+1798	Guten Rutsch!
+1799	Salate für 12: Teller fliegen!
+1800	Feuerwerk unterm Fenster
+1801	Schieß 3 fliegende Probleme ab
+1802	Treffpunkt 7:00: jemand ist zu spät — lauf!
+1803	In 10 Minuten fertig: Berge aus Schuhen und Rucksäcken — spring!
+1804	Saisonkarte bis 31. Januar: Firmenfeier, Geschenkeschlangen und Verwandte am Tisch
+1805	Saisonkarte bis 31. Januar: Markt, Eisbahn, Lebkuchen und ein bisschen Zauber
+1806	Glatter Weg
+1807	Glatte Eisbahn — alles schneller!
+1808	Kaputter Schlitten
+1809	Schnee im Kragen
+1810	Schnee und Christbaummarkt: Löcher unter den Wehen
+1811	Schneeball
+1812	Sammle
+1813	Eiszapfen
+1814	Geschenkeliste
+1815	Gelassen
+1816	Alter Hof: Löcher und Pfützen — spring
+1817	Museumscafeteria
+1818	Schneewehe
+1819	Wichteln
+1820	Dunkel im Saal — nur die Umgebung ist sichtbar
+1821	Teig ist nicht aufgegangen
+1822	Gedränge auf dem Markt
+1823	Fünfminütiger Trinkspruch
+1824	Du hast es geschafft!
+1825	Dunkler Wald
+1826	Zubettbringen
+1827	Hausaufgaben und Spielzeug — viele kleine Probleme
+1828	Gemütlicher Abend: Strümpfe am Kamin und Geschenke
+1829	Knallbonbon
+1830	Wunder geschehen — vor allem denen, die nicht aufgeben!
+1831	Ein Wunder ist geschehen!
+1832	Das Wunder ist nah
+1833	Christbaumkugel
+1834	Markt: Gedränge und Schneewehen — spring
+1835	Neuer Rang
+1836	Rang
+1837	Fortschritt
+1838	STRESSMODUS ab Level 4 in „Dampf ablassen"
+1839	STRESSMODUS — schwerer, aber mehr
