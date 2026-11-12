@@ -1618,3 +1618,39 @@
 1617	 s · l'énergie se recharge
 1618	🌙 Effets : réduits
 1619	✨ Effets : tous
+1620	Vallée des dinosaures
+1621	Safari
+1622	Cirque
+1623	Joyeuse ferme
+1624	Monde du Nouvel An
+1625	Les dinos piétinent ! Saute par-dessus les rochers
+1626	Les animaux du safari courent vite — frappe tout de suite !
+1627	Trampolines du cirque ! Saute et attrape les ⭐
+1628	À la ferme : des trous et des poules volantes — regarde en l'air !
+1629	Bonne année ! Rebondis sur les trampolines pour les cadeaux-⭐
+1630	Lion Grognon
+1631	Épouvantail Effrayant
+1632	T-Rex Bagarreur
+1633	Clown Ricaneur
+1634	Bonhomme Blizzard
+1635	Bonnet étoilé
+1636	Traînée lunaire
+1637	Petit sapin sur la tête
+1638	pour tous les mondes du tour 1
+1639	pour tous les mondes de la Nuit magique
+1640	pour le Monde du Nouvel An
+1641	Récompense
+1642	récompense
+1643	Mets-le dans la boutique
+1644	Monde terminé
+1645	Monde
+1646	Tour
+1647	Nuit magique
+1648	après le monde 16
+1649	tu es ici
+1650	Carte des mondes
+1651	seulement jusqu'au 31 janvier
+1652	Chaque monde a 3 récompenses : ⭐ termine le monde · 💎 trouve 3 cristaux · ❤️ pas plus de 2 coups. Tu peux rejouer tout monde ouvert.
+1653	Termine tous les mondes du tour pour gagner
+1654	JOUER
+1655	Au menu

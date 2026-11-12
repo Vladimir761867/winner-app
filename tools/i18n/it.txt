@@ -1618,3 +1618,39 @@
 1617	 s · l'energia si ricarica
 1618	🌙 Effetti: ridotti
 1619	✨ Effetti: tutti
+1620	Valle dei dinosauri
+1621	Safari
+1622	Circo
+1623	Fattoria allegra
+1624	Mondo di Capodanno
+1625	I dinosauri pestano i piedi! Salta i massi
+1626	Gli animali del safari corrono veloci: colpisci subito!
+1627	Trampolini del circo! Salta e prendi le ⭐
+1628	Alla fattoria ci sono buche e galline volanti: guarda in alto!
+1629	Buon anno! Salta sui trampolini per i regali-⭐
+1630	Leone Brontolone
+1631	Spaventapasseri Pauroso
+1632	T-Rex Prepotente
+1633	Clown Sghignazzante
+1634	Pupazzo Bufera
+1635	Berretto stellato
+1636	Scia lunare
+1637	Alberello in testa
+1638	per tutti i mondi del giro 1
+1639	per tutti i mondi della Notte magica
+1640	per il Mondo di Capodanno
+1641	Premio
+1642	premio
+1643	Indossalo nel negozio
+1644	Mondo completato
+1645	Mondo
+1646	Giro
+1647	Notte magica
+1648	dopo il mondo 16
+1649	sei qui
+1650	Mappa dei mondi
+1651	solo fino al 31 gennaio
+1652	Ogni mondo ha 3 premi: ⭐ completa il mondo · 💎 trova 3 cristalli · ❤️ non più di 2 colpi. Puoi rigiocare ogni mondo aperto.
+1653	Completa tutti i mondi del giro e otterrai
+1654	GIOCA
+1655	Al menu

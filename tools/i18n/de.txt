@@ -1618,3 +1618,39 @@
 1617	 s · Energie lädt sich auf
 1618	🌙 Effekte: reduziert
 1619	✨ Effekte: alle
+1620	Dinosaurier-Tal
+1621	Safari
+1622	Zirkus
+1623	Lustiger Bauernhof
+1624	Neujahrswelt
+1625	Die Dinos stampfen! Spring über die Felsbrocken
+1626	Safaritiere sind schnell — schlag sofort zu!
+1627	Zirkus-Trampoline! Spring und fang ⭐
+1628	Auf dem Hof gibt es Löcher und fliegende Hühner — schau nach oben!
+1629	Frohes neues Jahr! Spring auf den Trampolinen nach Geschenk-⭐
+1630	Brummlöwe
+1631	Gruselvogelscheuche
+1632	Raufbold-T-Rex
+1633	Kicherclown
+1634	Schneesturm-Schneemann
+1635	Sternenmütze
+1636	Mondspur
+1637	Tannenbaum-Mütze
+1638	für alle Welten von Runde 1
+1639	für alle Welten der Zaubernacht
+1640	für die Neujahrswelt
+1641	Belohnung
+1642	Belohnung
+1643	Zieh es im Laden an
+1644	Welt geschafft
+1645	Welt
+1646	Runde
+1647	Zaubernacht
+1648	nach Welt 16
+1649	du bist hier
+1650	Weltkarte
+1651	nur bis 31. Januar
+1652	Jede Welt hat 3 Belohnungen: ⭐ Welt schaffen · 💎 3 Kristalle finden · ❤️ höchstens 2 Treffer. Jede offene Welt kannst du wiederholen.
+1653	Schaffe alle Welten der Runde und du bekommst
+1654	SPIELEN
+1655	Zum Menü
