@@ -1,5 +1,5 @@
 /* ===== языки ===== */
-const LANGS=[["ru","Русский"],["en","English"],["es","Español"],["pt","Português"],["de","Deutsch"],["fr","Français"],["it","Italiano"],["zh","中文"],["ja","日本語"],["ko","한국어"]];
+const LANGS=[["ru","Русский"],["en","English"],["es","Español"],["pt","Português"],["de","Deutsch"],["fr","Français"],["it","Italiano"],["zh","中文"],["ja","日本語"],["ko","한국어"],["hi","हिन्दी"]];
 let LANG=(()=>{try{const s=localStorage.getItem("pob_lang");if(s&&LANGS.some(l=>l[0]===s))return s}catch(e){}const n=((navigator.languages&&navigator.languages[0])||navigator.language||"en").slice(0,2).toLowerCase();return LANGS.some(l=>l[0]===n)?n:"en"})();
 let TRM=null,TRR=null;const TRC=new Map(),CYR=/[А-Яа-яЁё]/;
 function trInit(){TRC.clear();TRM=null;TRR=null;document.documentElement.lang=LANG;if(LANG==="ru"||!I18N[LANG])return;const a=I18N[LANG],ks=[];TRM=new Map();
