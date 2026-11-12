@@ -316,11 +316,11 @@ function defeat(p,quiet,big){if(p.bar)return;p.dead=true;if(p.boss){spawn=Math.m
  const mul=(mood>0||fx.x2>0)?2:1,add=(1+(combo%5===0?3:0))*mul*(EV().id==="star"?2:1)+PK("star")+(EV().id==="fast"?1:0);if(tut>=9)evTick();coins+=Math.round(add*avM());qEv("stars","",add);qEv("kill",p.name);qEv("kills");
  energy=Math.min(maxE(),energy+(avOn()&&meta.av.food?.5:1)*6*(1-.75*dayT)+3*PK("vamp")+(EV().id==="fresh"?4:0));xp++;
  if(p.wall&&tut===2)tutOk=true;if(p.fly&&tut===3)tutOk=true;
- if(p.boss){spawn=Math.max(spawn,5);queue.length=0;lvlMode=2;lvlT=5;lvlB=0;lvlP=rnd(th.praise);meta.bossK++;hmTick();coins+=EV().id==="boss"?23:15;energy=Math.min(maxE(),energy+40);burst(p.x,y,"#fff",80);confetti(p.x,y);shake=.5;buzz(80);lastBN=p.name;lastBC=EV().id==="boss"?23:15}
+ if(p.boss){spawn=Math.max(spawn,5);queue.length=0;lvlMode=2;lvlT=5;lvlB=0;lvlP=rnd(th.praise);meta.bossK++;hmTick();coins+=EV().id==="boss"?12:8;energy=Math.min(maxE(),energy+40);burst(p.x,y,"#fff",80);confetti(p.x,y);shake=.5;buzz(80);lastBN=p.name;lastBC=EV().id==="boss"?12:8}
  else if(combo%5===0||Math.random()<.2)say(combo%5===0?"Комбо ×"+combo+" — неудержим!":rnd(th.praise),p.x,y-p.h/2-30*u,"#fff2a8",22);
  save();chk()}
 function startClear(){locDone();lvlMode=1;lvlT=6.2;lvlB=0;lvlC=0;lvlP=rnd(th.praise);probs.forEach(p=>{if(p.bar){p.dead=true;return}if(!p.dead&&!p.boss)defeat(p,1)});pits.length=0;queue.length=0;bullets.length=0;joyT=3;flash=.8;shake=.3;SFX.level();confetti(W/2,H*.35);setTimeout(()=>confetti(W*.3,H*.4),350);setTimeout(()=>confetti(W*.7,H*.4),700);buzz(40)}
-function levelUp(){zPrev=zoneNow();level++;lt={c:0,s:0,f:0,st:0,mE:1,e0:0,done:0};zWipe=.001;xp=0;setLvl();energy=Math.min(maxE(),energy+30);coins+=2;shieldOn=ownR("shield")>0||PK("shield")>0;flash=1;shake=.4;buzz(40);if(isDev()){if(chOf(level)!==chOf(level-1)){thIdx=devTh(level);th=THEMES[thIdx];th.en=th.enD;probs=probs.filter(p=>p.boss);showChap(chOf(level)-1)}if(chOf(level)===5){fx.magnet=Math.max(fx.magnet,25);fx.x2=Math.max(fx.x2,25)}}save();chk()}
+function levelUp(){zPrev=zoneNow();level++;lt={c:0,s:0,f:0,st:0,mE:1,e0:0,done:0};zWipe=.001;xp=0;setLvl();energy=Math.min(maxE(),energy+30);coins+=1;shieldOn=ownR("shield")>0||PK("shield")>0;flash=1;shake=.4;buzz(40);if(isDev()){if(chOf(level)!==chOf(level-1)){thIdx=devTh(level);th=THEMES[thIdx];th.en=th.enD;probs=probs.filter(p=>p.boss);showChap(chOf(level)-1)}if(chOf(level)===5){fx.magnet=Math.max(fx.magnet,25);fx.x2=Math.max(fx.x2,25)}}save();chk()}
 function dieCheck(){if(PK("rev")&&!perk.revU){perk.revU=1;energy=maxE()*.5;iF=2;flash=.8;banner("💖 Второе дыхание! Ты снова в строю",2.5);SFX.level();return}if(ownR("kit")>0){inv.kit--;energy=60;save();say("Аптечка поддержки! +60",W/2,H*.3,"#9ff5c0",26)}
  else{st="over";overT=0;SFX.over();if(run>(meta.bestBy[bk()]||0))meta.bestBy[bk()]=run;if(run>meta.best){meta.best=run;newRec=true}setLvl();save();chk();showEnd()}}
 
@@ -1590,7 +1590,7 @@ var _hH=hitHero;hitHero=function(p){if(fx.inv<=0&&iF<=0&&!shieldOn&&armBlock()){
 var _bH=bossHit;bossHit=function(z){if(fx.inv<=0&&iF<=0&&!shieldOn&&armBlock())return;return _bH(z)};
 var _sT=spawnT;spawnT=function(ty,x0){const n=probs.length;_sT(ty,x0);if(th&&th.epic)for(let i=n;i<probs.length;i++){const p=probs[i];if(!p.bar){p.hp=Math.ceil(p.hp*1.7);p.mx=Math.max(p.mx||0,p.hp);p.epic=1}}};
 var _sB=spawnBoss;spawnBoss=function(){_sB();if(th&&th.epic){const p=probs[probs.length-1];if(p&&p.boss){p.hp=p.mx=Math.ceil(p.mx*1.5)}}};
-var _df=defeat;defeat=function(p,q,b){const was=p.dead;_df(p,q,b);if(!was&&!q&&th&&th.epic&&!p.bar&&tut>=9)coins+=p.boss?25:1};
+var _df=defeat;defeat=function(p,q,b){const was=p.dead;_df(p,q,b);if(!was&&!q&&th&&th.epic&&!p.bar&&tut>=9)coins+=p.boss?15:1};
 function premMenu(){if(typeof PLV==="undefined"||!PLV)return"";return '<p style="margin-top:10px;font-weight:bold">⚡ СУПЕР-УРОВНИ</p><div class="cards">'+Object.keys(PLV).map(k=>{const i=THEMES.findIndex(T=>T.id===k),T=THEMES[i],o=has("l:"+k);return '<button class="card" data-sl="'+k+'" style="background:linear-gradient(160deg,'+T.c[0]+','+T.c[1]+')"><i>'+T.ic+'</i><b>'+T.n+(o?'':' 🔒')+'</b><span>'+T.tag+'</span><span>'+(o?'рекорд: '+(meta.bestBy[T.id]||0):'💎 Арсенал')+'</span></button>'}).join('')+'</div><button class="big" data-a="prem" style="background:linear-gradient(90deg,#ffd54a,#ff7a59);color:#2b2350;margin-top:8px">💎 АРСЕНАЛ: катаны, луки, гранаты, доспехи</button>'}
 
 function openShop(){shopOpen=true;renderShop();shopEl.style.display="block"}
