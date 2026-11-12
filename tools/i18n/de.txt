@@ -1613,3 +1613,8 @@
 1612	Schau im Laden vorbei
 1613	Kaufen für
 1614	Jedes Set enthält Waffe, Kleidung und einen Spezialbonus — günstiger als einzeln. Nur für Spiel-⭐.
+1615	Besiegt: 
+1616	Verschnaufpause 
+1617	 s · Energie lädt sich auf
+1618	🌙 Effekte: reduziert
+1619	✨ Effekte: alle

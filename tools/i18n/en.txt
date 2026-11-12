@@ -1613,3 +1613,8 @@
 1612	Visit the shop
 1613	Buy for
 1614	Each set has a weapon, an outfit and a special bonus — cheaper than buying separately. In-game ⭐ only.
+1615	You beat: 
+1616	Breather 
+1617	 s · energy is recovering
+1618	🌙 Effects: reduced
+1619	✨ Effects: full

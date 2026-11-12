@@ -1613,3 +1613,8 @@
 1612	Passe na loja
 1613	Comprar por
 1614	Cada conjunto tem arma, roupa e um bônus especial — mais barato que separado. Só com ⭐ do jogo.
+1615	Você venceu: 
+1616	Pausa 
+1617	 s · a energia se recupera
+1618	🌙 Efeitos: reduzidos
+1619	✨ Efeitos: todos

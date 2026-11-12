@@ -1613,3 +1613,8 @@
 1612	Passe à la boutique
 1613	Acheter pour
 1614	Chaque pack contient une arme, une tenue et un bonus spécial — moins cher que séparément. Uniquement avec les ⭐ du jeu.
+1615	Tu as vaincu : 
+1616	Pause 
+1617	 s · l'énergie se recharge
+1618	🌙 Effets : réduits
+1619	✨ Effets : tous
