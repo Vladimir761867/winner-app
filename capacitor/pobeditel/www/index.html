@@ -1602,6 +1602,91 @@ function closeAll(){shopOpen=profOpen=false;shopEl.style.display=profEl.style.di
 shopEl.onclick=e=>{const b=e.target.closest("button");if(!b)return;if(b.dataset.x){closeAll();return}const i=SHOP.find(x=>x.id===b.dataset.id);if(!i)return;const pr=price(i);if(coins>=pr&&ownR(i.id)<i.max){coins-=pr;inv[i.id]=ownR(i.id)+1;save();renderShop()}};
 profEl.onclick=e=>{const b=e.target.closest("button");if(!b)return;if(b.dataset.x){closeAll();return}const i=+b.dataset.sk,s=SKINS[i];if(!s)return;
  if(meta.skins[i]){meta.skin=i;save();renderProf()}else if(coins>=s.p){coins-=s.p;meta.skins[i]=1;meta.skin=i;save();renderProf()}};
+/* ===== v33: дуэли с боссами, супербоссы, предложения ===== */
+var duel={t:0,o:0,dc:0,par:0,sn:0};
+meta.duel=meta.duel||{par:0,sup:0,rnd:0};
+const isSuperLv=()=>level>=10&&level%10===0;
+function startDuel(p,stg){duel.t=p.sup?11:8;duel.o=.9;duel.sn=0;duel.par=0;p.bs="idle";p.bt=.5;p.pt=3;meta.duel.rnd=(meta.duel.rnd||0)+1;flash=.5;shake=.4;SFX.warn();haz.length=0;
+ banner("⚔️ ДУЭЛЬ! Время замедлено. Бросок отбивает золотой шар в босса",3.6)}
+function duelOrb(p,stg){const x0=p.x-p.w*.42;haz.push({t:"orb",x:x0,s:x0,v:-(230+stg*25)*u,lo:1,dy:0,r:20*u,hh:30*u,gold:1});tone(420,.2,"sine",.08,820);duel.sn++}
+var _bossAI=bossAI;
+bossAI=function(p,stg,dt){
+ if(p.dz===undefined)p.dz={};
+ if(duel.t<=0){
+  if(stg>=1&&!p.dz[stg]){p.dz[stg]=1;if(p.sup)p.sh=Math.max(p.sh||0,2);startDuel(p,stg)}
+  else if(p.sup&&!p.dz[0]){p.dz[0]=1;startDuel(p,stg)}
+  else if(p.sup&&(p.sh||0)>0){duel.dc-=dt;if(duel.dc<=0)startDuel(p,stg)}}
+ if(duel.t>0){
+  duel.t-=dt;duel.o-=dt;
+  if(duel.o<=0&&duel.t>1.2){duelOrb(p,stg);duel.o=1.6-stg*.2-(p.sup?.2:0)}
+  if(duel.t<=0){duel.dc=1.4;if(!(p.sup&&(p.sh||0)>0)){p.bs="open";p.bt=2.2;say("ОТКРЫТ! Бей — урон ×2",p.x-20*u,GY-p.h-34*u,"#9ff5c0",19)}else{p.bs="idle";p.bt=.6}}
+  return}
+ _bossAI(p,stg,dt)};
+var _shoot=shoot;
+shoot=function(){
+ if(st==="play"&&sCd<=0&&duel.t>0){const X=hx();
+  for(const z of haz){if(z.gold&&!z.rf&&!z.hit&&z.x-X>-10*u&&z.x-X<130*u){z.rf=1;z.ok=1;z.x=Math.max(z.x,X+45*u);z.v=900*u;sCd=.3;sMax=.3;SFX.strike();shake=Math.max(shake,.2);flash=.25;burst(z.x,GY-z.hh/2,"#ffd54a",16);say("ОТБИЛ!",X+40*u,GY-120*u*sc(),"#ffe27a",24);return}}}
+ return _shoot()};
+function duelStep(){
+ const B=probs.find(p=>p.boss&&!p.dead);
+ for(const z of haz){if(!z.rf||z.gone)continue;
+  if(B&&z.x>=B.x-B.w*.4){z.gone=1;z.x=-9999;
+   if((B.sh||0)>0){B.sh--;say(B.sh>0?"Щит треснул!":"ЩИТ ПРОБИТ!",B.x,GY-B.h-60*u,"#9fd0ff",26);SFX.boom();shake=.5;burst(B.x,GY-B.h/2,"#9fd0ff",30)}
+   else{const d=Math.max(3,Math.round(B.mx*(B.sup?.1:.14)));B.hp-=d;B.flash=1;say("−"+d+" боссу!",B.x,GY-B.h-60*u,"#ffe27a",28);SFX.boom();shake=.55;burst(B.x,GY-B.h/2,"#ffd54a",30);if(B.hp<=0)defeat(B,0,1)}
+   duel.par++;meta.duel.par=(meta.duel.par||0)+1}}
+ haz=haz.filter(z=>!z.gone)}
+var _bd=bd;
+bd=function(p,n){if(p.boss&&(p.sh||0)>0){if(t-(p.shT||0)>1.2){p.shT=t;say("Щит! Отбивай золотые шары",p.x,GY-p.h-60*u,"#9fd0ff",18)}return 0}return _bd(p,n)};
+var _defeat=defeat;
+defeat=function(p,quiet,big){const was=p.dead;_defeat(p,quiet,big);
+ if(p.boss&&!was&&!p._r){p._r=1;duel.t=0;if(p.sup){meta.duel.sup=(meta.duel.sup||0)+1;coins+=50;say("СУПЕРБОСС ПОБЕЖДЁН! +50 ⭐",W/2,H*.32,"#ffe27a",30);confetti(p.x,GY-p.h/2);save()}}};
+var _spawnBoss=spawnBoss;
+spawnBoss=function(){_spawnBoss();if(!isSuperLv())return;const B=probs[probs.length-1];if(!B||!B.boss)return;
+ B.k=B.k!==undefined?B.k:kindOf(B.name,true);B.sup=1;B.sh=3;B.hp=B.mx=Math.round(B.mx*1.9);B.h*=1.2;B.w*=1.2;
+ banner("СУПЕРБОСС: "+B.name+"! Пробей щит золотыми шарами",5)};
+var _updateV=update;
+update=function(dt){if(duel.t>0&&st==="play")dt*=.62;
+ if(meta.prem&&meta.prem.c_gold&&st==="play"&&!LOWFX()&&Math.random()<.7)parts.push({x:px()-8*u,y:GY-jy-34*u*sc()+(Math.random()-.5)*20*u,vx:-90*u,vy:(Math.random()-.5)*50*u,l:.55,c:Math.random()<.5?"#ffd54a":"#fff3a8",r:3.2*u});
+ _updateV(dt);if(duel.t>0||haz.some(z=>z.rf))duelStep()};
+var _draw=draw;
+draw=function(){_draw();try{
+ if(st!=="play")return;g.save();g.lineJoin="round";g.textAlign="center";
+ for(const z of haz){if(!z.gold)continue;const y=GY-z.hh/2,pl=.5+Math.sin(t*14)*.5,X=hx(),win=!z.rf&&z.x-X>-10*u&&z.x-X<130*u;
+  g.fillStyle="rgba(255,213,74,"+(.25+pl*.25)+")";g.beginPath();g.arc(z.x,y,z.r*(z.rf?1.5:1.9),0,6.283);g.fill();
+  g.fillStyle="#ffd54a";g.beginPath();g.arc(z.x,y,z.r*.7,0,6.283);g.fill();
+  if(win){g.strokeStyle="#fff";g.lineWidth=4*u;g.beginPath();g.arc(z.x,y,z.r*(2.2+pl*.4),0,6.283);g.stroke();g.font="900 "+Math.round(24*u)+"px system-ui";g.lineWidth=5;g.strokeStyle="rgba(30,10,60,.9)";g.strokeText("БРОСОК!",z.x,y-z.r*3.2);g.fillStyle="#ffe27a";g.fillText("БРОСОК!",z.x,y-z.r*3.2)}}
+ for(const p of probs){if(!p.boss||p.dead||!p.inA)continue;const w=Math.max(p.w*1.3,140*u),x=p.x-w/2,y=GY-p.h-36*u;
+  g.fillStyle="rgba(20,10,40,.75)";g.fillRect(x-2,y-2,w+4,12*u+4);g.fillStyle=p.sup?"#ff5ad6":"#ff6b6b";g.fillRect(x,y,w*Math.max(0,p.hp/p.mx),12*u);
+  g.strokeStyle="#fff";g.lineWidth=2;g.strokeRect(x-2,y-2,w+4,12*u+4);
+  if(p.sup){g.font="900 "+Math.round(14*u)+"px system-ui";g.lineWidth=4;g.strokeStyle="rgba(30,10,60,.9)";g.strokeText("СУПЕРБОСС",p.x,y-8*u);g.fillStyle="#ffe27a";g.fillText("СУПЕРБОСС",p.x,y-8*u);
+   for(let k=0;k<(p.sh||0);k++){g.fillStyle="#7fc4ff";g.strokeStyle="#fff";g.lineWidth=2;g.beginPath();g.arc(p.x+(k-1)*22*u,y+34*u,8*u,0,6.283);g.fill();g.stroke()}}}
+ if(duel.t>0){const k=clamp(duel.t/8,0,1);g.fillStyle="rgba(255,213,74,.9)";g.fillRect(W*.25,H*.06,W*.5*k,5*u);g.font="bold "+Math.round(13*u)+"px system-ui";g.fillStyle="#fff";g.fillText("ДУЭЛЬ · отбито: "+duel.par,W/2,H*.06+20*u)}
+ g.restore()}catch(e){window.__de=e.message}};
+/* достижения */
+ACH.push({id:"d1",n:"Первый отбитый шар",ti:"Дуэлянт",c:()=>(meta.duel.par||0)>=1},
+ {id:"d2",n:"50 отбитых шаров",ti:"Мастер дуэли",c:()=>(meta.duel.par||0)>=50},
+ {id:"d3",n:"Победить супербосса",ti:"Гроза гигантов",c:()=>(meta.duel.sup||0)>=1},
+ {id:"d4",n:"Победить 5 супербоссов",ti:"Легенда арены",c:()=>(meta.duel.sup||0)>=5});
+/* сброс при старте забега */
+var _startGameV=startGame;
+startGame=function(i,md){duel.t=0;duel.dc=0;promoEl.style.display="none";return _startGameV(i,md)};
+/* товары и цены (рубли) */
+PRODS.forEach(x=>{x.p=x.one?"79 ₽":({all_in:"799 ₽",pack_warrior:"349 ₽",pack_shooter:"349 ₽",super_levels:"199 ₽"})[x.id]||x.p});
+PALL.push("c_gold");
+PRODS.unshift({id:"starter",n:"🎁 Стартовый набор",d:"300 ⭐, Катана, Рыцарские доспехи и золотой след за героем. Выгоднее покупки по отдельности в 5 раз",g:["starter","c_gold","w:katana","a:knight"],p:"149 ₽",best:1},
+ {id:"c_gold",n:"✨ Золотой след",d:"За героем тянется золотой шлейф — виден всем на видео",g:["c_gold"],p:"99 ₽"});
+var _grantPid=grantPid;
+grantPid=function(pid){const had=meta.prem&&meta.prem.starter,r=_grantPid(pid);if(r&&!had&&meta.prem.starter){coins+=300;save()}return r};
+/* предложения: меню и конец забега */
+const promoEl=document.createElement("button");promoEl.style.cssText="position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:30;display:none;padding:8px 16px;border-radius:14px;border:2px solid #ffd54a;background:rgba(40,20,80,.92);color:#ffe27a;font:bold 14px system-ui";
+document.body.appendChild(promoEl);promoEl.onclick=()=>openPrem();
+const starterP=()=>PRODS.find(x=>x.id==="starter");
+const offerOn=()=>!(meta.prem&&meta.prem.starter)&&(meta.runsN||0)>=3;
+var _showMenuV=showMenu;
+showMenu=function(){_showMenuV();if(offerOn()){promoEl.textContent="🎁 Стартовый набор: "+starterP().p;promoEl.style.display="block"}else promoEl.style.display="none"};
+var _showEndV=showEnd;
+showEnd=function(){_showEndV();promoEl.style.display="none";if(offerOn()){const mc=endEl.querySelector(".mc");if(mc){const b=document.createElement("button");b.dataset.a="prem";b.textContent="🎁 Стартовый набор — "+starterP().p+" (300 ⭐ + Катана + доспехи)";b.style.cssText="margin-top:10px;padding:10px 14px;border-radius:12px;border:2px solid #ffd54a;background:rgba(255,213,74,.15);color:#ffe27a;font:bold 14px system-ui";mc.appendChild(b)}}};
+
 skipB.onclick=skipTut;
 showMenu();requestAnimationFrame(loop);
 </script><script>try{trStatic()}catch(e){}</script></body></html>
