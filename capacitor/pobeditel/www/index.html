@@ -1987,7 +1987,7 @@ const R2 = (() => {
     for(let i=impacts.length-1;i>=0;i--){impacts[i].age+=dt;if(impacts[i].age>=.23)impacts.splice(i,1)}
     if(notice){notice.t-=dt;if(notice.t<=0)notice=null}if(victory){victory.t-=dt;if(victory.t<=0)victory=null}
     const p=activeBoss();if(st==="play"&&p&&p.bossIntro>0){
-      t+=dt;p.bossIntro=Math.max(0,p.bossIntro-dt);const k=1-p.bossIntro/2,e=1-Math.pow(1-k,3);p.x=p.entryFrom+(bossTarget(p)-p.entryFrom)*e;
+      t+=dt;if(jy>0||jv>0){jv-=1800*u*dt;jy+=jv*dt;if(jy<=0){jy=0;jv=0;djU=false}}p.bossIntro=Math.max(0,p.bossIntro-dt);const k=1-p.bossIntro/2,e=1-Math.pow(1-k,3);p.x=p.entryFrom+(bossTarget(p)-p.entryFrom)*e;
       if(!p.bossIntro){p.inA=1;p.bs="idle";p.bt=1;SFX.boom();shake=reduced()?0:.16;iF=Math.max(iF,.5)}return;
     }
     const beforeScroll=dist,beforeTime=t,wasPlaying=st==="play"&&!lvlMode;
@@ -2315,6 +2315,8 @@ const R2 = (() => {
     .rui-surface .it { gap:12px; flex-wrap:wrap; padding:14px 0; }
     .rui-surface .it > div { min-width:0; }
     .rui-surface .it > div:first-child { flex:1 1 180px; }
+    .rui-surface .it[data-row] > div:first-child { flex:0 0 44px; }
+    .rui-surface .it[data-row] > div:nth-child(2) { flex:1 1 150px; min-width:140px; }
     .rui-surface .it button { margin:2px; }
     .rui-surface .box { padding:20px!important; }
     .rui-surface p, .rui-surface b, .rui-surface span { overflow-wrap:anywhere; }
@@ -2388,6 +2390,15 @@ const R2 = (() => {
       #menu .rui-brand-icon { display:none; }
       #menu .rui-play { padding:12px; }
       #menu .rui-section.rui-progress { margin-bottom:14px; }
+    }
+    @media (orientation:landscape) and (max-height:500px) {
+      #menu .rui-shell[data-release-view="home"] { max-width:780px; padding-top:4px; padding-bottom:4px; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); grid-template-areas:"brand play" "prog nav"; column-gap:16px; row-gap:10px; align-items:center; }
+      #menu .rui-shell[data-release-view="home"] .rui-brand { grid-area:brand; margin:0; }
+      #menu .rui-shell[data-release-view="home"] .rui-brand h1 { font-size:30px; }
+      #menu .rui-shell[data-release-view="home"] .rui-subtitle { font-size:13px; margin-top:4px; }
+      #menu .rui-shell[data-release-view="home"] .rui-progress { grid-area:prog; margin:0; align-self:start; }
+      #menu .rui-shell[data-release-view="home"] .rui-play { grid-area:play; }
+      #menu .rui-shell[data-release-view="home"] .rui-home-nav { grid-area:nav; margin-top:0; align-self:start; }
     }
     @media (prefers-reduced-motion:reduce) {
       .rui-surface .pcard { animation:none; }
