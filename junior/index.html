@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="build-version" content="2026.11.13-rc3">
+<html lang="ru"><head><meta charset="utf-8"><meta name="build-version" content="2026.11.13-rc4">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="color-scheme" content="dark light"><meta name="theme-color" content="#1b1535">
 <link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/icon-180.png"><meta name="apple-mobile-web-app-title" content="Победитель"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
@@ -228,7 +228,7 @@ function hitHero(p){if(fx.inv>0){defeat(p,0,1);return}
 function act(){ac();
  if(st==="over"){if(overT>.5)startGame(thIdx);return}
  if(st!=="play"||cd>0)return;strike=.22;cd=.3;SFX.strike();
- for(const p of probs){const d=p.x-px()-(p.boss?p.w*.45:0);if(!p.dead&&d<range()&&d>-30*u&&(!p.fly||jy>12*u||p.boss||p.hi)&&!p.bar){p.hp-=bd(p,1+PK("fist"));p.flash=1;if(p.hp<=0)defeat(p);else burst(p.x,GY-p.h/2-(p.fh||0),"#fff",8)}}}
+ for(const p of probs){const d=p.x-px()-(p.boss?p.w*.45:0);if(!p.dead&&d<range()&&d>-30*u&&(!p.fly||jy>12*u||p.boss||p.hi)&&!p.bar){if(R2.hitEnemy(p,1+PK("fist"),"fist"))tone(160,.08,"triangle",.08,72)}}}
 function slide(){if(st!=="play")return;if(jy>2*u){jv=Math.min(jv,-950*u);slideQ=true;return}if(slideT<=0){slideT=.6;tone(180,.18,"triangle",.06,90);for(let i=0;i<10;i++)parts.push({x:px()+(Math.random()-.2)*30*u,y:GY-3*u,vx:-(60+Math.random()*120)*u,vy:-Math.random()*90*u,l:.45,c:"rgba(255,255,255,.75)",r:3*u})}}
 function jump(){if(st!=="play")return;slideT=0;slideQ=false;if(jy<=0.5*u){jv=660*u*(ZM().ceil?.82:1);SFX.jump()}else if(own("dj")&&!djU){djU=true;jv=600*u;SFX.jump();burst(px(),GY-jy,"#fff",8)}}
 function superHit(){if(st!=="play"||tut<5)return;if(tut===5)tutOk=true;if(sup<100){tone(200,.08,"square",.05);say("Супер копится: "+Math.floor(sup)+"%",hx(),GY-130*u*sc(),"#ffd9a0",18);return}
@@ -1231,6 +1231,8 @@ const R2 = (() => {
   const activeBoss = () => probs.find(p => p.boss && !p.dead);
   const radius = () => 25;
   const utilityRadius = 22;
+  const jumpIcon = '<svg class="r2-jump-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 11l7-7 7 7M7 17l5-5 5 5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  const weaponLabels={katana:"Катана",hammer:"Молот",bow:"Лук",grenade:"Граната",blaster:"Бластер",boomerang:"Бумеранг"};
   function layout(){GY=H-SA.b-(portrait?158:132)}
   layout();
   const originalBtns=btns;
@@ -1238,9 +1240,9 @@ const R2 = (() => {
     const r=radius(),y=H-SA.b-r-12,left=SA.l+r+16,right=W-SA.r-r-16;
     const old=originalBtns(),find=id=>old.find(b=>b.id===id);
     return [
-      {...find("jump"),id:"jump",x:left,y,r,ic:"↑",lb:"Прыжок"},
-      {...find("shoot"),id:"shoot",x:portrait?W/2:right-82,y,r,lb:"Бросок"},
-      {...find("strike"),id:"strike",x:right,y,r,lb:"Удар"},
+      {...find("jump"),id:"jump",x:left,y,r,ic:jumpIcon,lb:"Прыжок"},
+      {...find("shoot"),id:"shoot",x:portrait?W/2:right-82,y,r,lb:!junior&&WR()?weaponLabels[WR()]:"Бросок"},
+      {...find("strike"),id:"strike",x:right,y,r,lb:!junior&&WM()?weaponLabels[WM()]:"Кулак"},
       {id:"slow",x:portrait?W/2-33:left,y:y-56,r:utilityRadius,ic:"⏳",lb:"Время",k:"Q"},
       {id:"super",x:portrait?W/2+33:right,y:y-56,r:utilityRadius,ic:"🔥",lb:"Супер",k:"E"}
     ].filter(b=>b.id!=="slow"&&b.id!=="super"||tut>=9||b.id==="super"&&tut>=5||b.id==="slow"&&tut>=6);
@@ -1251,6 +1253,9 @@ const R2 = (() => {
     #r2-controls button{position:absolute;box-sizing:border-box;border:2px solid #ffffff8c;border-radius:50%;padding:0;color:white;background:#211b49eb;box-shadow:0 3px 12px #08051c55;pointer-events:auto;touch-action:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px}
     #r2-controls button:active{filter:brightness(1.45)}#r2-controls button:focus-visible{outline:3px solid #ffd54a}
     #r2-controls .r2-icon{font:20px system-ui;line-height:1.1}#r2-controls .r2-label{font:650 10px system-ui;line-height:1.2}
+    #r2-controls [data-control="jump"] .r2-icon{display:grid;place-items:center;width:24px;height:22px;color:#ccecff}
+    #r2-controls .r2-jump-mark{display:block;width:24px;height:24px;flex:none}
+    #r2-controls [data-weapon="boomerang"] .r2-label{font-size:8px}
     #r2-controls :is([data-control="super"],[data-control="slow"]) .r2-icon{font-size:16px}
     #r2-controls button[data-ready="true"]{border-color:#ffe27a;background:#60451a;box-shadow:0 0 12px #ffd54a66}
     #pb,#mb{top:calc(48px + env(safe-area-inset-top,0px));width:44px;height:44px;border-radius:22px}#pb{right:calc(62px + env(safe-area-inset-right,0px))}#mb{right:calc(12px + env(safe-area-inset-right,0px))}
@@ -1268,6 +1273,8 @@ const R2 = (() => {
     controls.style.display=st==="play"&&!paused&&!cardOpen&&!lvlMode?"block":"none";
     const current=btns();for(const id of Object.keys(buttons)){const b=buttons[id],q=current.find(q=>q.id===id);b.style.display=q?"flex":"none";if(!q)continue;
       b.style.left=(q.x-q.r)+"px";b.style.top=(q.y-q.r)+"px";b.style.width=b.style.height=q.r*2+"px";
+      const weapon=junior?"":id==="strike"?WM():id==="shoot"?WR():"";
+      if(b.dataset.weapon!==weapon){b.dataset.weapon=weapon;b.setAttribute("aria-label",weapon?tr(q.lb):id==="strike"?"Кулак":id==="shoot"?"Бросок":b.getAttribute("aria-label"))}
       const charge=id==="super"?sup:id==="slow"?slowCh:100;b.dataset.ready=String((id==="super"||id==="slow")&&charge>=100);
       const label=charge<100?Math.floor(charge)+"%":tr(q.lb),text=q.ic+"|"+label;
       if(b.dataset.label!==text){b.innerHTML='<span class="r2-icon">'+q.ic+'</span><span class="r2-label">'+label+'</span>';b.dataset.label=text}
@@ -1287,8 +1294,42 @@ const R2 = (() => {
     g.beginPath();g.ellipse(x,GY-height*.5,16*u,height*.5,0,-Math.PI/2,Math.PI/2);g.stroke();
     g.restore();
   };
+  const impacts=[];
+  const impactColors={fist:"#ffd768",katana:"#aeeaff",hammer:"#9ed8ff",arw:"#ffe19a",las:"#82faff",boom:"#ffc478",grenade:"#ffb367"};
+  function impact(x,y,kind){
+    if(impacts.length>=16)impacts.shift();
+    impacts.push({x,y,kind,age:0});
+  }
+  function drawImpacts(){
+    if(!impacts.length)return;
+    g.save();
+    for(const hit of impacts){
+      const life=1-hit.age/.23,r=(7+12*(1-life))*u;
+      g.globalAlpha=life;
+      g.strokeStyle=impactColors[hit.kind]||impactColors.fist;g.lineWidth=2.5*u;
+      g.beginPath();g.ellipse(hit.x,hit.y,r,r*.73,0,0,2*Math.PI);g.stroke();
+      if(!reduced()){
+        g.beginPath();
+        for(let i=0;i<5;i++){
+          const a=i*2*Math.PI/5;
+          g.moveTo(hit.x+Math.cos(a)*r,hit.y+Math.sin(a)*r);
+          g.lineTo(hit.x+Math.cos(a)*(r+6*u),hit.y+Math.sin(a)*(r+6*u));
+        }
+        g.stroke();
+      }
+    }
+    g.restore();
+  }
+  function hitEnemy(p,damage,kind,quiet=false){
+    const dealt=bd(p,damage);
+    if(dealt<=0)return false;
+    p.hp-=dealt;p.flash=1;
+    impact(p.x-p.w*.23,GY-p.h*.5-(p.fh||0),kind);
+    if(p.hp<=0)defeat(p,0,quiet);
+    return true;
+  }
   const originalDraw=draw;
-  draw=function(){originalDraw();syncControls()};
+  draw=function(){originalDraw();if(st==="play"&&!cardOpen)drawImpacts();syncControls()};
   const originalSay=say;
   say=function(s,x,y,c,z){
     if(st==="play"&&String(s).length>4&&(Math.abs(x-W/2)<3||String(s).length>25)){
@@ -1386,10 +1427,16 @@ const R2 = (() => {
   const oldDamage=bd;
   bd=function(p,n){if(!p.boss)return oldDamage(p,n);if(p.bossIntro>0||p.phaseIntro>0||!p.inA)return 0;return limitBossDamage(p,oldDamage(p,n))};
   const oldReset=reset;
-  reset=function(){oldReset();freeze=0;swp=null;notice=null;victory=null;if(hasDuels){duel.t=0;duel.dc=0}layout()};
+  reset=function(){
+    oldReset();freeze=0;swp=null;notice=null;victory=null;impacts.length=0;
+    if(!junior){grens=[];booms=[];hw=null;slashT=0;nshT=0}
+    if(hasDuels){duel.t=0;duel.dc=0}
+    layout();
+  };
   const oldUpdate=update;
   update=function(dt){
     if(paused||cardOpen)return;
+    for(let i=impacts.length-1;i>=0;i--){impacts[i].age+=dt;if(impacts[i].age>=.23)impacts.splice(i,1)}
     if(notice){notice.t-=dt;if(notice.t<=0)notice=null}if(victory){victory.t-=dt;if(victory.t<=0)victory=null}
     const p=activeBoss();if(st==="play"&&p&&p.bossIntro>0){
       t+=dt;p.bossIntro=Math.max(0,p.bossIntro-dt);const k=1-p.bossIntro/2,e=1-Math.pow(1-k,3);p.x=p.entryFrom+(bossTarget(p)-p.entryFrom)*e;
@@ -1438,7 +1485,7 @@ const R2 = (() => {
   };
   const oldDay=dayStep;
   dayStep=function(dt){if(activeBoss()||lvlMode){mood=Math.max(0,mood-dt);for(const k in fx)fx[k]=Math.max(0,fx[k]-dt);pkStep(dt);return}oldDay(dt)};
-  return {layout,radius,stepBoss,bossTarget,tutorial,activeBoss,limitBossDamage};
+  return {layout,radius,stepBoss,bossTarget,tutorial,activeBoss,limitBossDamage,hitEnemy};
 })();
 
 </script>
