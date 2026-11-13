@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="build-version" content="2026.11.13-rc4">
+<html lang="ru"><head><meta charset="utf-8"><meta name="build-version" content="2026.11.13-rc5">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="color-scheme" content="dark light"><meta name="theme-color" content="#1b1535">
 <link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/icon-180.png"><meta name="apple-mobile-web-app-title" content="Победитель"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
@@ -1719,6 +1719,9 @@ const R2 = (() => {
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
   const reduced = () => (typeof LOWFX==="function" && LOWFX()) || reducedMotion.matches;
   let notice = null, victory = null;
+  const passiveSuperRate = 2;
+  const artifactCharge = 30;
+  let artifact = null, artifactTimer = 4, artifactHintShown = false;
   const activeBoss = () => probs.find(p => p.boss && !p.dead);
   const radius = () => 25;
   const utilityRadius = 22;
@@ -1774,6 +1777,7 @@ const R2 = (() => {
     }
   }
   drawBtns=function(){
+    drawArtifact();
     if(!swave)return;
     const x=swave.x, height=Math.min(90*u,GY*.32), trail=130*u;
     g.save();
@@ -1785,6 +1789,57 @@ const R2 = (() => {
     g.beginPath();g.ellipse(x,GY-height*.5,16*u,height*.5,0,-Math.PI/2,Math.PI/2);g.stroke();
     g.restore();
   };
+  const artifactHeight = () => GY-98*u;
+  function drawArtifact(){
+    if(!artifact)return;
+    const x=artifact.x,y=artifactHeight(),r=16*u;
+    g.save();
+    g.fillStyle="#2b194b";g.strokeStyle="#ffda79";g.lineWidth=2;
+    g.beginPath();g.moveTo(x,y-r);g.lineTo(x+r,y);g.lineTo(x,y+r);g.lineTo(x-r,y);
+    g.closePath();g.fill();g.stroke();
+    g.fillStyle="#fff0b0";
+    g.beginPath();g.moveTo(x+2*u,y-11*u);g.lineTo(x-6*u,y+u);g.lineTo(x-u,y+u);
+    g.lineTo(x-2*u,y+11*u);g.lineTo(x+6*u,y-2*u);g.lineTo(x+u,y-2*u);g.closePath();g.fill();
+    g.font="700 12px system-ui";g.textAlign="center";g.lineWidth=3;g.strokeStyle="#241536";
+    const label="+"+artifactCharge+"%";
+    g.strokeText(label,x,y-r-6);g.fillText(label,x,y-r-6);
+    g.restore();
+  }
+  function chargeSuper(amount){
+    const gained=Math.min(amount,Math.max(0,100-sup));
+    if(!gained)return 0;
+    sup+=gained;
+    if(sup>=100){SFX.power();buzz(35);notice={s:"🔥 Суперудар готов!",c:"#ffe7ae",t:2}}
+    return gained;
+  }
+  function updateArtifact(dt,scroll){
+    if(artifact){
+      artifact.x-=scroll;
+      if(!artifactHintShown&&artifact.x<=W-SA.r-20){
+        artifactHintShown=true;
+        notice={s:"↑ Прыгни за артефактом · +"+artifactCharge+"% к «Супер»",c:"#ffe7ae",t:3.5};
+      }
+      const y=artifactHeight(),heroY=GY-jy-38*u*sc();
+      if(jy>=28*u&&Math.abs(artifact.x-hx())<=27*u&&Math.abs(y-heroY)<=26*u){
+        const gained=chargeSuper(artifactCharge);
+        burst(artifact.x,y,"#ffd56b",12);
+        if(gained&&sup<100){
+          SFX.coin();
+          notice={s:"⚡ Артефакт · +"+Math.round(gained)+"% к суперудару",c:"#ffe7ae",t:2};
+        }
+        artifact=null;
+      }else if(artifact.x<-25){
+        artifact=null;
+      }
+      return;
+    }
+    if(bossPending||sup>=100)return;
+    artifactTimer-=dt;
+    if(artifactTimer<=0){
+      artifact={x:W+18};
+      artifactTimer=10;
+    }
+  }
   const impacts=[];
   const impactColors={fist:"#ffd768",katana:"#aeeaff",hammer:"#9ed8ff",arw:"#ffe19a",las:"#82faff",boom:"#ffc478",grenade:"#ffb367"};
   function impact(x,y,kind){
@@ -1907,6 +1962,7 @@ const R2 = (() => {
     p.hp=p.mx=Math.round(((junior?12:16)+Math.min(level,24)*1.25+(p.sup?8:0))*elite);
     p.bossIntro=2;p.inA=0;p.bs="intro";p.stage=0;p.entryFrom=W+p.w;p.x=p.entryFrom;p.shots=[];
     haz=[];pits=[];queue=[];bullets=[];zw=[];springs=[];swave=null;texts=[];
+    artifact=null;
     if(junior)grs=[];else {grens=[];hw=null}
     bn.t=0;notice=null;flash=0;shake=0;if(typeof bnQ!=="undefined"){bnQ=[];TQ.length=0;toast=null}arena=true;
   };
@@ -1920,6 +1976,7 @@ const R2 = (() => {
   const oldReset=reset;
   reset=function(){
     oldReset();freeze=0;swp=null;notice=null;victory=null;impacts.length=0;
+    artifact=null;artifactTimer=4;artifactHintShown=false;
     if(!junior){grens=[];booms=[];hw=null;slashT=0;nshT=0}
     if(hasDuels){duel.t=0;duel.dc=0}
     layout();
@@ -1933,7 +1990,14 @@ const R2 = (() => {
       t+=dt;p.bossIntro=Math.max(0,p.bossIntro-dt);const k=1-p.bossIntro/2,e=1-Math.pow(1-k,3);p.x=p.entryFrom+(bossTarget(p)-p.entryFrom)*e;
       if(!p.bossIntro){p.inA=1;p.bs="idle";p.bt=1;SFX.boom();shake=reduced()?0:.16;iF=Math.max(iF,.5)}return;
     }
-    oldUpdate(dt);if(reduced()){shake=0;flash=Math.min(flash,.1)}
+    const beforeScroll=dist,beforeTime=t,wasPlaying=st==="play"&&!lvlMode;
+    oldUpdate(dt);
+    const elapsed=t-beforeTime;
+    if(wasPlaying&&st==="play"&&tut>=9&&!lvlMode&&elapsed>0){
+      if(supBlock<=0)chargeSuper(passiveSuperRate*elapsed);
+      if(!activeBoss())updateArtifact(elapsed,Math.max(0,dist-beforeScroll));
+    }
+    if(reduced()){shake=0;flash=Math.min(flash,.1)}
   };
   // Actions do not consume charges on overlays or during a boss entrance.
   const allowed=()=>st==="play"&&!paused&&!cardOpen&&!lvlMode&&!(activeBoss()?.bossIntro>0);
@@ -1946,7 +2010,11 @@ const R2 = (() => {
     xp=need();lvlMode=1;lvlT=4.8;lvlB=0;lvlC=0;victory={name:p.name,t:2,coins:EV().id==="boss"?23:15};save();
   }};
   const oldLevelUp=levelUp;
-  levelUp=function(){if(junior&&wOv>=0){wOv=-1;level=meta.lvl||meta.maxL||1;lvlMode=0;paused=false;showMenu();return}oldLevelUp()};
+  levelUp=function(){
+    artifact=null;artifactTimer=4;
+    if(junior&&wOv>=0){wOv=-1;level=meta.lvl||meta.maxL||1;lvlMode=0;paused=false;showMenu();return}
+    oldLevelUp();
+  };
   const oldOverlay=lvlOverlay;
   lvlOverlay=function(){if(victory&&lvlB===0){message("🏆 "+victory.name+" побеждён!",H*.32,Math.min(W-24,520),16,"#ffe27a");message("+"+victory.coins+" ⭐ · следующий уровень",H*.32+38,Math.min(W-24,520),14,"#fff");return}oldOverlay()};
   const oldBossFx=bossFx;
